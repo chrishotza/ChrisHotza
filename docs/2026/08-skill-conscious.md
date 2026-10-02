@@ -1,7 +1,7 @@
 # 2026 — Skill-Conscious
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 Skill-Conscious es la etapa mayor más reciente documentada actualmente.
 
@@ -70,7 +70,7 @@ Skill-Conscious es donde varios mecanismos desarrollados en proyectos anteriores
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 Skill-Conscious is the latest major stage currently documented.
 
