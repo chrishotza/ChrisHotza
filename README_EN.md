@@ -1,6 +1,3 @@
-<details id="readme-en">
-<summary>EN</summary>
-
 <div align="center">
 
 # Chris Hotza
