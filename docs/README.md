@@ -1,7 +1,7 @@
 # 📚 Research Archive / Archivo de Investigación
 
 <details>
-<summary>🇪🇸 <strong>ES — Español</strong></summary>
+<summary>ES <strong>ES — Español</strong></summary>
 
 El README del perfil es el mapa legible. Este archivo conserva la cronología y el contexto detrás de cada etapa.
 
@@ -24,7 +24,7 @@ El README del perfil es el mapa legible. Este archivo conserva la cronología y 
 </details>
 
 <details>
-<summary>🇬🇧 <strong>EN — English</strong></summary>
+<summary>EN <strong>EN — English</strong></summary>
 
 The profile README is the readable map. This archive keeps the chronology and the context behind each stage.
 
