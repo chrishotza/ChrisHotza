@@ -11,6 +11,10 @@
 <details>
 <summary>ES</summary>
 
+<table width="200%" align="left" style="border:0; border-collapse:collapse;">
+<tr>
+<td style="border:0;">
+
 # Chris Hotza
 
 **Investigador independiente · Constructor · Sistemas experimentales**
@@ -146,6 +150,9 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 </div>
 
+</td>
+</tr>
+</table>
 </details>
 
 </td>
@@ -153,6 +160,10 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 <details>
 <summary>EN</summary>
+
+<table width="200%" align="right" style="border:0; border-collapse:collapse;">
+<tr>
+<td style="border:0;">
 
 <div style="width:200%; margin-left:-100%;">
 
@@ -291,6 +302,9 @@ The README is the map. The detailed stage pages contain the chronology, technica
 
 </div>
 
+</td>
+</tr>
+</table>
 </details>
 
 </td>
