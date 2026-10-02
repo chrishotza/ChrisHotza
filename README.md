@@ -9,7 +9,7 @@
 <td align="center" valign="top">
 
 <details>
-<summary style="text-align:center; white-space:nowrap; font-size:0;"><span style="display:inline-block; position:relative; margin-left:-18px; padding:0 6px; background-color:#0d1117; font-size:16px;">ES ▼</span></summary>
+<summary style="position:relative; height:24px; font-size:0; text-align:center; white-space:nowrap;"><span style="position:absolute; left:50%; top:0; transform:translateX(-50%); z-index:5; display:block; width:72px; padding:2px 4px; background-color:var(--bgColor-default,#0d1117); font-size:16px; line-height:20px;">ES ▼</span></summary>
 
 <div style="width:200%;">
 
@@ -154,7 +154,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <td align="center" valign="top">
 
 <details>
-<summary style="text-align:center; white-space:nowrap; font-size:0;"><span style="display:inline-block; position:relative; margin-left:-18px; padding:0 6px; background-color:#0d1117; font-size:16px;">EN ▼</span></summary>
+<summary style="position:relative; height:24px; font-size:0; text-align:center; white-space:nowrap;"><span style="position:absolute; left:50%; top:0; transform:translateX(-50%); z-index:5; display:block; width:72px; padding:2px 4px; background-color:var(--bgColor-default,#0d1117); font-size:16px; line-height:20px;">EN ▼</span></summary>
 <div style="width:200%; margin-left:-100%;">
 
 # Chris Hotza
