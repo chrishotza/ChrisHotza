@@ -1,7 +1,7 @@
 # 2025 — TCF
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## Teoría de Continuidad Fundamental
 
@@ -39,7 +39,7 @@ TCF fue el principal laboratorio donde la intuición original sobre conciencia y
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## Fundamental Continuity Theory
 
