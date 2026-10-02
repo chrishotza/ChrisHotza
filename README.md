@@ -10,7 +10,7 @@
 <td style="width:10%; text-align:center; vertical-align:top;">
 
 <details>
-<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">▼ ES</span></summary>
+<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">ES ▼</span></summary>
 
 <div style="width:1000%; margin-left:-400%;">
 
@@ -153,7 +153,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <td style="width:10%; text-align:center; vertical-align:top;">
 
 <details>
-<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">▼ EN</span></summary>
+<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">EN ▼</span></summary>
 
 <div style="width:1000%; margin-left:-500%;">
 
