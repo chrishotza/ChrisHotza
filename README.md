@@ -5,11 +5,12 @@
 </div>
 
 <table align="center">
+
 <tr>
 <td align="center" width="50%" valign="top">
 
 <details>
-<summary>ES</summary>
+<summary style="list-style:none; text-align:center;">▼ ES</summary>
 
 <table width="200%" align="left">
 <tr><td>
@@ -158,7 +159,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <td align="center" width="50%" valign="top">
 
 <details>
-<summary>EN</summary>
+<summary style="list-style:none; text-align:center;">▼ EN</summary>
 
 <table width="200%" align="right">
 <tr><td>
