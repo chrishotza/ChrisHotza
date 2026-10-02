@@ -149,10 +149,6 @@ The profile README is the map. The detailed stage pages contain the chronology, 
 
 [**Open the research archive →**](docs/README.md)
 
-🔒 Proprietary, private and NDA-protected material remains outside the public repository.
-
-[Protected material →](docs/protected.md)
-
 ---
 
 <div align="center">
