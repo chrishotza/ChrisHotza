@@ -4,9 +4,15 @@
 
 </div>
 
-<details>
-<summary>ES</summary>
+<table width="100%">
+<tr>
+<td align="center" width="50%" valign="top">
 
+<details>
+<summary>ES ▼</summary>
+
+<table width="200%" align="left">
+<tr><td>
 
 <div align="center">
 
@@ -143,13 +149,19 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 </div>
 
-</details>
+</td></tr>
+</table>
 
 </details>
+
+</td>
+<td align="center" width="50%" valign="top">
 
 <details>
-<summary>EN</summary>
+<summary>EN ▼</summary>
 
+<table width="200%" align="right">
+<tr><td>
 
 <div align="center">
 
@@ -286,4 +298,11 @@ The README is the map. The detailed stage pages contain the chronology, technica
 
 </div>
 
+</td></tr>
+</table>
+
 </details>
+
+</td>
+</tr>
+</table>
