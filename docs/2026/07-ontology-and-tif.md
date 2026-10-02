@@ -1,7 +1,7 @@
 # 2026 — Ser, Conciencia Cuántica y TIF / Being, Quantum Consciousness and TIF
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## Manifiesto Matemático del Ser
 
@@ -43,7 +43,7 @@ TIF es explícitamente una hipótesis de trabajo con falsadores y limitaciones d
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## Mathematical Manifesto of Being
 
