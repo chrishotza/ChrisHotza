@@ -5,7 +5,7 @@
 </div>
 
 <details>
-<summary>ES</summary>
+<summary>ES — Investigación independiente en conciencia, inteligencia artificial, computación científica y sistemas experimentales.</summary>
 
 # Chris Hotza
 
@@ -145,7 +145,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 </details>
 
 <details>
-<summary>EN</summary>
+<summary>EN — Independent research in consciousness, artificial intelligence, scientific computing, and experimental systems.</summary>
 
 <div style="width:200%; margin-left:-100%;">
 
