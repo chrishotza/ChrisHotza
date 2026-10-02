@@ -11,8 +11,6 @@
 <details style="width:200%; margin-left:0;">
 <summary style="font-size:0; text-align:center;"><span style="font-size:16px;">ES ▼</span></summary>
 
-<div style="width:1000%; margin-left:-400%;">
-
 # Chris Hotza
 
 **Investigador independiente · Constructor · Sistemas experimentales**
@@ -153,8 +151,6 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 <details style="width:200%; margin-left:-100%;">
 <summary style="font-size:0; text-align:center;"><span style="font-size:16px;">EN ▼</span></summary>
-
-<div style="width:1000%; margin-left:-500%;">
 
 # Chris Hotza
 
