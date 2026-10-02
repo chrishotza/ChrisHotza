@@ -718,6 +718,12 @@ Pulse Energy
         ↓
 Conscious Pulse
         ↓
+Evolution 2.0
+        ↓
+InoCrowd / AERIS
+        ↓
+InnoCentive / TRL6
+        ↓
 ...
 ~~~
 
@@ -1220,6 +1226,12 @@ ROBOTART
 Pulse Energy
         ↓
 Conscious Pulse
+        ↓
+Evolution 2.0
+        ↓
+InoCrowd / AERIS
+        ↓
+InnoCentive / TRL6
         ↓
 ...
 ~~~
