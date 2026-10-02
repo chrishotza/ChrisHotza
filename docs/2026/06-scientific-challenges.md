@@ -1,7 +1,7 @@
 # 2026 — Aplicaciones científicas / Scientific applications
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## InoCrowd — AERIS
 
@@ -58,7 +58,7 @@ La arquitectura de trabajo incorpora movimiento, forma, apariencia, vecindario, 
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## InoCrowd — AERIS
 
