@@ -4,16 +4,15 @@
 
 </div>
 
-<table align="center" width="100%">
-
+<table style="width:100%; table-layout:fixed;">
 <tr>
-<td align="center" width="50%" valign="top">
+<td style="width:40%;"></td>
+<td style="width:10%; text-align:center; vertical-align:top;">
 
 <details>
-<summary style="list-style-type: disclosure-open; text-align:center; white-space:nowrap;">ES</summary>
+<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">▼ ES</span></summary>
 
-<table width="200%" align="left">
-<tr><td>
+<div style="width:1000%; margin-left:-400%;">
 
 # Chris Hotza
 
@@ -146,19 +145,17 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 </div>
 
-</td></tr>
-</table>
+</div>
 
 </details>
 
 </td>
-<td align="center" width="50%" valign="top">
+<td style="width:10%; text-align:center; vertical-align:top;">
 
 <details>
-<summary style="list-style-type: disclosure-open; text-align:center; white-space:nowrap;">EN</summary>
+<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">▼ EN</span></summary>
 
-<table width="200%" align="right">
-<tr><td>
+<div style="width:1000%; margin-left:-500%;">
 
 # Chris Hotza
 
@@ -291,11 +288,11 @@ The README is the map. The detailed stage pages contain the chronology, technica
 
 </div>
 
-</td></tr>
-</table>
+</div>
 
 </details>
 
 </td>
+<td style="width:40%;"></td>
 </tr>
 </table>
