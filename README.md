@@ -1,13 +1,16 @@
 <div align="center">
 
-# README.md
-
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="50%"><a href="#readme-es"><strong>README.md ES</strong></a></td>
+<td align="center" width="50%"><a href="#readme-en"><strong>README.md EN</strong></a></td>
+</tr>
+</table>
 
-<details>
-<summary><strong>ES — abrir perfil completo</strong></summary>
+</div>
+
+<details id="readme-es">
+<summary>ES</summary>
 
 <div align="center">
 
@@ -149,8 +152,8 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 </td>
 <td align="center" width="50%">
 
-<details>
-<summary><strong>EN — open full profile</strong></summary>
+<details id="readme-en">
+<summary>EN</summary>
 
 <div align="center">
 
