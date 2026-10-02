@@ -9,9 +9,7 @@
 <td align="center" valign="top">
 
 <details>
-<summary style="display:block; text-align:center; white-space:nowrap; font-size:16px;"><span>ES ▼</span></summary>
-
-<div style="width:200%;">
+<summary>ES</summary>
 
 # Chris Hotza
 
@@ -154,7 +152,8 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <td align="center" valign="top">
 
 <details>
-<summary style="display:block; text-align:center; white-space:nowrap; font-size:16px;"><span>EN ▼</span></summary>
+<summary>EN</summary>
+
 <div style="width:200%; margin-left:-100%;">
 
 # Chris Hotza
