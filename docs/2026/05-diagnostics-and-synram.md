@@ -1,7 +1,7 @@
 # 2026 — COV / SYN-RAM
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## COV
 
@@ -26,7 +26,7 @@ Esta rama convirtió estado, memoria y presión en un lazo de control computacio
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## COV
 
