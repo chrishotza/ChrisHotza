@@ -564,6 +564,135 @@ No publicar:
 
 La cronología debe preservar la historia y el impacto técnico sin convertir el README en documentación del activo propietario.
 
+
+---
+
+# Evolution 2.0 — Chemical Communication
+
+Después de esa etapa participé también en el **Evolution 2.0 Prize** de HeroX.
+
+La propuesta fue un sistema de comunicación química basado en **osciladores Belousov–Zhabotinsky (BZ)** acoplados.
+
+La idea era intentar construir un canal digital donde la química produjera el encoder, los estados del mensaje y el decoder, sin imponer de antemano un codebook humano.
+
+La arquitectura propuesta utilizaba:
+
+- un tercer oscilador como generador autónomo;
+- un reactor BZ como encoder;
+- un canal de difusión;
+- un segundo reactor BZ como decoder químico;
+- descubrimiento de estados durante una etapa de calibración;
+- transmisión ciega posterior;
+- criterios de aceptación pre-registrados.
+
+La propuesta buscaba al menos **32 estados digitalmente distinguibles** y definía métricas como precisión de transmisión, BER, información mutua y capacidad de canal.
+
+El diseño incluía una campaña de calibración autónoma de 48 horas, con aproximadamente 4.000 eventos de disparo, y clustering no supervisado para descubrir las clases químicas sin asignarlas previamente.
+
+### Estado de la submission
+
+**No tengo registrada una conclusión experimental final del proyecto ni una validación química externa que cierre la propuesta.**
+
+Lo que queda documentado es la propuesta experimental, el protocolo de verificación y el trabajo computacional desarrollado alrededor de ella.
+
+Ese trabajo computacional terminó siendo útil como infraestructura metodológica: freeze discipline, runners reproducibles, criterios de aceptación, stress testing, comparación de arquitecturas y una separación explícita entre validación interna y validación química externa.
+
+---
+
+# InoCrowd — AERIS
+
+También participé en **InoCrowd** con **AERIS**, una propuesta de monitorización predictiva del bienestar animal en explotaciones lecheras.
+
+AERIS fue planteado como un **digital twin** orientado a bienestar animal, integrando señales:
+
+- conductuales
+- biomecánicas
+- térmicas y respiratorias
+- alimentación y agua
+- gestión
+- visión
+
+La arquitectura separaba el análisis en tres niveles:
+
+~~~text
+ANIMAL
+   ↓
+GROUP
+   ↓
+PRODUCTION UNIT
+~~~
+
+para estimar estados de bienestar, detectar deterioro, generar alertas y apoyar decisiones de intervención.
+
+La submission estaba posicionada como un **proof of concept integrado respaldado por simulación**, no como un producto ya validado en campo.
+
+El plan proponía un piloto de 6 meses para una unidad productiva con un presupuesto indicativo de **€120.000**, seguido de una ruta de escalado.
+
+Entre los resultados reportados para el modelo integrado estaban:
+
+~~~text
+Precision   0.6998
+Recall      0.8862
+Specificity 0.7834
+Accuracy    0.8207
+~~~
+
+La documentación mantiene explícitamente la validación integrada de campo como trabajo futuro del piloto.
+
+---
+
+# InnoCentive — Offline Research Assistant / TRL6
+
+Otra submission fue para un desafío de **InnoCentive** orientado al desarrollo de un **smart personal assistant for security researchers at TRL6**.
+
+La propuesta describía un asistente offline para investigadores de seguridad que trabajan con dossiers técnicos fragmentados y entornos sensibles o desconectados.
+
+El sistema se organizaba alrededor de cinco capacidades:
+
+- ingestión y normalización offline de dossiers;
+- construcción de un system graph inspeccionable;
+- respuestas fundamentadas en evidencia;
+- validation gate para controlar qué puede publicarse;
+- memoria persistente de investigación.
+
+La arquitectura conceptual era:
+
+~~~text
+STRUCTURE
++
+EVIDENCE
++
+VALIDATION
++
+MEMORY
+~~~
+
+El system graph conectaría componentes, interfaces, protocolos, trust boundaries, update paths y superficies de mantenimiento.
+
+El validation gate separaría findings estables, ambigüedades persistentes, hipótesis frágiles, claims bloqueados y recomendaciones.
+
+La propuesta planteaba un desarrollo de **12 semanas**:
+
+~~~text
+Weeks 1–2  → ingestion / normalization
+Weeks 3–4  → system graph
+Weeks 5–6  → evidence-grounded QA
+Weeks 7–8  → validation gate
+Weeks 9–10 → persistent research memory
+Weeks 11–12 → relevant-environment demonstrator
+~~~
+
+### TRL6 — precisión histórica
+
+El desafío estaba orientado a **TRL6**, pero la propuesta **no afirmaba que ya existiera un producto TRL6 completamente validado**.
+
+Planteaba un camino de 12 semanas hacia un demostrador en entorno relevante, respaldado por un prototipo interno y una metodología de validación ya desarrollada.
+
+La propuesta también documentaba una toolchain interna propietaria para exploración estructurada, síntesis entre fuentes, coverage checking, trust-chain reasoning y validación ciega/prerregistrada.
+
+---
+
+
 ---
 
 # Línea de evolución hasta este punto
@@ -950,6 +1079,122 @@ This public chronology does not disclose:
 - confidential implementation details
 
 The goal is to preserve the history without exposing protected technology.
+
+
+---
+
+# Evolution 2.0 — Chemical Communication
+
+I also participated in the **Evolution 2.0 Prize** on HeroX.
+
+The proposal was a chemical communication system based on coupled **Belousov–Zhabotinsky (BZ) oscillators**.
+
+The goal was to test whether chemistry itself could provide the encoder, message states, and decoder without imposing a human-designed codebook in advance.
+
+The proposed architecture used:
+
+- an autonomous third oscillator as generator;
+- a BZ reactor as encoder;
+- a diffusion channel;
+- a second BZ reactor as chemical decoder;
+- state discovery during calibration;
+- blind transmission;
+- pre-registered acceptance criteria.
+
+The proposal targeted at least **32 experimentally distinguishable digital states** and defined transmission accuracy, BER, mutual information, and channel capacity as key metrics.
+
+The design included a 48-hour autonomous calibration run with roughly 4,000 trigger events and unsupervised state discovery.
+
+### Submission status
+
+**No final experimental conclusion or external wet-lab validation is currently recorded in this chronology.**
+
+The documented work covers the experimental proposal, verification protocol, and supporting computational methodology.
+
+That computational work became useful as validation infrastructure: freeze discipline, reproducible runners, acceptance criteria, stress testing, architecture comparison, and explicit separation between internal computational validation and external chemical validation.
+
+---
+
+# InoCrowd — AERIS
+
+I also participated in **InoCrowd** with **AERIS**, a proposal for predictive dairy-animal welfare monitoring.
+
+AERIS was designed as a **digital twin** combining:
+
+- behavioral signals
+- biomechanical signals
+- thermal and respiratory evidence
+- feed and water signals
+- management data
+- visual evidence
+
+The architecture operated across three levels:
+
+~~~text
+ANIMAL
+   ↓
+GROUP
+   ↓
+PRODUCTION UNIT
+~~~
+
+The aim was continuous welfare-state estimation, earlier detection, alerts, and intervention support.
+
+The submission was positioned as a **simulation-backed integrated proof of concept**, not as a field-validated commercial product.
+
+It proposed a six-month pilot for one production unit with an indicative **€120,000** pilot budget, followed by a scale-up path.
+
+Reported integrated metrics included:
+
+~~~text
+Precision   0.6998
+Recall      0.8862
+Specificity 0.7834
+Accuracy    0.8207
+~~~
+
+The documentation explicitly leaves integrated external field validation as future pilot work.
+
+---
+
+# InnoCentive — Offline Research Assistant / TRL6
+
+Another submission was for an **InnoCentive** challenge focused on developing a **smart personal assistant for security researchers at TRL6**.
+
+The proposal described an offline research assistant for sensitive or disconnected environments and focused on five capabilities:
+
+- offline dossier ingestion and normalization;
+- inspectable system graph construction;
+- evidence-grounded answers;
+- validation-aware publication control;
+- persistent research memory.
+
+The architectural idea was:
+
+~~~text
+STRUCTURE
++
+EVIDENCE
++
+VALIDATION
++
+MEMORY
+~~~
+
+The system graph would connect components, interfaces, protocols, trust boundaries, update paths, and maintenance surfaces.
+
+The validation gate would separate stable findings, unresolved ambiguity, fragile hypotheses, blocked claims, and recommendations.
+
+The proposed implementation was structured as a **12-week execution plan**, progressing from ingestion and system-graph extraction through evidence-grounded QA, validation gating, persistent memory, and a relevant-environment offline demonstrator.
+
+### TRL6 — historical precision
+
+The challenge was oriented toward **TRL6**, but the proposal did **not claim that a complete TRL6 product already existed**.
+
+Instead, it proposed a concrete path toward a relevant-environment demonstrator, supported by an internally explored prototype slice and a validation-oriented methodology.
+
+The internal toolchain described in the proposal remained proprietary and was not treated as public product documentation.
+
 
 ---
 
