@@ -1,7 +1,7 @@
 # 2026 — HeroX and collaborations / HeroX y colaboraciones
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## MAKO12
 
@@ -28,7 +28,7 @@ HeroX introdujo problemas definidos externamente, submissions en equipo y restri
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## MAKO12
 
