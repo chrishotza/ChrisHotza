@@ -4,13 +4,12 @@
 
 </div>
 
-<table style="width:100%; table-layout:fixed;">
+<table align="center" width="100%">
 <tr>
-<td style="width:40%;"></td>
-<td style="width:10%; text-align:center; vertical-align:top;">
+<td align="center" width="50%" valign="top">
 
-<details>
-<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">ES ▼</span></summary>
+<details style="width:200%; margin-left:0;">
+<summary style="font-size:0; text-align:center;"><span style="font-size:16px;">ES ▼</span></summary>
 
 <div style="width:1000%; margin-left:-400%;">
 
@@ -150,10 +149,10 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 </details>
 
 </td>
-<td style="width:10%; text-align:center; vertical-align:top;">
+<td align="center" width="50%" valign="top">
 
-<details>
-<summary style="color:transparent; white-space:nowrap;"><span style="color:var(--fgColor-default);">EN ▼</span></summary>
+<details style="width:200%; margin-left:-100%;">
+<summary style="font-size:0; text-align:center;"><span style="font-size:16px;">EN ▼</span></summary>
 
 <div style="width:1000%; margin-left:-500%;">
 
@@ -293,6 +292,5 @@ The README is the map. The detailed stage pages contain the chronology, technica
 </details>
 
 </td>
-<td style="width:40%;"></td>
 </tr>
 </table>
