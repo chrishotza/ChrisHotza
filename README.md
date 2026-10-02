@@ -693,6 +693,231 @@ La propuesta también documentaba una toolchain interna propietaria para explora
 ---
 
 
+
+---
+
+# AEVUM Crypto — Nodo Cero y verificación determinista
+
+La evolución de AEVUM no quedó solamente en la especificación.
+
+La documentación del proyecto incluye una implementación mínima de **Nodo Cero** para comprobar una propiedad central del diseño: dos nodos independientes que reciben exactamente la misma propuesta deberían producir el mismo resultado y evolucionar de la misma manera sin comunicarse entre sí.
+
+El test utilizó una entrada compartida y ejecutó dos instancias aisladas:
+
+~~~text
+ENV_A
+ENV_B
+~~~
+
+La evaluación registrada produjo:
+
+~~~text
+EXISTE en A
+EXISTE en B
+UID match = True
+~~~
+
+y la disolución ocurrió en el mismo paso lógico en ambos nodos.
+
+La implementación también verificó que no hubiera rondas de votación, líderes ni mensajes de coordinación entre los dos nodos.
+
+El objetivo documentado era comprobar **reproducibilidad determinista del núcleo**, no demostrar todavía una red pública, una economía de token o una blockchain desplegada.
+
+---
+
+# Otra línea: computación ontológica e infraestructura experimental
+
+En paralelo con challenges, submissions y desarrollo de producto, apareció otra rama bastante distinta.
+
+La investigación empezó a llevar conceptos como:
+
+**estado · coherencia · energía · memoria · presión · colapso · persistencia · intervención**
+
+hacia software que pudiera observar y modificar sistemas computacionales reales.
+
+De ahí surgieron **COV** y posteriormente **SYN-RAM**.
+
+---
+
+# COV — Campo Ontológico
+
+COV fue una implementación experimental en Rust de un campo de nodos con dinámica interna.
+
+El sistema modela cada nodo mediante:
+
+- posición
+- coherencia
+- energía
+- gradiente
+- estado
+- topología
+- memoria de estabilidad. 
+
+La memoria conserva una historia de coherencia, energía acumulada, ticks estables y el último colapso. fileciteturn22file1L32-L40
+
+La dinámica del nodo actualiza la coherencia a partir de la influencia de sus vecinos y consume energía en función de la pérdida de coherencia. También existen estados **ACTIVO** y **ABSTRACTO**, con reglas explícitas de colapso y reactivación. fileciteturn22file1L79-L90 fileciteturn26file1L1-L15
+
+La topología se reconstruye por proximidad y la influencia de cada nodo depende de sus vecinos activos y de la distancia entre ellos. fileciteturn26file2L1-L28
+
+El sistema incluía además:
+
+- métricas de estabilidad;
+- conteo de nodos activos y abstractos;
+- escenarios de demostración;
+- proyección visual;
+- exportación de frames;
+- detección de convergencia.
+
+Uno de los escenarios era específicamente de **ondas colapsantes**, y otro de rejilla adaptativa. fileciteturn26file4L1-L13
+
+COV fue una primera exploración de cómo convertir una dinámica ontológica en un sistema espacial, temporal y computable.
+
+---
+
+# SYN-RAM — Del modelo al sistema operativo
+
+Después apareció **SYN-RAM**, una línea mucho más aplicada.
+
+La primera implementación fue deliberadamente **read-only**.
+
+El servicio observaba:
+
+- uso total de RAM;
+- RAM disponible;
+- memoria por proceso;
+- variación de RSS;
+- tasa de presión de memoria.
+
+La propia descripción del servicio lo define como un **“SYN RAM Ontological Observer”** para observar presión y dinámica real de RAM sin intervenir. fileciteturn24file1L1-L11
+
+Ese paso fue importante:
+
+~~~text
+modelo abstracto
+      ↓
+observación del sistema real
+~~~
+
+---
+
+# SYN-RAM Phase 2 — User-Space Intervention
+
+La siguiente etapa pasó de observación a intervención controlada en user-space.
+
+El servicio **SYN RAM Phase 2 — User Space Intervention** incorpora:
+
+- observación continua de procesos;
+- cálculo de presión;
+- filtros de candidatos;
+- protección de procesos interactivos;
+- intervención reversible sobre working sets;
+- integración con KMCG para registrar el contexto del episodio.
+
+La decisión de intervenir solamente se toma cuando la presión calculada supera el umbral definido por el prototipo. fileciteturn22file7L41-L53 fileciteturn24file0L75-L102
+
+La intervención utiliza mecanismos de Windows para sugerir recuperación del working set y ejecutar EmptyWorkingSet sobre el proceso seleccionado. fileciteturn22file7L129-L152
+
+La arquitectura también introduce una distinción importante entre procesos que pueden ceder memoria y procesos interactivos que deben permanecer protegidos.
+
+---
+
+# SYN-RAM — memoria ontológica y regiones
+
+Otra rama llevó la idea hacia **Ontological Memory Regions (OMR)**.
+
+El servicio clasifica procesos en regiones con diferentes políticas:
+
+~~~text
+EAGER
+GRADUAL
+RESISTANT
+NON
+~~~
+
+y establece cooldowns diferentes para cada régimen.
+
+También existe una región explícitamente protegida para estados interactivos, mientras que procesos de background pueden recibir hints de reclaim reversibles. fileciteturn22file5L35-L51 fileciteturn22file5L59-L79
+
+La lógica intenta que la intervención no dependa únicamente de una fotografía instantánea de presión, sino de una clasificación persistente del tipo de memoria/proceso.
+
+---
+
+# SYN-RAM — evidencia de episodio
+
+Uno de los registros de ejecución está fechado el **17 de enero de 2026**.
+
+El episodio muestra:
+
+- RAM total: 16.384 MB
+- RAM utilizada: 12.430 MB
+- pico de presión Φ: 0.86
+- proceso objetivo: 7z.exe
+- contexto: mmap_unzip
+- intervención: working_set_trim
+
+Durante el episodio, el registro muestra:
+
+~~~text
+hard faults:   132 → 91
+I/O stall:     310 ms → 175 ms
+Φ:             0.71 → 0.62
+~~~
+
+y clasifica la intervención como efectiva, sin efectos secundarios registrados. fileciteturn22file7L2-L16 fileciteturn22file7L32-L52
+
+Otro archivo de auditoría de una capability posterior registra:
+
+~~~text
+baseline Φ = 0.74
+during   Φ = 0.58
+post     Φ = 0.73
+
+ttl_respected   = true
+scope_respected = true
+no_residuals    = true
+verdict         = PASS
+~~~
+
+fileciteturn22file8L10-L34
+
+Estos registros son evidencia de pruebas del prototipo en user-space; no equivalen por sí solos a una validación de driver, kernel o sistema operativo completo.
+
+---
+
+# De COV a SYN-RAM
+
+Esta rama muestra otra evolución dentro de mi trabajo:
+
+~~~text
+campo abstracto
+      ↓
+nodos y estados
+      ↓
+coherencia + energía + memoria
+      ↓
+observación de un sistema real
+      ↓
+intervención reversible
+      ↓
+auditoría de episodios
+~~~
+
+Es una línea diferente de TCF, AEVUM y los challenges de innovación, pero comparte una preocupación común:
+
+**cómo representar estado, memoria, presión, transición y persistencia de forma computable.**
+
+---
+
+# Nota sobre el resto de los materiales de esta etapa
+
+Algunos de los archivos incorporados junto con esta tanda pertenecen a líneas distintas y no los estoy convirtiendo automáticamente en proyectos de esta cronología.
+
+Por ejemplo, el archivo etiquetado **FACTS FIRST ENGINE** actualmente contiene una ficha de una entrevista online remunerada, no documentación de un proyecto técnico. fileciteturn22file3
+
+El documento **Los hombres que faltan** es un manuscrito histórico/genealógico independiente de esta trayectoria tecnológica y de investigación. fileciteturn22file2L1-L7
+
+Los dejo fuera del árbol principal hasta que exista un contexto histórico que indique dónde deben entrar.
+
 ---
 
 # Línea de evolución hasta este punto
@@ -1200,6 +1425,230 @@ The challenge was oriented toward **TRL6**, but the proposal did **not claim tha
 Instead, it proposed a concrete path toward a relevant-environment demonstrator, supported by an internally explored prototype slice and a validation-oriented methodology.
 
 The internal toolchain described in the proposal remained proprietary and was not treated as public product documentation.
+
+
+
+---
+
+# AEVUM Crypto — Node Zero and deterministic verification
+
+The AEVUM evolution did not stop at the specification.
+
+The project documentation includes a minimal **Node Zero** implementation designed to test a central property of the protocol: two independent nodes receiving the same proposal should produce the same result and evolve identically without communicating.
+
+The recorded test used two isolated environments:
+
+~~~text
+ENV_A
+ENV_B
+~~~
+
+The result was:
+
+~~~text
+EXISTE in A
+EXISTE in B
+UID match = True
+~~~
+
+and dissolution occurred at the same logical step in both nodes.
+
+The implementation also checked the absence of voting rounds, leaders, or coordination messages.
+
+The documented objective was to test **deterministic reproducibility of the core**, not to claim a deployed public network, token economy, or production blockchain.
+
+---
+
+# Another branch: ontological computing and experimental infrastructure
+
+Alongside challenges, submissions, and product development, another line emerged.
+
+Concepts such as:
+
+**state · coherence · energy · memory · pressure · collapse · persistence · intervention**
+
+were increasingly translated into software capable of observing and modifying real computational systems.
+
+This produced **COV** and later **SYN-RAM**.
+
+---
+
+# COV — Ontological Field
+
+COV was an experimental Rust implementation of a field of nodes with internal dynamics.
+
+Each node models:
+
+- position
+- coherence
+- energy
+- gradient
+- state
+- topology
+- stability memory
+
+The memory layer records coherence history, accumulated energy, stable ticks, and the last collapse.
+
+Nodes can exist in **ACTIVE** or **ABSTRACT** states, with explicit collapse and reactivation rules.
+
+Topology is rebuilt by proximity, and node influence depends on active neighbors and distance.
+
+The system also included:
+
+- stability metrics;
+- active/abstract node counts;
+- demonstration scenarios;
+- visual projection;
+- frame export;
+- convergence detection.
+
+One scenario specifically modeled collapsing waves, while another modeled an adaptive grid.
+
+COV was an early exploration of turning an ontological dynamic into a spatial, temporal, executable system.
+
+---
+
+# SYN-RAM — From model to operating system
+
+The next stage was **SYN-RAM**, a more applied line.
+
+The first implementation was deliberately **read-only**.
+
+The service observed:
+
+- total RAM usage;
+- available RAM;
+- per-process memory;
+- RSS variation;
+- memory-pressure rate.
+
+The service itself was described as the **“SYN RAM Ontological Observer”**, focused on observing real RAM pressure and dynamics without intervention.
+
+That created a transition:
+
+~~~text
+abstract model
+      ↓
+observation of a real system
+~~~
+
+---
+
+# SYN-RAM Phase 2 — User-Space Intervention
+
+The next stage moved from observation to controlled user-space intervention.
+
+**SYN RAM Phase 2 — User Space Intervention** introduced:
+
+- continuous process observation;
+- pressure calculation;
+- candidate filters;
+- protection of interactive processes;
+- reversible working-set intervention;
+- KMCG episode context.
+
+Intervention occurs only when the prototype's pressure measure crosses its defined threshold.
+
+The intervention uses Windows mechanisms to request working-set recovery and execute EmptyWorkingSet on the selected process.
+
+The architecture also distinguishes processes that may yield memory from interactive processes that should remain protected.
+
+---
+
+# SYN-RAM — Ontological Memory Regions
+
+Another branch introduced **Ontological Memory Regions (OMR)**.
+
+Processes are classified into different regimes:
+
+~~~text
+EAGER
+GRADUAL
+RESISTANT
+NON
+~~~
+
+with different cooldown periods.
+
+Interactive state is explicitly protected, while eligible background processes can receive reversible reclaim hints.
+
+The intent was to make intervention depend on a persistent classification of memory/process roles rather than only on a single instantaneous pressure snapshot.
+
+---
+
+# SYN-RAM — Episode evidence
+
+One execution record is dated **January 17, 2026**.
+
+The episode records:
+
+- 16,384 MB total RAM
+- 12,430 MB used RAM
+- Φ peak: 0.86
+- target process: 7z.exe
+- context: mmap_unzip
+- intervention: working_set_trim
+
+The recorded episode shows:
+
+~~~text
+hard faults:   132 → 91
+I/O stall:     310 ms → 175 ms
+Φ:             0.71 → 0.62
+~~~
+
+and classifies the intervention as effective with no recorded side effects.
+
+A later audit artifact records:
+
+~~~text
+baseline Φ = 0.74
+during   Φ = 0.58
+post     Φ = 0.73
+
+ttl_respected   = true
+scope_respected = true
+no_residuals    = true
+verdict         = PASS
+~~~
+
+These records document user-space prototype tests; they should not be read as validation of a kernel driver or a complete operating-system implementation.
+
+---
+
+# From COV to SYN-RAM
+
+This branch shows another evolution in the work:
+
+~~~text
+abstract field
+      ↓
+nodes and states
+      ↓
+coherence + energy + memory
+      ↓
+observation of a real system
+      ↓
+reversible intervention
+      ↓
+episode auditing
+~~~
+
+It is distinct from TCF, AEVUM, and the innovation challenges, but shares a recurring concern:
+
+**how to represent state, memory, pressure, transition, and persistence computationally.**
+
+---
+
+# Note on the other materials from this batch
+
+Some uploaded files from this batch belong to unrelated lines and are not being inserted into the main technical chronology automatically.
+
+For example, **FACTS FIRST ENGINE** currently contains an online paid interview listing rather than project documentation.
+
+**Los hombres que faltan** is a separate historical/genealogical manuscript and is not part of this technical research trajectory.
+
+They remain outside the main project tree until their historical role is established.
 
 
 ---
