@@ -4,275 +4,28 @@
 
 [🇪🇸 Español](#español) · [🇬🇧 English](#english)
 
-> A chronological record of research, software, experiments, collaborations, challenges and the systems that connected them over time.
+## Español
 
-This profile is the **map**. Detailed context and source notes live in the [research archive](docs/README.md).
+Esta es la evolución de mi investigación, desde la primera formulación de **Conciencia Fotónica** en octubre de 2025, donde empecé a explorar conciencia, autorreferencia, luz, oscilación, geometría y campos, hasta los sistemas que desarrollo hoy. Esa línea dio lugar a **TCF — Teoría de Continuidad Fundamental**, que fue tomando forma matemática a través de distintos dominios y versiones, hasta pasar de una propuesta amplia sobre continuidad a una formulación efectiva y multiescala. [Conciencia Fotónica](docs/2025/01-photonic-consciousness.md) · [TCF](docs/2025/02-tcf.md)
 
----
+Con TCF también empezó una etapa más experimental: ideas sobre régimen, presión, irreversibilidad, coherencia, memoria y persistencia fueron convertidas en mecanismos y diagnósticos concretos como **SPNV, ALLR, B98, COV, FDI1 y SFGA**. De ahí surgió **AEVUM**, donde la preocupación por existencia, estado y continuidad se convirtió en operadores computacionales y después en **AEVUM Node, AEVUM Crypto y Node Zero**, llevando esas ideas hacia sistemas deterministas y reproducibles. [Entre TCF y AEVUM](docs/2026/01-between-tcf-and-aevum.md) · [AEVUM](docs/2026/02-aevum.md)
 
-# Español
+Después la investigación salió del laboratorio propio y empezó a aplicarse a problemas externos: **HeroX / MAKO12**, con Marco Lavorgna, para detección de grietas subsuperficiales; una propuesta de **comunicación química con osciladores Belousov–Zhabotinsky**; y más tarde **Pulse Energy**, una plataforma de control para microgrids y BESS que llegó a una campaña Pre-HIL de 66.000 escenarios y evolucionó posteriormente hacia **Conscious Pulse**. Esa etapa también incluyó trabajo colaborativo bajo NDA en Energy Field Security. [HeroX / MAKO12](docs/2026/03-herox.md) · [Pulse Energy / Conscious Pulse](docs/2026/04-pulse-energy.md)
 
-## 2025
+En paralelo, los mismos principios siguieron apareciendo en otras áreas: **InoCrowd AERIS**, el asistente offline para investigación de seguridad, **Kaggle RNA 3D Folding**, **OnttoVoid**, **MAZU** y **Biohub**, mientras **COV y SYN-RAM** llevaron la investigación hacia memoria, observación e intervención sobre sistemas dinámicos. [Aplicaciones científicas y challenges](docs/2026/06-scientific-challenges.md) · [COV / SYN-RAM](docs/2026/05-diagnostics-and-synram.md)
 
-### Octubre — Conciencia Fotónica
+A medida que avanzaba, la investigación fue dejando de buscar una única explicación universal y empezó a concentrarse en una idea más básica: **el ser como relación, continuidad, memoria, transición y autorreferencia**. De ahí surgieron el **Manifiesto Matemático del Ser**, la línea de **Conciencia Ontológica Cuántica** y finalmente **TIF — Teoría de la Iteración Fuente**, que intenta reducir gran parte de la trayectoria anterior a una dinámica mínima de configuración, memoria y reentrada. [Ontología y TIF](docs/2026/07-ontology-and-tif.md)
 
-Mi investigación comenzó en octubre de 2025 con la primera formulación de la **Teoría de la Conciencia Fotónica**.
+La etapa actual es **Skill-Conscious**, donde esas ideas dejan de ser solamente una ontología y se convierten en una arquitectura experimental: memoria persistente, estado interno persistente, self-model, autoobservación, predicción del propio estado, selección de trayectorias, acción y continuidad del estado. La investigación sigue siendo experimental y no presenta estos sistemas como una demostración de conciencia. [Skill-Conscious](docs/2026/08-skill-conscious.md)
 
-La etapa inicial trabajó con conciencia, autorreferencia, luz, oscilación, geometría y campos.
+El repositorio conserva los documentos y avances públicos que permiten seguir ese recorrido; el material propietario, privado o sujeto a NDA permanece fuera del archivo público. [Explorar el archivo](docs/README.md) · [Material protegido](docs/protected.md)
 
-→ [Archivo de esta etapa](docs/2025/01-photonic-consciousness.md)
+## English
 
----
+This repository follows the evolution of my research from the first **Photonic Consciousness** formulation in October 2025, through **TCF — Fundamental Continuity Theory**, experimental operators such as SPNV, ALLR, B98, COV, FDI1 and SFGA, and into **AEVUM**, where questions of existence, state and continuity became deterministic computational systems. [Photonic Consciousness](docs/2025/01-photonic-consciousness.md) · [TCF](docs/2025/02-tcf.md) · [AEVUM](docs/2026/02-aevum.md)
 
-# TCF — Teoría de Continuidad Fundamental
+The work then expanded into external problems and collaborations: **HeroX / MAKO12**, chemical communication with Belousov–Zhabotinsky oscillators, **Pulse Energy** and later **Conscious Pulse**, followed by scientific and technical applications including AERIS, offline research assistance, RNA folding, OnttoVoid, MAZU, Biohub, **COV / SYN-RAM**, and further work on relational ontology. [HeroX / MAKO12](docs/2026/03-herox.md) · [Pulse Energy / Conscious Pulse](docs/2026/04-pulse-energy.md) · [Scientific applications](docs/2026/06-scientific-challenges.md) · [COV / SYN-RAM](docs/2026/05-diagnostics-and-synram.md)
 
-TCF fue la primera gran formalización matemática de aquella línea:
+The later phase became more focused on **relation, continuity, memory, transition and self-reference**, leading to the **Mathematical Manifesto of Being**, **Ontological Quantum Consciousness**, **TIF — Source Iteration Theory**, and finally **Skill-Conscious**, an experimental architecture built around persistent memory, persistent internal state, self-modeling, self-observation, self-state prediction, trajectory selection, action and recurrent continuity. [Ontology and TIF](docs/2026/07-ontology-and-tif.md) · [Skill-Conscious](docs/2026/08-skill-conscious.md)
 
-\`\`\`
-PI · PHI · REL
-PI  = 6π²
-PHI = π²/6
-REL = 6/π²
-\`\`\`
-
-De v1.x a v3.3 pasó por axiomas, ecuación madre, estructura atómica, astrofísica, ruido, biología, lattice field theory y finalmente una formulación efectiva multiescala.
-
-→ [Cronología y contexto de TCF](docs/2025/02-tcf.md)
-
----
-
-# Entre TCF y AEVUM
-
-Antes de AEVUM aparecieron varios laboratorios computacionales:
-
-**SPNV · ALLR · B98 · COV · COV v49 · FDI1 · SFGA / TCF-AEF**
-
-Aquí aparecen por primera vez, como mecanismos ejecutables, muchas de las ideas que después reaparecen en otras ramas: régimen, presión, irreversibilidad, coherencia, memoria, persistencia e intervención.
-
-→ [Archivo de la etapa](docs/2026/01-between-tcf-and-aevum.md)
-
----
-
-# AEVUM
-
-AEVUM convirtió la preocupación por existencia, estado y continuidad en operadores computacionales.
-
-**Existence Oracle → AEVUM Node → AEVUM Crypto → Node Zero**
-
-→ [Archivo de AEVUM](docs/2026/02-aevum.md)
-
----
-
-# HeroX
-
-La investigación salió del ecosistema propio y entró en problemas abiertos y submissions.
-
-### MAKO12
-
-Primer equipo importante con **Marco Lavorgna**, trabajando sobre ROBOTART + GPR + seismic para detección de grietas subsuperficiales.
-
-### Evolution 2.0
-
-Submission sobre comunicación química con osciladores Belousov–Zhabotinsky.
-
-→ [HeroX, MAKO12 y challenges](docs/2026/03-herox.md)
-
----
-
-# Pulse Energy → Conscious Pulse
-
-Con Marco apareció **Pulse Energy**, una plataforma de control para microgrids/BESS.
-
-Una campaña Pre-HIL documentó **66.000 escenarios**, incluyendo la detección y corrección de un defecto real y replay posterior sin regresiones.
-
-Pulse Energy evolucionó posteriormente hacia **Conscious Pulse**.
-
-### Energy Field Security
-
-Hubo una fase de submission y colaboración bajo NDA con Marco Lavorgna y David A. Moran.
-
-→ [Pulse Energy y Conscious Pulse](docs/2026/04-pulse-energy.md)
-
-**El Core propietario no se publica.**
-
----
-
-# Open Innovation & Scientific Challenges
-
-Después llegaron más problemas externos:
-
-**InoCrowd — AERIS**  
-Digital twin de bienestar animal.
-
-**InnoCentive — Offline Research Assistant / TRL6**  
-Asistente offline con system graph, evidence, validation gate y persistent research memory.
-
-**Kaggle — Stanford RNA 3D Folding 2**  
-V21 → V32 → V36/MSARefinerV2.
-
-**OnttoVoid**  
-Selección topológica adaptativa de algoritmos.
-
-**MAZU**  
-Auditoría de madurez interna.
-
-**Biohub**  
-Tracking celular 3D+time.
-
-→ [Archivo de aplicaciones científicas y challenges](docs/2026/06-scientific-challenges.md)
-
----
-
-# Sistemas experimentales
-
-En paralelo siguió otra línea:
-
-**COV → SYN-RAM**
-
-De campos de nodos y memoria ontológica a observación e intervención reversible sobre un sistema real.
-
-→ [COV / SYN-RAM](docs/2026/05-diagnostics-and-synram.md)
-
----
-
-# Meta-Selección de Refinadores de Grafos
-
-La investigación también produjo un informe técnico sobre **meta-aprendizaje para seleccionar algoritmos según descriptores estructurales y dinámicos**, incluyendo OOF, LOGOCV, auditorías anti-fuga y pruebas de extrapolación.
-
----
-
-# Manifiesto del Ser
-
-Después apareció el **Manifiesto Matemático del Ser**:
-
-> **El ser no es una cosa. El ser es relación.**
-
-La investigación se desplazó de una fórmula universal hacia una ontología relacional.
-
----
-
-# Conciencia Ontológica Cuántica
-
-De ahí surgió una nueva formulación de conciencia como dinámica relacional y multiescala, con estado, memoria, trayectorias, selección, transición y auto-recorrido.
-
-→ [Ontología, Conciencia y TIF](docs/2026/07-ontology-and-tif.md)
-
----
-
-# TIF — Teoría de la Iteración Fuente
-
-En julio de 2026 apareció una reformulación:
-
-\`\`\`
-C(n+1) = Stabilize[ C(n), M(n), R(n) ]
-\`\`\`
-
-**Configuración + Memoria + Reentrada**
-
-TIF intenta extraer una operación recurrente mínima de toda la trayectoria anterior y mantiene explícitamente sus falsadores y límites.
-
-→ [Archivo de TIF](docs/2026/07-ontology-and-tif.md)
-
----
-
-# Skill-Conscious
-
-La etapa más reciente integra varias líneas que antes estaban separadas.
-
-\`\`\`
-LLM
- ↓
-persistent memory
- ↓
-persistent internal state
- ↓
-self-model
- ↓
-self-observation
- ↓
-self-state prediction
- ↓
-trajectory selection
- ↓
-action
- ↓
-new state
- ↓
-persistence
-\`\`\`
-
-La arquitectura incorpora además VIGILIA/SLEEP, SelfObserver, SelfPolicy, dinámica interna y protocolos de ablación.
-
-La línea C0 define propiedades independientes relacionadas con self-state, self/environment differentiation, causal self-reference, trayectoria, dinámica, reorganización y cierre recurrente, comparadas contra controles.
-
-**C0 no se presenta como una prueba de conciencia.**
-
-→ [Archivo de Skill-Conscious](docs/2026/08-skill-conscious.md)
-
----
-
-# La línea completa
-
-\`\`\`
-Conciencia Fotónica
-        ↓
-TCF
-        ↓
-operadores / diagnósticos
-        ↓
-AEVUM
-        ↓
-AEVUM Node
-        ↓
-AEVUM Crypto
-        ↓
-HeroX / MAKO12
-        ↓
-Pulse Energy
-        ↓
-Conscious Pulse
-        ↓
-challenges / Kaggle / scientific AI
-        ↓
-COV / SYN-RAM
-        ↓
-Manifiesto del Ser
-        ↓
-TIF
-        ↓
-Skill-Conscious
-\`\`\`
-
----
-
-## Archivo
-
-[Explorar el archivo completo por etapa →](docs/README.md)
-
-### Material protegido
-
-No se publica:
-
-- B98 non-public IP
-- Energy Field Security NDA/legal material
-- Conscious Pulse Core
-- AEVUM Core implementation
-- private infrastructure
-- confidential material
-
-→ [Índice de material protegido](docs/protected.md)
-
----
-
-# English
-
-This profile is the map of the same chronology.
-
-**Photonic Consciousness → TCF → operators/diagnostics → AEVUM → AEVUM Node → AEVUM Crypto → HeroX/MAKO12 → Pulse Energy → Conscious Pulse → scientific challenges → Being / Quantum Consciousness → TIF → Skill-Conscious.**
-
-The detailed archive is organized by stage:
-
-→ [Research Archive](docs/README.md)
-
-Protected and NDA material is indexed but not published.
-
+Detailed public records are organized in the [research archive](docs/README.md). Proprietary, private and NDA-protected material is kept outside the public repository.
