@@ -6,10 +6,10 @@
 
 <table align="center" style="width:100%; table-layout:fixed;">
 <tr>
-<td align="center" valign="top">
+<td valign="top">
 
 <details>
-<summary>ES</summary>
+<summary><div align="center">ES</div></summary>
 
 # Chris Hotza
 
@@ -149,10 +149,10 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 </details>
 
 </td>
-<td align="center" valign="top">
+<td valign="top">
 
 <details>
-<summary>EN</summary>
+<summary><div align="center">EN</div></summary>
 
 <div style="width:200%; margin-left:-100%;">
 
