@@ -1,7 +1,7 @@
 # 2026 — Pulse Energy → Conscious Pulse
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## Pulse Energy
 
@@ -28,7 +28,7 @@ Pulse Energy evolucionó posteriormente hacia Conscious Pulse.
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## Pulse Energy
 
