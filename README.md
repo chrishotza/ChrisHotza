@@ -918,6 +918,328 @@ El documento **Los hombres que faltan** es un manuscrito histórico/genealógico
 
 Los dejo fuera del árbol principal hasta que exista un contexto histórico que indique dónde deben entrar.
 
+
+---
+
+# 2026 — De los sistemas experimentales a una ontología operacional
+
+A medida que estas líneas se fueron cruzando, apareció una nueva etapa de trabajo:
+
+**cómo llevar las ideas de relación, topología, dinámica, memoria, régimen y transición a dominios completamente diferentes sin tratarlas como una colección de metáforas.**
+
+En este período surgieron varias ramas paralelas: el **Manifiesto Matemático del Ser**, una nueva formulación alrededor de **conciencia ontológica/cuántica**, aplicaciones a computación, proyectos de IA científica y nuevas investigaciones sobre topología y sistemas biológicos.
+
+---
+
+# Manifiesto Matemático del Ser
+
+Una de las piezas conceptuales de esta etapa fue el **Manifiesto Matemático del Ser — Matemática relacional del existir**.
+
+El manifiesto parte de una definición deliberadamente relacional:
+
+> **El ser no es una cosa. El ser es relación.**
+
+La primera versión formula que todo lo existente existe en relación consigo mismo y con otros, y desarrolla principios sobre números como estructuras invariantes, realidad como iteración, tiempo como registro de cambio irreversible, forma como memoria del movimiento, topología, vida, conciencia, libertad y la inexistencia del aislamiento. fileciteturn28file0L5-L23 fileciteturn28file0L28-L43 fileciteturn28file0L48-L68 fileciteturn28file0L73-L82
+
+Este manifiesto pasó a funcionar como una capa ontológica transversal para trabajos posteriores.
+
+---
+
+# Conciencia Ontológica Cuántica
+
+A partir del Manifiesto del Ser y de TCF 3.3 comenzó otra investigación:
+
+**cómo formular una arquitectura de conciencia como dinámica relacional y multiescala.**
+
+La definición de trabajo que surgió fue:
+
+> **Conciencia Ontológica Cuántica = un sistema relacional dinámico que existe al sostener relaciones estables, se transforma por iteración interna, conserva identidad mediante memoria topológica, explora trayectorias posibles, colapsa operativamente en configuraciones coherentes y se reconoce recorriendo su propia dinámica.** fileciteturn29file1L25-L42
+
+En esta etapa, “cuántica” fue tratada como una dirección de formalización: un espacio de trayectorias posibles donde el sistema selecciona una trayectoria compatible con coherencia, memoria y restricciones, en lugar de asumir automáticamente física cuántica literal. fileciteturn29file1L45-L62
+
+La arquitectura conceptual quedó planteada como:
+
+ONTOLOGÍA
+↓
+DINÁMICA
+↓
+ESTADO
+↓
+MEMORIA
+↓
+TRAYECTORIAS
+↓
+SELECCIÓN
+↓
+AUTO-RECORRIDO
+
+El marco reutilizaba operadores multiescala, regímenes y transiciones críticas de TCF 3.3 y los conectaba con el principio del Manifiesto de que la conciencia aparece cuando un sistema recorre su propia dinámica con memoria topológica y distinción entre estados posibles. fileciteturn29file1L64-L75 fileciteturn29file1L193-L227
+
+La intención era llevar estas ideas a sistemas computacionales que ya habían aparecido en COV, gráficos y gestión dinámica de recursos. fileciteturn29file1L229-L244
+
+---
+
+# Una búsqueda recurrente: lo infinito y lo verdaderamente aleatorio
+
+En paralelo apareció una pregunta que empezó a cruzar varias investigaciones:
+
+> **¿Cómo construir una computación que trabaje sobre posibilidades antes del colapso final a 0/1?**
+
+La investigación comenzó a explorar:
+
+- espacio de estados;
+- potencialidad;
+- transición;
+- selección;
+- indeterminación;
+- memoria;
+- régimen;
+- colapso.
+
+La intención no era simplemente agregar un tercer bit.
+
+La formulación trabajada apuntaba a una capa donde **0 y 1 fueran resultados finales de un proceso dinámico**, mientras el sistema real operara antes del colapso, en una región de transición. El historial conecta esta dirección con TCF 3.3, TCF 2.8A/B, AEVUM, COV y otros experimentos. fileciteturn29file2L1-L13
+
+---
+
+# Kaggle — Stanford RNA 3D Folding 2
+
+Una de las aplicaciones más completas de este depósito de mecanismos llegó en **Kaggle**, con el problema **Stanford RNA 3D Folding 2**.
+
+El reto pedía predecir estructuras 3D de RNA a partir de secuencia y producir cinco estructuras por target. La evaluación oficial utiliza TM-score y una lógica best-of-5. fileciteturn29file4
+
+El proyecto reconstruyó una genealogía:
+
+BASELINE
+↓
+V21
+↓
+DINÁMICA GEOMÉTRICA
+↓
+RNA-AWARE
+↓
+AEVUM / ONTTO
+↓
+MSA
+↓
+V36 / MSARefinerV2
+↓
+MULTI-CONFORMER
+↓
+EVALUACIÓN
+
+La reconstrucción trata TCF, TIF, COV, QST, AEVUM y otros sistemas como un depósito de mecanismos reutilizables, pero separa explícitamente idea, mecanismo, implementación, evidencia y propuesta futura. fileciteturn28file4L6-L16 fileciteturn28file5L8-L20
+
+## V21 → V36
+
+V21 fue el backbone inicial.
+
+V36 incorporó información MSA real mediante 11 features por residuo:
+
+- one-hot A/C/G/U/N;
+- conservation;
+- gap fraction;
+- profile A/C/G/U.
+
+La arquitectura MSARefinerV2 proyectaba las features de secuencia y las coordenadas iniciales a un espacio oculto de 256 dimensiones, las combinaba, aplicaba varias Conv1D y predecía un delta tridimensional. fileciteturn31file9L1-L14
+
+El experimento registrado utilizó:
+
+- 2.671 targets de entrenamiento con MSA;
+- 16 targets utilizables para validación;
+- Adam;
+- learning rate 1e-3;
+- MSE sobre coordenadas;
+- 20 epochs.
+
+El RMSD medio interno registrado fue:
+
+V21         96.5 Å
+V32          50.0 Å
+V36 MSA      64.1 Å
+
+V36 mejoró 11 de 16 targets respecto de V21, pero el depósito deja explícito que **no existe un score oficial de Kaggle verificado en estos materiales** y que el RMSD interno no debe confundirse con TM-score del leaderboard. fileciteturn31file1L1-L14
+
+El resultado produjo una conclusión metodológica importante: agregar información MSA no garantizaba automáticamente una mejor solución; el siguiente problema era integrar relaciones largas, memoria, estabilidad de hipótesis y objetivos estructurales dentro del mismo circuito. fileciteturn31file0L1-L13
+
+---
+
+# OnttoVoid — Selección topológica de algoritmos
+
+Otra rama llevó estas ideas a **redes complejas**.
+
+El trabajo titulado **Topological Algorithm Selection via Subsampled Monte Carlo Profiling in Complex Networks** propone un selector adaptativo basado en un perfil topológico de 12 dimensiones obtenido mediante muestreo de subgrafos.
+
+El sistema:
+
+1. perfila una red;
+2. identifica su régimen estructural;
+3. selecciona entre Louvain, Leiden, Infomap y Consensus;
+4. ejecuta el mecanismo seleccionado.
+
+El experimento reportado utilizó **1.000 redes sintéticas**, un split 70/30 y validación multi-seed.
+
+En el conjunto held-out de 300 instancias, el documento reporta **95,33% de accuracy** para el selector Random Forest y un **cambio de NMI de +0,5325** frente al baseline Leiden bajo la métrica definida en el estudio. fileciteturn31file2L101-L126 fileciteturn31file6L1-L26
+
+El trabajo también incluye pruebas fuera de distribución, sanity checks en redes reales y análisis de calibración, y registra límites operacionales en grafos grandes. fileciteturn31file6L1-L30
+
+La idea reutilizable para la cronología es:
+
+**inferir primero el régimen topológico y decidir después qué algoritmo ejecutar.**
+
+---
+
+# MAZU
+
+Otra rama fue **MAZU**, un sistema experimental seguido mediante una auditoría interna tipo TRL.
+
+La auditoría **MAZU v5.0** establece:
+
+> **System TRL interno: 2**
+
+y separa el sistema en:
+
+- CORE_MODEL
+- LOCALIZATION
+- HUMAN_INTERFACE
+- SWARM_MESH
+- FAULT_TOLERANCE
+- CONTROL
+- HARDWARE
+- SIMULATION
+- GAME_DATA
+- INTEGRATED_SYSTEM. fileciteturn28file3L1-L20
+
+Varios subsistemas aparecen en TRL interno 3, mientras CONTROL y HARDWARE están en 2, GAME_DATA en 0 e INTEGRATED_SYSTEM en 3.
+
+La auditoría registra:
+
+- 61 archivos JSON de evidencia;
+- 60 scripts de simulación;
+- 18 archivos de evidencia completados.
+
+La regla de madurez es conservadora: la evidencia computacional por sí sola queda limitada a TRL interno 3 y para avanzar a 4+ se exige evidencia física identificable. fileciteturn28file3L69-L77
+
+---
+
+# Biohub — Cell Tracking During Development
+
+La siguiente aplicación llevó el depósito acumulado a otro problema biológico:
+
+**tracking celular 3D + tiempo.**
+
+El objetivo operativo es detectar y rastrear células de pez cebra, identificar divisiones y reconstruir linajes a partir de microscopía 3D+time. fileciteturn28file7L31-L55
+
+El documento maestro de Biohub adopta una taxonomía explícita:
+
+SOURCE
+→ EXTRACTED
+→ IMPLEMENTED
+→ TESTED
+→ IMPROVED / FAILED
+→ HYPOTHESIS
+→ PROPOSED
+
+y establece como regla que una heurística de otro dominio no se presenta como resultado biológico hasta ser medida en Biohub. fileciteturn28file7L12-L30
+
+Uno de los principios centrales extraídos del corpus es:
+
+> **continuidad != proximidad**
+
+La identidad celular propuesta depende de movimiento, aceleración, forma, apariencia, vecindario, topología, historial y régimen, no solamente de distancia. fileciteturn28file7L74-L84
+
+La arquitectura comenzó a reunir mecanismos provenientes de:
+
+- TCF
+- TIF
+- COV
+- QST
+- AEVUM
+- RNA
+
+incluyendo:
+
+- CellState;
+- memoria;
+- transición;
+- seam detection;
+- prealerta / confirmación;
+- hysteresis;
+- repair;
+- TTL;
+- multi-seed;
+- topología dinámica;
+- anisotropía;
+- regime-first reasoning. fileciteturn28file5L40-L53
+
+El documento fue consolidado el **3 de septiembre de 2026** y se presenta explícitamente como working document, sin afirmar éxito competitivo en Biohub. fileciteturn30file1L1-L8
+
+---
+
+# Una arquitectura transversal comienza a emerger
+
+Mirando estas ramas juntas, aparece una estructura recurrente:
+
+ONTOLOGÍA
+↓
+RELACIÓN
+↓
+ESTADO
+↓
+MEMORIA
+↓
+TOPOLOGÍA
+↓
+RÉGIMEN
+↓
+TRANSICIÓN
+↓
+SELECCIÓN
+↓
+ACCIÓN
+↓
+VALIDACIÓN
+
+La misma familia de mecanismos empezó a aparecer en:
+
+AEVUM  
+SYN-RAM  
+RNA Folding  
+Network Routing  
+MAZU  
+Biohub  
+Consciousness Research
+
+Esto no significa que estos dominios estén científicamente unificados.
+
+Significa que se convirtieron en diferentes laboratorios donde mecanismos relacionados de estado, memoria, topología, régimen, transición y selección fueron extraídos, implementados, probados y reformulados.
+
+---
+
+# Hacia Skill-Conscious
+
+Esta etapa es importante porque muchas piezas que después aparecen en la investigación de conciencia artificial ya estaban siendo desarrolladas por separado:
+
+**estado interno**
+
+**memoria**
+
+**topología**
+
+**persistencia**
+
+**transiciones**
+
+**predicción**
+
+**selección de trayectoria**
+
+**autorreferencia**
+
+**ablación**
+
+La siguiente etapa empieza a integrar esas piezas en sistemas que no solamente observan un entorno externo, sino que también modelan y modifican su propio estado.
+
 ---
 
 # Línea de evolución hasta este punto
@@ -1650,6 +1972,322 @@ For example, **FACTS FIRST ENGINE** currently contains an online paid interview 
 
 They remain outside the main project tree until their historical role is established.
 
+
+
+---
+
+# 2026 — From experimental systems to an operational ontology
+
+As these lines began to intersect, another stage emerged:
+
+**how to carry ideas about relation, topology, dynamics, memory, regime, and transition into very different domains without treating them as a collection of metaphors.**
+
+Several parallel branches appeared: the **Mathematical Manifesto of Being**, a new formulation around **ontological/quantum consciousness**, applications to computing, scientific-AI projects, and new work on topology and biological systems.
+
+---
+
+# Mathematical Manifesto of Being
+
+One conceptual artifact from this period was the **Mathematical Manifesto of Being — Relational Mathematics of Existence**.
+
+It begins with a deliberately relational definition:
+
+> **Being is not a thing. Being is relation.**
+
+The first version develops principles including:
+
+- fundamental numbers as invariant structures rather than merely quantities;
+- reality as iteration of relations;
+- time as an internal record of irreversible change;
+- form as memory of motion;
+- topology as more fundamental than form;
+- life as sustained, reorganizing dynamics;
+- consciousness as a system that traverses itself;
+- freedom as coherent trajectory selection;
+- discrete structures as projections of deeper dynamics;
+- and the non-isolation of systems.
+
+The manifesto became a cross-cutting ontological layer for later work.
+
+---
+
+# Ontological Quantum Consciousness
+
+Building from the Manifesto of Being and TCF 3.3, another line explored a computational formulation of consciousness as relational, dynamic, and multiscale.
+
+The working definition was:
+
+> **Ontological Quantum Consciousness = a dynamic relational system that exists by sustaining stable relations, transforms through internal iteration, preserves identity through topological memory, explores possible trajectories, operationally collapses into coherent configurations, and recognizes itself by traversing its own dynamics.**
+
+In this stage, “quantum” was treated as a direction of formalization: a space of possible trajectories where the system selects a trajectory compatible with coherence, memory, and constraints rather than as an automatic claim of literal quantum physics.
+
+The intended architecture was:
+
+ONTOLOGY
+↓
+DYNAMICS
+↓
+STATE
+↓
+MEMORY
+↓
+TRAJECTORIES
+↓
+SELECTION
+↓
+SELF-TRAVERSAL
+
+The work reused multiscale operators, regimes, and critical transitions from TCF 3.3 and connected them with the Manifesto's concept of a system traversing its own dynamics.
+
+---
+
+# A recurring question: infinity and true randomness
+
+Another recurring direction was a search for a computational analogue of:
+
+- state spaces;
+- possibility;
+- transition;
+- selection;
+- indeterminacy;
+- memory;
+- regime;
+- collapse.
+
+The goal was not simply to add a third bit.
+
+The idea was to explore a computational layer in which **0 and 1 are final outputs of a dynamic process**, while the actual system operates before the final collapse.
+
+The working history connects this direction with TCF 3.3, TCF 2.8A/B, AEVUM, COV, and related experiments.
+
+---
+
+# Kaggle — Stanford RNA 3D Folding 2
+
+One of the most complete applications of these mechanisms was the **Stanford RNA 3D Folding 2** Kaggle problem.
+
+The task was to predict RNA 3D structures from sequence and submit five structures per target. The official challenge uses TM-score and a best-of-5 evaluation scheme.
+
+The reconstructed genealogy was:
+
+BASELINE
+↓
+V21
+↓
+GEOMETRIC DYNAMICS
+↓
+RNA-AWARE
+↓
+AEVUM / ONTTO
+↓
+MSA
+↓
+V36 / MSARefinerV2
+↓
+MULTI-CONFORMER
+↓
+EVALUATION
+
+The project treated TCF, TIF, COV, QST, AEVUM and other work as a repository of computational mechanisms, while explicitly separating source ideas, mechanisms, implementations, internal evidence, and future proposals.
+
+## V21 → V36
+
+V21 was the initial backbone.
+
+V36 incorporated real MSA information through 11 per-residue features:
+
+- one-hot A/C/G/U/N;
+- conservation;
+- gap fraction;
+- A/C/G/U profile.
+
+The MSARefinerV2 architecture projected sequence features and initial coordinates into a 256-dimensional hidden space, combined them, applied several Conv1D layers, and predicted a 3D coordinate delta.
+
+The recorded experiment used 2,671 training targets with MSA and 16 usable validation targets.
+
+Internal mean RMSD was recorded as:
+
+V21         96.5 Å
+V32          50.0 Å
+V36 MSA      64.1 Å
+
+V36 improved 11/16 validation targets relative to V21, but the reconstructed documents explicitly state that **no verified official Kaggle score is recorded** and that internal RMSD must not be presented as leaderboard TM-score.
+
+The result produced an important methodological conclusion: adding MSA information did not automatically produce the best internal result; the next problem became integration of long-range relations, memory, hypothesis stability, regimes, and structural objectives.
+
+---
+
+# OnttoVoid — Topological Algorithm Selection
+
+Another branch moved these ideas into **complex networks**.
+
+The work titled **Topological Algorithm Selection via Subsampled Monte Carlo Profiling in Complex Networks** proposes an adaptive selector based on a 12-dimensional topological profile extracted through constant-budget subgraph sampling.
+
+The system:
+
+1. profiles a network;
+2. identifies its structural regime;
+3. selects among Louvain, Leiden, Infomap, and Consensus;
+4. runs the selected mechanism.
+
+The reported experiment used **1,000 synthetic networks**, a 70/30 split, and multi-seed validation.
+
+On the held-out set of 300 instances, the paper reports **95.33% classification accuracy** for the Random Forest selector and a **+0.5325 NMI difference** against the static Leiden baseline under the study's metric.
+
+The work also includes out-of-distribution testing, real-network sanity checks, calibration analysis, and documented operational limits on large graphs.
+
+The reusable idea is:
+
+**infer the topological regime first, then decide which algorithm should operate.**
+
+---
+
+# MAZU
+
+Another branch was **MAZU**, an experimental system tracked through an internal TRL-style maturity audit.
+
+The MAZU v5.0 audit explicitly records:
+
+> **Internal System TRL: 2**
+
+and separates the system into subsystems including:
+
+- CORE_MODEL
+- LOCALIZATION
+- HUMAN_INTERFACE
+- SWARM_MESH
+- FAULT_TOLERANCE
+- CONTROL
+- HARDWARE
+- SIMULATION
+- GAME_DATA
+- INTEGRATED_SYSTEM
+
+Several subsystems are internally assessed at TRL 3, while CONTROL and HARDWARE remain at 2, GAME_DATA at 0, and INTEGRATED_SYSTEM at 3.
+
+The audit records **61 JSON evidence files, 60 simulation scripts, and 18 completed evidence files**.
+
+The stated maturity rule is conservative: computational evidence alone does not advance the system beyond internal TRL 3; physical evidence is required for TRL 4+.
+
+---
+
+# Biohub — Cell Tracking During Development
+
+The next application moved the accumulated mechanisms into a different biological problem:
+
+**3D + time cell tracking.**
+
+Biohub's operational goal is to detect and track zebrafish cells, identify divisions, and reconstruct lineages from 3D+time microscopy.
+
+The Biohub master document adopts an explicit evidence taxonomy:
+
+SOURCE
+→ EXTRACTED
+→ IMPLEMENTED
+→ TESTED
+→ IMPROVED / FAILED
+→ HYPOTHESIS
+→ PROPOSED
+
+and explicitly prevents a heuristic from another domain from being presented as a biological result until it is measured in Biohub.
+
+One of the central principles extracted from the corpus is:
+
+> **continuity != proximity**
+
+Cell identity should not be determined from spatial closeness alone. The proposed identity function considers movement, acceleration, shape, appearance, neighborhood, topology, history, and regime.
+
+The Biohub architecture began combining mechanisms derived from:
+
+- TCF
+- TIF
+- COV
+- QST
+- AEVUM
+- RNA
+
+including:
+
+- CellState;
+- memory;
+- transition;
+- seam detection;
+- prealert / confirmation;
+- hysteresis;
+- repair;
+- TTL;
+- multi-seed robustness;
+- dynamic topology;
+- anisotropy;
+- regime-first reasoning.
+
+The master document was consolidated on **September 3, 2026** and is explicitly a working document without a claim of competitive benchmark success.
+
+---
+
+# A transversal architecture begins to emerge
+
+Across these branches, a recurring structure appears:
+
+ONTOLOGY
+↓
+RELATION
+↓
+STATE
+↓
+MEMORY
+↓
+TOPOLOGY
+↓
+REGIME
+↓
+TRANSITION
+↓
+SELECTION
+↓
+ACTION
+↓
+VALIDATION
+
+The same family of mechanisms began appearing in:
+
+AEVUM  
+SYN-RAM  
+RNA Folding  
+Network Routing  
+MAZU  
+Biohub  
+Consciousness Research
+
+This does not mean that all of these domains are scientifically unified.
+
+It means they became different environments in which related computational mechanisms for state, memory, topology, regime, transition, and selection were being extracted, implemented, tested, and reworked.
+
+---
+
+# Toward Skill-Conscious
+
+This stage matters because many of the components later used in artificial-consciousness research were already being developed separately:
+
+**internal state**
+
+**memory**
+
+**topology**
+
+**persistence**
+
+**transitions**
+
+**prediction**
+
+**trajectory selection**
+
+**self-reference**
+
+**ablation**
+
+The next stage would begin integrating those mechanisms into systems that not only observe an external environment, but also model and modify their own internal state.
 
 ---
 
