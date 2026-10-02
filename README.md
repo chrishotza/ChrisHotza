@@ -1,11 +1,6 @@
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="50%"><a href="#readme-es"><strong>README.md ES</strong></a></td>
-<td align="center" width="50%"><a href="#readme-en"><strong>README.md EN</strong></a></td>
-</tr>
-</table>
+**[ES](#readme-es) &nbsp;&nbsp;&nbsp; [EN](#readme-en)**
 
 </div>
 
