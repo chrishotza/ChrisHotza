@@ -1,7 +1,7 @@
 # 2026 — AEVUM
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## Existence Oracle
 
@@ -38,7 +38,7 @@ AEVUM es el punto donde existencia, estado y continuidad se convirtieron en oper
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## Existence Oracle
 
