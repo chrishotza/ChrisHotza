@@ -8,7 +8,7 @@
 </div>
 
 <details>
-<summary>🇪🇸 <strong>ES — abrir perfil completo</strong></summary>
+<summary>ES <strong>ES — abrir perfil completo</strong></summary>
 
 <div align="center">
 
@@ -148,7 +148,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 </details>
 
 <details>
-<summary>🇬🇧 <strong>EN — open full profile</strong></summary>
+<summary>EN <strong>EN — open full profile</strong></summary>
 
 <div align="center">
 
