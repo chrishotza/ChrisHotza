@@ -1,7 +1,7 @@
 # 2026 — Entre TCF y AEVUM / Between TCF and AEVUM
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 Esta etapa contiene varios laboratorios computacionales pequeños que aparecieron entre las formulaciones grandes de TCF y la consolidación de AEVUM.
 
@@ -30,7 +30,7 @@ Fue una transición desde ideas abstractas sobre continuidad y transición hacia
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 This stage contains several smaller computational laboratories that appeared between the larger TCF formulations and the consolidation of AEVUM.
 
