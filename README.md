@@ -10,7 +10,7 @@
 <td align="center" width="50%" valign="top">
 
 <details>
-<summary style="display:block; list-style:none; text-align:center; white-space:nowrap;">ES ▼</summary>
+<summary style="list-style-type: disclosure-open; text-align:center; white-space:nowrap;">ES</summary>
 
 <table width="200%" align="left">
 <tr><td>
@@ -159,7 +159,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <td align="center" width="50%" valign="top">
 
 <details>
-<summary style="display:block; list-style:none; text-align:center; white-space:nowrap;">EN ▼</summary>
+<summary style="list-style-type: disclosure-open; text-align:center; white-space:nowrap;">EN</summary>
 
 <table width="200%" align="right">
 <tr><td>
