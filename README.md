@@ -9,7 +9,7 @@
 <td align="center" valign="top">
 
 <details>
-<summary style="position:relative; height:24px; font-size:0; text-align:center; white-space:nowrap; overflow:visible;"><span style="position:relative; z-index:20; display:block; width:calc(100% + 44px); margin-left:-22px; padding:2px 4px; box-sizing:border-box; background-color:#0d1117; font-size:16px; line-height:20px; text-align:center;">ES ▼</span></summary>
+<summary style="list-style:none; text-align:center; white-space:nowrap; font-size:16px;"><span>ES ▼</span></summary>
 
 <div style="width:200%;">
 
@@ -154,7 +154,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <td align="center" valign="top">
 
 <details>
-<summary style="position:relative; height:24px; font-size:0; text-align:center; white-space:nowrap; overflow:visible;"><span style="position:relative; z-index:20; display:block; width:calc(100% + 44px); margin-left:-22px; padding:2px 4px; box-sizing:border-box; background-color:#0d1117; font-size:16px; line-height:20px; text-align:center;">EN ▼</span></summary>
+<summary style="list-style:none; text-align:center; white-space:nowrap; font-size:16px;"><span>EN ▼</span></summary>
 <div style="width:200%; margin-left:-100%;">
 
 # Chris Hotza
