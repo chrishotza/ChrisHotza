@@ -1,11 +1,10 @@
 <div align="center">
 
-# 🌐 Elegí tu idioma / Choose your language
+# README.md
 
-**Todo el perfil se despliega en el idioma que elijas.**  
-**The full profile expands in the language you choose.**
-
-</div>
+<table>
+<tr>
+<td align="center" width="50%">
 
 <details>
 <summary><strong>ES — abrir perfil completo</strong></summary>
@@ -147,6 +146,9 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 </details>
 
+</td>
+<td align="center" width="50%">
+
 <details>
 <summary><strong>EN — open full profile</strong></summary>
 
@@ -286,3 +288,9 @@ The README is the map. The detailed stage pages contain the chronology, technica
 </div>
 
 </details>
+
+</td>
+</tr>
+</table>
+
+</div>
