@@ -1,10 +1,11 @@
-<div align="center">
-
 # README
 
-<table>
-<tr>
-<td align="center" valign="top" width="50%">
+<div align="center">
+
+<details id="readme-es">
+<summary>ES</summary>
+
+</div>
 
 <details id="readme-es">
 <summary>ES</summary>
@@ -151,6 +152,9 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 </td>
 <td align="center" valign="top" width="50%">
+
+<details id="readme-en">
+<summary>EN</summary>
 
 <details id="readme-en">
 <summary>EN</summary>
