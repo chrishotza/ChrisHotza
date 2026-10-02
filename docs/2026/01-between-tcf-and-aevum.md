@@ -12,7 +12,7 @@ Detector más un Domain of Validity Map. Exploró robustez frente a condiciones 
 Lógica adaptativa de bursts basada en irreversibilidad y persistencia.
 
 ## B98
-Alerta temprana de severidad de drawdown. La fuente identifica explícitamente a B98 como IP confidencial y no pública; los detalles protegidos no se reproducen.
+Alerta temprana de severidad de drawdown.
 
 ## COV v49
 Memoria persistente, olvido, anticipación y continuidad temporal. La comparación documentada reportó 38.418995 FPS y cero frames perdidos para la variante COV en esa ejecución.
@@ -41,7 +41,7 @@ Detector plus Domain of Validity Map. It explored robustness across lag and nois
 Adaptive burst logic based on irreversibility and persistence.
 
 ## B98
-Drawdown-severity early warning. The source explicitly identifies B98 as confidential, non-public IP; protected details are not reproduced.
+Drawdown-severity early warning.
 
 ## COV v49
 Persistent memory, forgetting, anticipation and temporal continuity. The documented comparison reported 38.418995 FPS and zero dropped frames for the COV variant in that run.
