@@ -4,7 +4,7 @@
 
 </div>
 
-<table align="center">
+<table align="center" width="100%">
 
 <tr>
 <td align="center" width="50%" valign="top">
@@ -14,8 +14,6 @@
 
 <table width="200%" align="left">
 <tr><td>
-
-<div align="center">
 
 # Chris Hotza
 
@@ -28,8 +26,6 @@
 [![Archivo de investigación](https://img.shields.io/badge/Archivo%20de%20investigación-Explorar-6f42c1?style=for-the-badge)](docs/README.md)
 
 **Conciencia Fotónica → TCF → Operadores experimentales → AEVUM → Aplicaciones científicas → TIF → Skill-Conscious**
-
-</div>
 
 ---
 
@@ -164,8 +160,6 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 <table width="200%" align="right">
 <tr><td>
 
-<div align="center">
-
 # Chris Hotza
 
 **Independent Researcher · Builder · Experimental Systems**
@@ -177,8 +171,6 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 [![Research Archive](https://img.shields.io/badge/Research%20Archive-Explore-6f42c1?style=for-the-badge)](docs/README.md)
 
 **Photonic Consciousness → TCF → Experimental Operators → AEVUM → Scientific Applications → TIF → Skill-Conscious**
-
-</div>
 
 ---
 
