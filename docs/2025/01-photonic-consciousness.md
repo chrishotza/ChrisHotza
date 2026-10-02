@@ -1,7 +1,7 @@
 # October 2025 — Photonic Consciousness
 
 <details open>
-<summary>🇪🇸 Español</summary>
+<summary>ES Español</summary>
 
 ## Punto de partida
 
@@ -30,7 +30,7 @@ Esta fue la base conceptual del trabajo posterior de TCF.
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 ## Starting point
 
