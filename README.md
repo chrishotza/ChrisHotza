@@ -250,6 +250,158 @@ Una conclusión metodológica explícita fue separar el modelo de sus interpreta
 
 ---
 
+
+---
+
+# Entre TCF y AEVUM — operadores, diagnósticos y sistemas de transición
+
+Entre la etapa de TCF y la consolidación de AEVUM aparecieron varios proyectos que llevaron las ideas de régimen, presión, persistencia, irreversibilidad, coherencia, fractura y dominio de validez hacia herramientas computacionales más concretas.
+
+No todos eran la misma teoría ni el mismo producto. Fueron laboratorios distintos para convertir esas intuiciones en detectores, integradores, mapas de validez y mecanismos de control.
+
+## SPNV — Supernova / Domain of Validity
+
+Una de estas líneas fue **SPNV**, un detector acompañado por un **Domain of Validity Map**.
+
+La implementación recorre una cuadrícula de:
+
+- retardos: 0, 3, 7, 14 y 21 días;
+- niveles de ruido: 0.0, 0.1, 0.25, 0.5 y 1.0;
+
+y registra para cada condición el multiplicador final y el número de eventos detectados.
+
+El motor calcula volatilidad, momentum y una medida de presión relativa, activa una fase de “charging”, observa la expansión durante una ventana de 20 días y registra los eventos que superan el umbral definido. fileciteturn33file1L13-L21 fileciteturn33file1L31-L66
+
+El interés histórico de SPNV está en algo que después se vuelve recurrente:
+
+**no medir solamente si un mecanismo funciona, sino mapear bajo qué condiciones sigue siendo válido.**
+
+---
+
+## ALLR — Adaptive Burst / Irreversibility
+
+Otra línea exploró una entrada y salida adaptativas a partir de una medida de irreversibilidad.
+
+El modelo calcula:
+
+- drift;
+- volatilidad;
+- un índice de irreversibilidad;
+- normalización tipo z-score;
+- persistencia;
+- exposición adaptativa.
+
+La entrada del “burst” requiere una ruptura del umbral de irreversibilidad junto con persistencia; la salida se produce cuando cae la irreversibilidad o se pierde la persistencia. fileciteturn33file2L16-L25 fileciteturn33file2L57-L85
+
+El sistema registra además Sharpe, tiempo activo, exposición media, drawdown, multiplicador y número de bursts. fileciteturn33file2L89-L119
+
+---
+
+## B98 — Drawdown Severity Anticipation Engine
+
+También apareció **B98**, un proyecto específicamente documentado como **confidential, non-public IP**.
+
+La idea es un motor de alerta temprana que intenta distinguir severidad de drawdowns antes de que se materialicen, sin plantearse como un predictor de retornos ni como un sistema de trading.
+
+La documentación pública disponible lo describe como una capa de anticipación de riesgo y señala que los detalles técnicos están restringidos bajo NDA. **Los detalles cuantitativos y de implementación no se reproducen en este README.** fileciteturn33file3L1-L24 fileciteturn33file3L27-L32
+
+---
+
+## COV v49 — memoria, persistencia y anticipación
+
+Una evolución de COV llevó explícitamente la memoria ontológica a una simulación de carga temporal.
+
+La variante COV_MANIFEST_V49 añade:
+
+- memoria persistente;
+- tasa de olvido;
+- detección de actividad;
+- anticipación mediante gradiente;
+- continuidad temporal;
+- límite de variación;
+- procesamiento selectivo de tiles.
+
+La configuración utiliza PERSISTENCE = 0.85, FORGET_RATE = 0.05 y una ganancia explícita de anticipación. fileciteturn33file4L6-L16 fileciteturn33file4L52-L89
+
+En la corrida documentada:
+
+CLASSIC
+avg_fps         18.254649
+jitter_ms       14.273786
+stutter_events  240
+dropped_frames  217
+
+COV_MANIFEST_V49
+avg_fps         38.418995
+jitter_ms       6.224216
+stutter_events  166
+dropped_frames  0
+
+fileciteturn33file4L106-L126
+
+Esto se convirtió en uno de los ejemplos donde la idea de memoria/persistencia pasó de una representación ontológica a una comparación operacional dentro de un sistema simulado.
+
+---
+
+## FDI1 — Fracture Detection Integrator
+
+**FDI1** exploró la detección de **fracturas estructurales positivas**.
+
+El integrador combina:
+
+- volatilidad;
+- tendencia;
+- momentum;
+- coherencia.
+
+Normaliza esas señales mediante ventanas móviles y define una fractura positiva cuando existe expansión estructurada: tendencia por encima del umbral, momentum positivo y coherencia suficiente. fileciteturn33file5L14-L20 fileciteturn33file5L25-L47
+
+El resultado incluye para cada fecha:
+
+Fracture
+Intensity
+Trend
+Momentum
+Coherence
+
+y permite inspeccionar la secuencia de eventos detectados. fileciteturn33file5L83-L108
+
+---
+
+## SFGA / TCF-AEF — presión, memoria y régimen
+
+Otra rama experimental llevó estas ideas a un motor de presión con memoria y **histeresis estable**.
+
+La implementación define:
+
+- presión con decay;
+- umbral de presión dura;
+- umbral de alivio;
+- límite de presión;
+- ventana MICRO;
+- ventana HARD;
+- modos BASE, MICRO y HARD;
+- telemetría de auditoría.
+
+El experimento utiliza 4.000 ejecuciones sintéticas y audita una fracción de ellas para registrar estado, etiqueta, presión y ventanas restantes. fileciteturn33file6L13-L30 fileciteturn33file6L59-L82
+
+La estructura es significativa porque introduce una separación entre:
+
+señal
+↓
+presión acumulada
+↓
+régimen
+↓
+histeresis
+↓
+acción
+↓
+telemetría
+
+que después reaparecería en varias arquitecturas posteriores.
+
+
 # AEVUM
 
 Después de TCF apareció **AEVUM**.
@@ -921,6 +1073,35 @@ Los dejo fuera del árbol principal hasta que exista un contexto histórico que 
 
 ---
 
+
+---
+
+# Informe Técnico — Meta-Selección de Refinadores de Grafos
+
+Antes de la etapa del **Manifiesto Matemático del Ser**, otra línea de investigación se centró en un problema de selección algorítmica.
+
+El **Informe Técnico — Estado de la Investigación sobre Meta-Selección de Refinadores de Grafos** documenta la evolución desde la comparación de refinadores hacia un sistema de **meta-aprendizaje para seleccionar el refinador óptimo según descriptores estructurales y dinámicos**. fileciteturn33file0L2-L9
+
+La investigación pasó por:
+
+- corrección de la función objetivo;
+- construcción del dataset;
+- evaluación OOF;
+- caracterización de empates;
+- incorporación de descriptores dinámicos;
+- auditorías anti-fuga;
+- LOGOCV;
+- representación invariante;
+- auditorías de reproducibilidad;
+- auditoría de entropía condicional. fileciteturn33file0L10-L14
+
+Un resultado importante fue que no se observó una fuga directa dominante, pero **LOGOCV produjo una caída importante de rendimiento**, y la auditoría estadística encontró H(Y|Familia)=0 en el benchmark disponible. fileciteturn33file0L15-L22
+
+La interpretación registrada fue que el benchmark actual acoplaba completamente familia y operador óptimo, por lo que LOGOCV funcionaba como prueba de extrapolación zero-shot entre dominios, no simplemente como otra partición de generalización convencional. fileciteturn33file0L20-L22
+
+El siguiente paso documentado era construir benchmarks con variabilidad intra-familia, evaluar dominios no usados durante el desarrollo, comparar con SOTA y publicar código reproducible. fileciteturn33file0L23-L27
+
+
 # 2026 — De los sistemas experimentales a una ontología operacional
 
 A medida que estas líneas se fueron cruzando, apareció una nueva etapa de trabajo:
@@ -1435,6 +1616,86 @@ The work studied:
 An important methodological shift was keeping the effective model separate from stronger ontological interpretations.
 
 ---
+
+
+---
+
+# Between TCF and AEVUM — operators, diagnostics, and transition systems
+
+Between the TCF stage and the consolidation of AEVUM, several projects pushed ideas around regime, pressure, persistence, irreversibility, coherence, fracture, and domain validity into more concrete computational tools.
+
+They were not one single theory or product. They were different laboratories for turning those ideas into detectors, integrators, validity maps, and control mechanisms.
+
+## SPNV — Supernova / Domain of Validity
+
+**SPNV** included a detector together with a **Domain of Validity Map**.
+
+The implementation sweeps lag values of 0, 3, 7, 14, and 21 days and noise levels of 0.0, 0.1, 0.25, 0.5, and 1.0, recording the final multiplier and detected events under each condition. fileciteturn33file1L13-L21 fileciteturn33file1L69-L111
+
+The historical importance of SPNV is the recurring question:
+
+**not only whether a mechanism works, but under which conditions it remains valid.**
+
+---
+
+## ALLR — Adaptive Burst / Irreversibility
+
+Another line explored adaptive entry and exit using an irreversibility measure.
+
+The model calculates drift, volatility, irreversibility, normalized z-score, persistence, and adaptive exposure. Burst entry requires an irreversibility threshold crossing together with persistence; exit occurs when irreversibility or persistence falls below its defined threshold. fileciteturn33file2L16-L25 fileciteturn33file2L57-L85
+
+---
+
+## B98 — Drawdown Severity Anticipation Engine
+
+**B98** was explicitly documented as **confidential, non-public IP**.
+
+It is described as an early-warning engine intended to distinguish deep from shallow drawdowns before they materialize, rather than as a return predictor or trading system.
+
+Because the source explicitly marks it as non-public IP, technical details and quantitative performance are not reproduced in this public README. fileciteturn33file3L1-L24
+
+---
+
+## COV v49 — memory, persistence, and anticipation
+
+A later COV variant introduced persistent ontological memory into a temporal load simulation.
+
+COV_MANIFEST_V49 added persistent memory, forgetting, activity detection, gradient-based anticipation, temporal continuity, bounded variation, and selective tile processing. fileciteturn33file4L6-L16 fileciteturn33file4L52-L89
+
+The documented run compared the classical model against COV_MANIFEST_V49 and recorded different FPS, jitter, stutter, and dropped-frame metrics, including zero dropped frames for the COV variant in the recorded run. fileciteturn33file4L106-L126
+
+---
+
+## FDI1 — Fracture Detection Integrator
+
+**FDI1** explored detection of positive structural expansions by combining volatility, trend, momentum, and coherence. A positive fracture is emitted when the defined expansion and coherence conditions are satisfied. fileciteturn33file5L14-L20 fileciteturn33file5L53-L74
+
+The output records date, fracture state, intensity, trend, momentum, and coherence. fileciteturn33file5L83-L108
+
+---
+
+## SFGA / TCF-AEF — pressure, memory, and regime
+
+Another experimental branch implemented a pressure model with memory and stable hysteresis.
+
+It defined pressure decay, hard-pressure and relief thresholds, a cap, MICRO and HARD windows, BASE/MICRO/HARD regimes, and audit telemetry. fileciteturn33file6L13-L30 fileciteturn33file6L59-L82
+
+The experiment used 4,000 synthetic runs.
+
+The structural pattern was:
+
+signal
+↓
+accumulated pressure
+↓
+regime
+↓
+hysteresis
+↓
+action
+↓
+telemetry
+
 
 # AEVUM
 
@@ -1975,6 +2236,24 @@ They remain outside the main project tree until their historical role is establi
 
 
 ---
+
+
+---
+
+# Technical Report — Meta-Selection of Graph Refiners
+
+Before the **Mathematical Manifesto of Being** stage, another research line focused on algorithm selection.
+
+The **Technical Report — Research Status on Meta-Selection of Graph Refiners** documents the evolution from comparing refiners toward a **meta-learning system that selects an optimal refiner according to structural and dynamic descriptors**. fileciteturn33file0L2-L9
+
+The work progressed through objective-function correction, dataset construction, OOF evaluation, tie characterization, dynamic descriptors, leakage audits, LOGOCV, invariant representations, reproducibility audits, and conditional-entropy auditing. fileciteturn33file0L10-L14
+
+A key finding was that no dominant direct leakage was observed, while **LOGOCV caused a substantial performance drop** and the statistical audit found H(Y|Family)=0 in the current benchmark. fileciteturn33file0L15-L22
+
+The report interprets this as a benchmark where family and optimal operator are fully coupled, making LOGOCV a zero-shot extrapolation test rather than ordinary generalization.
+
+The next documented steps were intra-family variability benchmarks, evaluation on domains not used for development, comparison against SOTA, reproducible code, and performance measurements across time, memory, power, GPUs, and future FPGA implementations. fileciteturn33file0L23-L27
+
 
 # 2026 — From experimental systems to an operational ontology
 
