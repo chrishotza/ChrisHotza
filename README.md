@@ -1,8 +1,20 @@
+<div align="center">
+
 # Chris Hotza
 
 **Independent Researcher · Builder · Experimental Systems**
 
-[🇪🇸 Español](#español) · [🇬🇧 English](#english)
+**Investigador independiente · Constructor · Sistemas experimentales**
+
+*Research across consciousness, mathematical models, AI, scientific computing, dynamic systems and experimental architectures.*
+
+*Investigación en conciencia, modelos matemáticos, IA, computación científica, sistemas dinámicos y arquitecturas experimentales.*
+
+📚 [Research Archive](docs/README.md) · 🧩 [Public Repositories](#repositorios-públicos)
+
+</div>
+
+---
 
 <details>
 <summary>🇪🇸 Español — ver resumen y evolución</summary>
