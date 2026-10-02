@@ -4,7 +4,7 @@
 
 </div>
 
-<table align="center">
+<table align="center" style="width:100%; table-layout:fixed;">
 <tr>
 <td align="center" valign="top">
 
@@ -29,7 +29,7 @@
 
 Un archivo que conecta **conciencia, continuidad, memoria, estado, autorreferencia, computación científica y arquitecturas experimentales de IA**.
 
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
 <td width="50%">
 
@@ -88,7 +88,7 @@ La etapa actual es **Skill-Conscious**: una arquitectura experimental con memori
 
 ## ⭐ Repositorios públicos destacados
 
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
 <td width="50%" valign="top">
 
@@ -174,7 +174,7 @@ El README es el mapa. Las páginas del archivo contienen la cronología, context
 
 A research archive connecting **consciousness, continuity, memory, state, self-reference, scientific computing and experimental AI architectures**.
 
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
 <td width="50%">
 
@@ -233,7 +233,7 @@ The current stage is **Skill-Conscious**: an experimental architecture with pers
 
 ## ⭐ Selected public repositories
 
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
 <td width="50%" valign="top">
 
