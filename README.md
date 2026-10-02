@@ -2,22 +2,69 @@
 
 # Chris Hotza
 
-**Independent Researcher · Builder · Experimental Systems**
-
+**Independent Researcher · Builder · Experimental Systems**  
 **Investigador independiente · Constructor · Sistemas experimentales**
 
-*Research across consciousness, mathematical models, AI, scientific computing, dynamic systems and experimental architectures.*
-
+*Research across consciousness, mathematical models, AI, scientific computing, dynamic systems and experimental architectures.*  
 *Investigación en conciencia, modelos matemáticos, IA, computación científica, sistemas dinámicos y arquitecturas experimentales.*
 
-📚 [Research Archive](docs/README.md) · 🧩 [Public Repositories](#repositorios-públicos)
+[![Followers](https://img.shields.io/github/followers/chrishotza?style=for-the-badge&label=FOLLOWERS)](https://github.com/chrishotza?tab=followers)
+[![Public Repositories](https://img.shields.io/badge/Public%20Repositories-8-24292f?style=for-the-badge)](https://github.com/chrishotza?tab=repositories)
+[![Research Archive](https://img.shields.io/badge/Research%20Archive-Explore-6f42c1?style=for-the-badge)](docs/README.md)
+
+**Photonic Consciousness → TCF → Experimental Operators → AEVUM → Scientific Applications → TIF → Skill-Conscious**
 
 </div>
 
 ---
 
+## 🧭 Research trajectory
+
+A research archive connecting **consciousness, continuity, memory, state, self-reference, scientific computing and experimental AI architectures**.
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔬 Core research
+
+**Photonic Consciousness**  
+→ [Archive](docs/2025/01-photonic-consciousness.md)
+
+**TCF — Fundamental Continuity Theory**  
+→ [Archive](docs/2025/02-tcf.md)
+
+**SPNV · ALLR · B98 · COV · FDI1 · SFGA**  
+→ [Experimental stage](docs/2026/01-between-tcf-and-aevum.md)
+
+**AEVUM · Node · Crypto · Node Zero**  
+→ [AEVUM archive](docs/2026/02-aevum.md)
+
+</td>
+<td width="50%">
+
+### 🧪 Applied & experimental work
+
+**HeroX / MAKO12 · Pulse Energy · Conscious Pulse**  
+→ [Collaboration archive](docs/2026/03-herox.md) · [Energy systems](docs/2026/04-pulse-energy.md)
+
+**AERIS · RNA 3D Folding · OnttoVoid · MAZU · Biohub**  
+→ [Scientific applications](docs/2026/06-scientific-challenges.md)
+
+**COV / SYN-RAM**  
+→ [Systems archive](docs/2026/05-diagnostics-and-synram.md)
+
+**Manifiesto del Ser · Ontological Quantum Consciousness · TIF · Skill-Conscious**  
+→ [Ontology & TIF](docs/2026/07-ontology-and-tif.md) · [Skill-Conscious](docs/2026/08-skill-conscious.md)
+
+</td>
+</tr>
+</table>
+
+---
+
 <details>
-<summary>🇪🇸 Español — ver resumen y evolución</summary>
+<summary>🇪🇸 <strong>Español — ver resumen y evolución completa</strong></summary>
 
 Mi investigación comenzó en octubre de 2025 con **Conciencia Fotónica**, explorando conciencia, autorreferencia, luz, oscilación, geometría y campos. Esa línea dio lugar a **TCF — Teoría de Continuidad Fundamental**, que fue pasando por distintas formulaciones y dominios hasta convertirse en un marco efectivo y multiescala. [Conciencia Fotónica](docs/2025/01-photonic-consciousness.md) · [TCF](docs/2025/02-tcf.md)
 
@@ -31,16 +78,10 @@ Con el tiempo, el foco se fue concentrando en **relación, continuidad, memoria,
 
 La etapa actual es **Skill-Conscious**: una arquitectura experimental con memoria persistente, estado interno persistente, self-model, autoobservación, predicción del propio estado, selección de trayectorias, acción y continuidad del estado, junto con mecanismos de vigilia/sueño, autoobservación y protocolos de control. La investigación sigue siendo experimental y no presenta estos sistemas como una demostración de conciencia. [Skill-Conscious](docs/2026/08-skill-conscious.md)
 
-### Repositorios públicos
-
-[Skill-Conscious](https://github.com/chrishotza/Skill-Conscious) · [Aeris-Dairy-Twin](https://github.com/chrishotza/Aeris-Dairy-Twin) · [Adaptiv-Topologica-Optimization-Framework](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework) · [Biohub-lab](https://github.com/chrishotza/Biohub-lab) · [PromptForge](https://github.com/chrishotza/PromptForge) · [bess-operational-intelligence](https://github.com/chrishotza/bess-operational-intelligence) · [Crypto-Security-Forensics-Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab) · [Flint-Prop-AMM-Research](https://github.com/chrishotza/Flint-Prop-AMM-Research) · [T3N-Enterprise-Audit-Agent](https://github.com/chrishotza/T3N-Enterprise-Audit-Agent)
-
-Los proyectos y documentos que no tienen un repositorio público correspondiente quedan representados en el [archivo de investigación](docs/README.md). El material propietario, privado o sujeto a NDA permanece fuera del repositorio abierto. [Material protegido](docs/protected.md)
-
 </details>
 
 <details>
-<summary>🇬🇧 English — view summary and evolution</summary>
+<summary>🇬🇧 <strong>English — view the complete summary and evolution</strong></summary>
 
 My research began in October 2025 with **Photonic Consciousness**, exploring consciousness, self-reference, light, oscillation, geometry and fields. That line led to **TCF — Fundamental Continuity Theory**, which passed through different formulations and domains before becoming an effective multiscale framework. [Photonic Consciousness](docs/2025/01-photonic-consciousness.md) · [TCF](docs/2025/02-tcf.md)
 
@@ -54,10 +95,70 @@ Over time, the focus narrowed toward **relation, continuity, memory, transition 
 
 The current stage is **Skill-Conscious**: an experimental architecture with persistent memory, persistent internal state, self-model, self-observation, self-state prediction, trajectory selection, action and state continuity, together with wake/sleep dynamics, self-observation and control protocols. The research remains experimental and does not present these systems as a demonstration of consciousness. [Skill-Conscious](docs/2026/08-skill-conscious.md)
 
-### Public repositories
-
-[Skill-Conscious](https://github.com/chrishotza/Skill-Conscious) · [Aeris-Dairy-Twin](https://github.com/chrishotza/Aeris-Dairy-Twin) · [Adaptiv-Topologica-Optimization-Framework](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework) · [Biohub-lab](https://github.com/chrishotza/Biohub-lab) · [PromptForge](https://github.com/chrishotza/PromptForge) · [bess-operational-intelligence](https://github.com/chrishotza/bess-operational-intelligence) · [Crypto-Security-Forensics-Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab) · [Flint-Prop-AMM-Research](https://github.com/chrishotza/Flint-Prop-AMM-Research) · [T3N-Enterprise-Audit-Agent](https://github.com/chrishotza/T3N-Enterprise-Audit-Agent)
-
-Projects and documents without a corresponding public repository are represented in the [research archive](docs/README.md). Proprietary, private and NDA-protected material remains outside the public repository. [Protected material](docs/protected.md)
-
 </details>
+
+---
+
+## ⭐ Selected public repositories
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious)
+Experimental architecture exploring persistent memory, internal state, self-modeling, self-observation and trajectory continuity.
+
+### 🐄 [Aeris-Dairy-Twin](https://github.com/chrishotza/Aeris-Dairy-Twin)
+Digital-twin research for animal welfare and production-unit monitoring.
+
+### 🧬 [Biohub-lab](https://github.com/chrishotza/Biohub-lab)
+3D + time cell-tracking research focused on continuity, lineage and state.
+
+### 🧭 [Adaptiv-Topologica-Optimization-Framework](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework)
+Adaptive selection of topological algorithms from structural and dynamic network descriptors.
+
+### 🛡️ [Crypto-Security-Forensics-Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab)
+Security research and forensic experimentation.
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ [bess-operational-intelligence](https://github.com/chrishotza/bess-operational-intelligence)
+Public branch of the BESS / operational-intelligence line connected to the Pulse Energy work.
+
+### 🧰 [PromptForge](https://github.com/chrishotza/PromptForge)
+Research and tooling around structured prompting and AI workflows.
+
+### 🏦 [Flint-Prop-AMM-Research](https://github.com/chrishotza/Flint-Prop-AMM-Research)
+Experimental research repository focused on AMM / DeFi mechanisms.
+
+### 🔍 [T3N-Enterprise-Audit-Agent](https://github.com/chrishotza/T3N-Enterprise-Audit-Agent)
+Enterprise auditing and AI-agent experimentation.
+
+</td>
+</tr>
+</table>
+
+[View all public repositories →](https://github.com/chrishotza?tab=repositories)
+
+---
+
+## 📚 Archive
+
+The profile README is the map. The detailed stage pages contain the chronology, technical context, evidence, limitations and source notes.
+
+[**Open the research archive →**](docs/README.md)
+
+🔒 Proprietary, private and NDA-protected material remains outside the public repository.
+
+[Protected material →](docs/protected.md)
+
+---
+
+<div align="center">
+
+**Research → Models → Systems → Experiments → Re-evaluation → New architectures**
+
+*The archive is still evolving.*
+
+</div>
