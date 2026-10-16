@@ -1,3 +1,15 @@
+<div align="center">
+
+### [▶ JUGAR SIGNAL SNAKE — ENTRAR AL LABORATORIO](https://hotza-lab-arcade.onrender.com)
+
+**Un juego real, hecho en HTML/Canvas:** mové el gusanito, descubrí seis investigaciones y conocé qué hice, qué estoy haciendo y cómo trabajo. Con teclado o desde el celu.
+
+[**JUGAR AHORA ↗**](https://hotza-lab-arcade.onrender.com) · [**Leer sin jugar ↗**](https://hotza-lab-arcade.onrender.com/#resumen)
+
+</div>
+
+---
+
 <!-- PERFIL NARRATIVO. GitHub-native; sin JS, servicios externos ni estadísticas inventadas. -->
 <div align="center">
 
