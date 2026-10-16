@@ -15,11 +15,13 @@
 
 Uso inteligencia artificial para convertir preguntas en código, experimentos y proyectos. Mi objetivo no es producir más software porque sí: **es generar valor para la sociedad**.
 
-[**Explorar proyectos**](#-proyectos-seleccionados) &nbsp;·&nbsp; [**Elegí un recorrido**](#-elegí-un-recorrido) &nbsp;·&nbsp; [**Research archive**](docs/README.md)
+[**Explorar proyectos**](#proyectos) &nbsp;·&nbsp; [**Elegí un recorrido**](#recorridos) &nbsp;·&nbsp; [**Research archive**](docs/README.md)
 
 </div>
 
 ---
+
+<a name="recorridos"></a>
 
 ### 🛰️ Elegí un recorrido
 
@@ -65,6 +67,8 @@ Seguimiento celular, optimización de grafos y una plataforma de adhesiones a ca
 </details>
 
 ---
+
+<a name="proyectos"></a>
 
 ### 🔬 Proyectos seleccionados
 
