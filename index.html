@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090c16">
+<meta name="description" content="Conocé a Chris Hotza: investigador independiente, vibe coder y creador de proyectos con inteligencia artificial.">
+<title>Chris Hotza · La IA habla por mí</title>
+<style>
+:root{color-scheme:dark;--bg:#090c16;--panel:#121827;--panel2:#101522;--line:#283147;--muted:#a2b0c6;--text:#f4f6fe;--accent:#85e5d0;--violet:#b9a7ff;--shadow:0 18px 70px #0005}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 86% 10%,#29214b80,transparent 38%),radial-gradient(ellipse at 0% 100%,#123f4580,transparent 48%),var(--bg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);min-height:100vh}
+a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}
+.shell{max-width:1160px;margin:auto;padding:28px 22px 72px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:42px}
+.brand{display:flex;align-items:center;gap:11px;font-size:12px;font-weight:780;letter-spacing:.15em;color:var(--muted)}
+.brandmark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#80e5d017;color:var(--accent);border:1px solid #80e5d052;font-weight:900;font-size:14px;letter-spacing:0}
+.nav{display:flex;align-items:center;gap:10px}
+.nav a,.lang{background:transparent;color:var(--muted);border:1px solid var(--line);padding:9px 13px;border-radius:12px;font-size:13px;font-weight:650}
+.nav a:hover,.lang:hover,.nav a:focus-visible,.lang:focus-visible{border-color:var(--accent);color:#fff}
+main{display:grid;grid-template-columns:minmax(0,.91fr) minmax(0,1.09fr);gap:26px;align-items:stretch}
+.intro{padding:28px 16px 16px 0;display:flex;flex-direction:column}
+.kicker{display:flex;align-items:center;gap:8px;color:var(--accent);font-size:12px;letter-spacing:.16em;font-weight:800;text-transform:uppercase;margin-bottom:26px}
+.pulse{width:8px;height:8px;border-radius:100%;background:var(--accent);box-shadow:0 0 0 5px #85e5d019;animation:blink 2.4s infinite}
+h1{margin:0 0 15px;font-size:clamp(60px,8vw,104px);line-height:.93;letter-spacing:-.08em;font-weight:850}
+h1 span{display:block;color:var(--violet)}
+.lead{font-size:clamp(19px,2.3vw,26px);line-height:1.38;max-width:520px;color:#dae2f5;margin:20px 0 17px;font-weight:520}
+.sub{max-width:480px;color:var(--muted);margin:0;font-size:15px}
+.mission{max-width:500px;border-left:3px solid var(--accent);padding:12px 0 12px 18px;margin:32px 0 0;background:linear-gradient(90deg,#85e5d008,transparent);font-size:16px;font-weight:650}
+.mission small{display:block;margin-top:5px;color:var(--muted);font-size:12px;letter-spacing:.12em;font-weight:650}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:42px}
+.tag{padding:7px 12px;border-radius:50px;border:1px solid #ffffff22;font-size:12px;color:#c5d1e2}
+.orbit{position:relative;display:none}
+.chat{border-radius:24px;border:1px solid #8494b137;background:linear-gradient(165deg,#171b2b 0%,#0e1422 80%);box-shadow:var(--shadow);min-height:570px;display:flex;flex-direction:column;overflow:hidden}
+.chathead{padding:20px 22px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.avatar{display:grid;place-items:center;height:40px;width:40px;border:1px solid #a28cf566;background:#a28cf51c;border-radius:15px;font-size:20px}
+.chathead strong{display:block;line-height:1.3;font-size:15px}
+.chathead small{display:block;font-size:12px;color:var(--muted)}
+.online{margin-left:auto;color:var(--accent);font-size:12px}
+.messages{padding:22px;min-height:330px;flex:1;overflow-y:auto;max-height:550px;scrollbar-color:#525f7a transparent}
+.msg{max-width:92%;margin-bottom:15px;border-radius:16px;padding:14px 16px;font-size:15px;line-height:1.55;animation:appear .25s ease-out;overflow-wrap:anywhere}
+.msg.bot{background:#22283c;border:1px solid #ffffff0f;border-top-left-radius:5px}
+.msg.you{margin-left:auto;background:#20504b;border:1px solid #85e5d03d;border-top-right-radius:5px;max-width:86%}
+.msg .from{font-size:10px;letter-spacing:.13em;font-weight:850;margin-bottom:6px;color:var(--accent)}
+.msg.you .from{color:#caf7f1}
+.msg p{margin:0 0 8px}.msg p:last-child{margin-bottom:0}
+.msg a{color:#cfc2ff;text-decoration:underline;text-underline-offset:3px}
+.options{display:flex;flex-wrap:wrap;gap:9px;padding:0 22px 16px}
+.option{border:1px solid #85e5d05c;color:#d8fbf3;background:#85e5d00b;border-radius:14px;padding:9px 13px;font-size:13px;text-align:left;font-weight:650}
+.option:hover,.option:focus-visible{background:#85e5d025;border-color:#85e5d0;outline:none}
+.chatbar{display:flex;gap:9px;padding:16px 20px;border-top:1px solid var(--line)}
+.chatbar input{min-width:0;flex:1;color:#fff;border:1px solid #404a63;border-radius:12px;background:#0c111d;padding:12px 13px;outline:none;font-size:14px}
+.chatbar input:focus{border-color:var(--accent)}
+.send{border:0;border-radius:12px;padding:0 17px;font-size:13px;font-weight:800;background:var(--accent);color:#10201e}
+.send:hover,.send:focus-visible{background:#b7fff1}
+.notice{padding:0 22px 17px;margin:0;color:#909eb7;font-size:11px}
+.below{margin-top:66px}
+.sectiontop{display:flex;justify-content:space-between;align-items:end;gap:18px;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:20px}
+.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.16em}
+h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.04em;margin:7px 0 0}
+.sectiontop>a{color:#d4f7ed;font-size:13px;border-bottom:1px solid #85e5d0a0;padding-bottom:4px}
+.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.project{display:block;border:1px solid var(--line);background:#141b2b9c;border-radius:17px;padding:20px;min-height:166px;transition:transform .15s,border-color .15s}
+.project:hover,.project:focus-visible{transform:translateY(-3px);border-color:var(--accent);outline:none}
+.project small{display:block;color:var(--accent);font-size:11px;font-weight:750;letter-spacing:.08em}
+.project strong{display:block;font-size:19px;letter-spacing:-.03em;margin:11px 0 5px}
+.project span{font-size:13px;color:var(--muted);line-height:1.5}
+footer{margin-top:45px;display:flex;gap:15px;justify-content:space-between;flex-wrap:wrap;color:#8d9ab1;font-size:12px}
+footer a{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@keyframes blink{50%{opacity:.4}}@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:850px){main{grid-template-columns:1fr;gap:22px}.intro{padding:0}.tags{padding-top:25px}.chat{min-height:500px}.below{margin-top:50px}}
+@media(max-width:600px){.shell{padding:18px 14px 35px}header{margin-bottom:32px}.brand{font-size:10px}.nav{gap:6px}.nav a,.lang{padding:7px 9px;font-size:11px}h1{font-size:65px}.chathead{padding:15px}.messages{padding:16px;min-height:285px}.options{padding:0 16px 12px}.chatbar{padding:12px}.notice{padding:0 13px 13px}.projects{grid-template-columns:1fr}.project{min-height:110px}.sectiontop{align-items:start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header>
+ <a class="brand" href="https://github.com/chrishotza" aria-label="Ver el perfil de Chris Hotza en GitHub"><span class="brandmark">CH</span><span>HOTZA / LAB</span></a>
+ <nav class="nav" aria-label="Navegación principal"><a id="navRepo" href="https://github.com/chrishotza">GitHub ↗</a><button class="lang" id="toggleLang" type="button" aria-label="Cambiar idioma">EN</button></nav>
+</header>
+<main>
+ <section class="intro" aria-labelledby="name">
+  <div class="kicker"><span class="pulse" aria-hidden="true"></span><span id="kicker">SEÑAL DETECTADA · ARGENTINA</span></div>
+  <h1 id="name">Chris <span>Hotza.</span></h1>
+  <p class="lead" id="lead">Investigo preguntas. Con ayuda de la IA, las convierto en proyectos.</p>
+  <p class="sub" id="sub">Soy investigador independiente y vibe coder. No vengo a aparentar que sé de todo: vengo a explorar, construir y comprobar.</p>
+  <p class="mission" id="mission">«Quiero generar valor en la sociedad.»<small id="purpose">MI MOTOR / MY PURPOSE</small></p>
+  <div class="tags"><span class="tag" id="tag1">Investigación</span><span class="tag" id="tag2">IA aplicada</span><span class="tag" id="tag3">Vibe coding</span><span class="tag" id="tag4">Experimentos</span></div>
+ </section>
+ <section class="chat" aria-label="Presentación conversacional interactiva">
+  <div class="chathead"><div class="avatar" aria-hidden="true">✳</div><div><strong id="assistantTitle">La IA habla por mí</strong><small id="assistantSub">Guía interactiva de Chris Hotza</small></div><span class="online" id="demoTag">● DEMO</span></div>
+  <div class="messages" id="messages" role="log" aria-live="polite" aria-label="Conversación"><div class="msg bot"><div class="from">IA / HOTZA</div><p id="opening">Hola. Soy una presentación interactiva de Chris. Elegí una pregunta y te cuento quién es, qué investiga y para qué construye.</p></div></div>
+  <div class="options" id="options" aria-label="Preguntas sugeridas">
+   <button class="option" data-topic="identity">¿Quién es Chris?</button>
+   <button class="option" data-topic="work">¿Qué está creando?</button>
+   <button class="option" data-topic="purpose">¿Por qué lo hace?</button>
+  </div>
+  <form class="chatbar" id="chatForm" autocomplete="off"><input id="query" maxlength="180" aria-label="Escribir una pregunta" placeholder="Preguntá algo sobre Chris…" required><button class="send" id="send" type="submit">Enviar ↗</button></form>
+  <p class="notice" id="disclaimer">Experiencia guiada con respuestas preparadas. No es una IA en vivo ni guarda mensajes.</p>
+ </section>
+</main>
+<section class="below" id="proyectos">
+ <div class="sectiontop"><div><span class="eyebrow" id="projectKicker">EXPLORÁ EL LABORATORIO</span><h2 id="projectHeading">Ideas que se volvieron proyectos.</h2></div><a id="all" href="https://github.com/chrishotza?tab=repositories">Ver todos en GitHub ↗</a></div>
+ <div class="projects">
+  <a class="project" href="https://github.com/chrishotza/Skill-Conscious" target="_blank" rel="noopener noreferrer"><small>01 / INTELIGENCIA ARTIFICIAL</small><strong>Skill-Conscious</strong><span class="pdesc">Arquitectura experimental de memoria, estado interno y autoobservación.</span></a>
+  <a class="project" href="https://github.com/chrishotza/Repo-Orbit" target="_blank" rel="noopener noreferrer"><small>02 / HERRAMIENTAS PARA IA</small><strong>RepoOrbit</strong><span class="pdesc">Un atlas de repositorios hecho para agentes de IA.</span></a>
+  <a class="project" href="https://github.com/chrishotza/ai4s-life-science-2026" target="_blank" rel="noopener noreferrer"><small>03 / CIENCIA</small><strong>AI4S · Life Science</strong><span class="pdesc">Seguimiento de células y análisis de trayectorias en imágenes.</span></a>
+  <a class="project" href="https://github.com/chrishotza/PromptForge" target="_blank" rel="noopener noreferrer"><small>04 / ENGINEERING</small><strong>PromptForge</strong><span class="pdesc">Herramientas para estructurar y evaluar contextos de IA.</span></a>
+  <a class="project" href="https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework" target="_blank" rel="noopener noreferrer"><small>05 / MATEMÁTICA</small><strong>ATOF</strong><span class="pdesc">Optimización y particionado de grafos con herramientas reproducibles.</span></a>
+  <a class="project" href="https://github.com/chrishotza/UnGesto-" target="_blank" rel="noopener noreferrer"><small>06 / IMPACTO SOCIAL</small><strong>UnGesto</strong><span class="pdesc">Una adhesión, varias causas elegidas. Integraciones externas en desarrollo.</span></a>
+ </div>
+</section>
+<footer><span id="foot">Una persona curiosa. Herramientas de IA. Preguntas que valen la pena.</span><span><a href="https://github.com/chrishotza/ChrisHotza">Código y archivo histórico</a> · <span id="privacy">Sin cookies ni registro</span></span></footer>
+</div>
+<script>
+"use strict";
+(function(){
+const DATA={
+es:{
+identity:{q:"¿Quién es Chris?",a:"Chris es un investigador independiente argentino y vibe coder. Lo mueve la curiosidad: toma una pregunta, la investiga y busca cómo convertirla en un experimento, una herramienta o un proyecto real."},
+work:{q:"¿Qué está creando?",a:"Explora arquitectura experimental de IA con Skill-Conscious, herramientas para agentes con RepoOrbit y PromptForge, optimización con ATOF, biología computacional y proyectos como UnGesto. No todo está terminado: algunos son prototipos o investigaciones.<p><a href='#proyectos'>Explorar 6 proyectos ↓</a></p>"},
+purpose:{q:"¿Por qué lo hace?",a:"Lo dijo con sus palabras: «Quiero generar valor en la sociedad». Para Chris, la IA no es el objetivo: es una forma de acelerar la investigación y construir cosas que algún día puedan servirle a otras personas."},
+method:{q:"¿Cómo trabaja con IA?",a:"Chris propone ideas, fija objetivos y revisa resultados. Usa la IA para programar, investigar, documentar y explorar alternativas. Después toca comprobar qué funciona. Vibe coding no significa que un resultado sea correcto por arte de magia."},
+consciousness:{q:"¿Investiga la conciencia?",a:"Sí. En Skill-Conscious estudia modelos de estado persistente, autorreferencia y autoobservación en sistemas de IA. Es investigación experimental: el proyecto no prueba que una IA sea consciente.<p><a href='https://github.com/chrishotza/Skill-Conscious' target='_blank' rel='noopener noreferrer'>Ver Skill-Conscious ↗</a></p>"},
+research:{q:"¿En qué investiga?",a:"IA y memoria, optimización, computación científica, seguimiento celular y sistemas aplicados. No plantea que todo esté demostrado ni que cada área tenga un producto listo; cada repositorio tiene sus propias evidencias y límites.<p><a href='#proyectos'>Ver los proyectos ↓</a></p>"},
+contact:{q:"¿Cómo lo contacto?",a:"Podés explorar sus repositorios públicos y abrir una conversación en el proyecto correspondiente mediante Issues o Discussions, cuando estén habilitados.<p><a href='https://github.com/chrishotza' target='_blank' rel='noopener noreferrer'>Ir a su GitHub ↗</a></p>"},
+fallback:{q:"Tengo otra pregunta",a:"Puedo orientarte sobre quién es Chris, qué investiga, por qué trabaja con IA o qué proyectos creó. Esta es una experiencia guiada: no invento respuestas ni uso un modelo de IA en vivo. Probá con alguno de los temas de abajo."}
+},
+en:{
+identity:{q:"Who is Chris?",a:"Chris is an independent researcher and vibe coder based in Argentina. Curiosity is his starting point: he takes a question, researches it, and tries to turn it into a useful experiment, tool, or project."},
+work:{q:"What is he building?",a:"His projects include Skill-Conscious, RepoOrbit, PromptForge, ATOF, computational biology experiments and UnGesto. Some are prototypes or active research, not finished products.<p><a href='#proyectos'>Explore six projects ↓</a></p>"},
+purpose:{q:"Why does he do it?",a:"In his own words: «I want to create value for society». AI is a tool for investigation and building things that could eventually help other people."},
+method:{q:"How does he work with AI?",a:"Chris sets questions, goals and constraints. AI helps with code, research and documentation. Results still need testing and verification. Vibe coding is a method of working, not a claim that generated code is automatically correct."},
+consciousness:{q:"Does he study consciousness?",a:"Yes. Skill-Conscious investigates persistent state, self-reference and self-observation in experimental AI systems. It does not prove that AI is conscious.<p><a href='https://github.com/chrishotza/Skill-Conscious' target='_blank' rel='noopener noreferrer'>Explore the project ↗</a></p>"},
+research:{q:"What are his research areas?",a:"AI, memory, optimization, scientific computing, cell tracking and applied systems. Each repository has its own evidence and limitations.<p><a href='#proyectos'>See selected projects ↓</a></p>"},
+contact:{q:"Where can I find him?",a:"Explore his public repositories or start a discussion through project Issues or Discussions where enabled.<p><a href='https://github.com/chrishotza' target='_blank' rel='noopener noreferrer'>Open GitHub ↗</a></p>"},
+fallback:{q:"Another question",a:"I can introduce Chris, his projects, his research, his motivation, or his use of AI. This is a scripted interactive guide, not a live language model. Try one of the suggested questions."}
+}};
+const $=id=>document.getElementById(id);const body=$("messages");const opts=$("options");let lang="es";
+function infer(q){const s=q.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+if(/contact|correo|email|hablar|reach|collab|colabor/.test(s))return "contact";
+if(/conciencia|conscious|mente|self.model|memoria/.test(s))return "consciousness";
+if(/sociedad|valor|impact|social|motivo|porque|por que|why|proposit|purpose/.test(s))return "purpose";
+if(/como|how|vibe|program|agente|agent|herramienta|herramient|metodo/.test(s))return "method";
+if(/quien|quién|who|identidad|about|persona/.test(s))return "identity";
+if(/proyect|repos|crea|constru|building|built|portfolio|que hace/.test(s))return "work";
+if(/investig|research|cientif|science/.test(s))return "research";
+return "fallback"}
+function bubble(kind,content,html){const el=document.createElement("article");el.className="msg "+kind;const from=document.createElement("div");from.className="from";from.textContent=kind==="bot"?"IA / HOTZA":lang==="es"?"VISITANTE":"VISITOR";const p=document.createElement("div");if(html)p.innerHTML=content;else p.textContent=content;el.append(from,p);body.append(el);body.scrollTop=body.scrollHeight}
+function reply(q,key){bubble("you",q,false);const item=DATA[lang][key]||DATA[lang].fallback;bubble("bot",item.a,true)}
+opts.addEventListener("click",ev=>{const btn=ev.target.closest("button[data-topic]");if(btn){const t=btn.dataset.topic;reply(DATA[lang][t].q,t)}});
+$("chatForm").addEventListener("submit",ev=>{ev.preventDefault();const text=$("query").value.trim();if(!text)return;reply(text,infer(text));$("query").value="";$("query").focus()});
+function setLang(to){lang=to;document.documentElement.lang=to;const en=to==="en";
+$("toggleLang").textContent=en?"ES":"EN";$("kicker").textContent=en?"SIGNAL DETECTED · ARGENTINA":"SEÑAL DETECTADA · ARGENTINA";
+$("lead").textContent=en?"I investigate questions. With AI, I turn them into projects.":"Investigo preguntas. Con ayuda de la IA, las convierto en proyectos.";
+$("sub").textContent=en?"I'm an independent researcher and vibe coder. I don't pretend to know everything: I explore, build and test.":"Soy investigador independiente y vibe coder. No vengo a aparentar que sé de todo: vengo a explorar, construir y comprobar.";
+$("mission").firstChild.textContent=en?"“I want to create value for society.”":"«Quiero generar valor en la sociedad.»";
+$("purpose").textContent=en?"MY PURPOSE / MI MOTOR":"MI MOTOR / MY PURPOSE";
+["Research","Applied AI","Vibe coding","Experiments"].forEach((v,i)=>{$("tag"+(i+1)).textContent=en?v:["Investigación","IA aplicada","Vibe coding","Experimentos"][i]});
+$("assistantTitle").textContent=en?"AI introduces me":"La IA habla por mí";
+$("assistantSub").textContent=en?"Interactive guide to Chris Hotza":"Guía interactiva de Chris Hotza";
+$("opening").textContent=en?"Hi. I'm an interactive introduction to Chris. Choose a question to learn who he is, what he builds and why.":"Hola. Soy una presentación interactiva de Chris. Elegí una pregunta y te cuento quién es, qué investiga y para qué construye.";
+$("query").placeholder=en?"Ask something about Chris…":"Preguntá algo sobre Chris…";
+$("send").textContent=en?"Send ↗":"Enviar ↗";
+$("disclaimer").textContent=en?"Scripted answers, not a live AI. No messages are stored.":"Experiencia guiada con respuestas preparadas. No es una IA en vivo ni guarda mensajes.";
+$("projectKicker").textContent=en?"EXPLORE THE LAB":"EXPLORÁ EL LABORATORIO";
+$("projectHeading").textContent=en?"Ideas turned into projects.":"Ideas que se volvieron proyectos.";
+$("all").textContent=en?"All repositories on GitHub ↗":"Ver todos en GitHub ↗";
+const labels=en?["ARTIFICIAL INTELLIGENCE","AI TOOLS","SCIENCE","ENGINEERING","MATHEMATICS","SOCIAL IMPACT"]:["INTELIGENCIA ARTIFICIAL","HERRAMIENTAS PARA IA","CIENCIA","ENGINEERING","MATEMÁTICA","IMPACTO SOCIAL"];
+document.querySelectorAll(".project small").forEach((n,i)=>n.textContent=String(i+1).padStart(2,"0")+" / "+labels[i]);
+const descriptions=en?["Experimental architecture for memory, internal state and self-observation.","A repository atlas designed for AI agents.","Cell tracking and trajectory analysis from microscopy images.","Tools to structure and evaluate AI context.","Reproducible graph optimization and partitioning.","One consent flow for selected causes. External integrations under development."]:["Arquitectura experimental de memoria, estado interno y autoobservación.","Un atlas de repositorios hecho para agentes de IA.","Seguimiento de células y análisis de trayectorias en imágenes.","Herramientas para estructurar y evaluar contextos de IA.","Optimización y particionado de grafos con herramientas reproducibles.","Una adhesión, varias causas elegidas. Integraciones externas en desarrollo."];
+document.querySelectorAll(".pdesc").forEach((n,i)=>n.textContent=descriptions[i]);
+$("foot").textContent=en?"One curious human. AI tools. Questions worth asking.":"Una persona curiosa. Herramientas de IA. Preguntas que valen la pena.";
+$("privacy").textContent=en?"No cookies or message storage":"Sin cookies ni registro";
+["identity","work","purpose"].forEach((topic,i)=>opts.children[i].textContent=DATA[to][topic].q);
+body.innerHTML="";bubble("bot",en?"Hi. I'm an interactive introduction to Chris. Choose a question to learn who he is, what he builds and why.":"Hola. Soy una presentación interactiva de Chris. Elegí una pregunta y te cuento quién es, qué investiga y para qué construye.",false)
+}
+$("toggleLang").addEventListener("click",()=>setLang(lang==="es"?"en":"es"));
+})();
+</script>
+</body></html>
