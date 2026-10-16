@@ -12,6 +12,10 @@ No busco parecer experto en todo. Investigo lo que me da curiosidad, pruebo idea
 
 **Mi motor: generar valor en la sociedad.**
 
+### [▶️ HABLÁ CON MI PRESENTACIÓN INTERACTIVA](https://htmlpreview.github.io/?https://github.com/chrishotza/ChrisHotza/blob/main/index.html)
+
+<sub>Un chat guiado que responde preguntas sobre mí y mis proyectos. Principalmente en español, con opción en inglés.</sub>
+
 </div>
 
 ---
