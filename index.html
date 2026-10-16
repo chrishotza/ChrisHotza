@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1320">
+<meta name="description" content="Laboratorio abierto: una experiencia jugable sobre investigación, inteligencia artificial y proyectos reales, hecha desde Argentina.">
+<title>LAB / Un recorrido jugable</title>
+<style>
+:root{color-scheme:dark;--bg:#09121d;--panel:#101d2d;--panel2:#132338;--line:#254054;--ink:#edf6ff;--muted:#9ab1c2;--teal:#68e4ca;--blue:#7dc9f1;--gold:#edc17c;--danger:#f6949c;--mono:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse 700px 450px at 90% 0%,#12374f77,transparent),radial-gradient(ellipse 670px 500px at 4% 85%,#113c3b66,transparent),var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button:disabled{opacity:.5;cursor:default}
+.shell{max-width:1400px;padding:20px clamp(16px,4vw,48px) 85px;margin:auto}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:18px;border-bottom:1px solid var(--line);padding:10px 0 19px}
+.ident{font-size:12px;letter-spacing:.2em;font-family:var(--mono);font-weight:700;color:var(--blue)}.ident b{display:inline-grid;place-items:center;width:29px;height:29px;background:#7dc9f11b;border:1px solid #7dc9f155;border-radius:7px;margin-right:9px;color:var(--teal);font-size:13px}
+.top-right{display:flex;gap:20px;align-items:center;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.live{display:inline-flex;align-items:center;gap:9px}.live i{height:7px;width:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px #68e4ca11}
+.top-right a{border-bottom:1px solid #ffffff38;padding-bottom:3px}.top-right a:hover{color:var(--teal)}
+.hero{padding:56px 0 35px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:32px;align-items:end}
+.kicker{color:var(--gold);font:700 11px var(--mono);letter-spacing:.21em}
+h1{font-size:clamp(37px,6.6vw,76px);letter-spacing:-.06em;line-height:1.03;margin:19px 0 20px;font-weight:830}
+h1 span{color:var(--teal)}.intro{color:#c3d4e0;line-height:1.72;font-size:clamp(15px,1.55vw,18px);max-width:700px;margin:0}
+.intro strong{color:#fff}.quick{justify-self:end;max-width:300px;border-left:2px solid var(--gold);padding-left:18px;color:var(--muted);font-size:14px;line-height:1.55}
+.quick strong{display:block;color:var(--gold);font:700 11px var(--mono);letter-spacing:.15em;margin-bottom:8px}
+.ticker{overflow:hidden;border-block:1px solid #6a8da130;background:#0c1b2b99;margin:3px 0 28px}
+.track{display:flex;gap:52px;white-space:nowrap;width:max-content;animation:marquee 30s linear infinite;padding:10px 0;font:700 11px var(--mono);letter-spacing:.16em;color:#799db3}
+.track span{display:inline-flex;align-items:center;gap:9px}.track em{font-style:normal;color:var(--gold)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.arena{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(290px,.83fr);gap:16px;align-items:stretch}
+.gameframe{min-width:0;border:1px solid #3c687c;border-radius:17px;overflow:hidden;background:#081322;box-shadow:0 22px 70px #0005;display:flex;flex-direction:column}
+.framebar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:15px 18px;background:linear-gradient(90deg,#173247,#0d1d2e);border-bottom:1px solid #42627877}
+.framebar .title{font:700 13px var(--mono);letter-spacing:.11em}.framebar .title span{color:var(--teal)}
+.framebar .score{font:600 12px var(--mono);color:#b7ccdb;font-variant-numeric:tabular-nums}
+.canvaswrap{position:relative;width:100%;aspect-ratio:3 / 2;overflow:hidden;background:#081523}
+canvas{width:100%;height:100%;display:block;touch-action:none}
+.overlayer{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px;text-align:center;background:radial-gradient(ellipse at 50% 40%,#081627cc,#081422d8);z-index:2}
+.overlayer[hidden]{display:none}
+.symbol{font:800 clamp(38px,6vw,66px) var(--mono);letter-spacing:-.07em;color:var(--teal);text-shadow:0 0 30px #68e4ca38}
+.overlayer h2{margin:8px 0 6px;font-size:clamp(20px,3vw,30px);letter-spacing:-.035em}
+.overlayer p{max-width:420px;color:var(--muted);line-height:1.6;font-size:14px;margin:5px 0 18px}
+.primary{border:1px solid #b9ffe8;background:var(--teal);color:#09221c;border-radius:10px;padding:13px 21px;font:800 12px var(--mono);letter-spacing:.07em;transition:transform .15s,background .15s}
+.primary:hover{transform:translateY(-2px);background:#b5fff0}
+.secondary{border:1px solid #38576c;background:#13263a;color:#d9ecf8;border-radius:9px;padding:10px 13px;font:700 11px var(--mono)}
+.secondary:hover{border-color:var(--blue)}
+.controlbar{padding:13px 15px;border-top:1px solid #36556b88;background:#0d1d2d;display:flex;gap:11px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.instructions{font:11px var(--mono);color:var(--muted);line-height:1.6}
+.buttons{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.dpad{display:grid;grid-template-columns:repeat(3,48px);grid-template-rows:repeat(2,39px);justify-content:center;gap:5px;margin:0;padding:0 10px 17px;background:#0d1d2d}
+.dpad button{border:1px solid #45667b;border-radius:8px;background:#173148;color:var(--ink);font:800 17px var(--mono);touch-action:manipulation}
+.dpad button:active{background:#4aa79b}
+.dpad [data-move="up"]{grid-column:2;grid-row:1}
+.dpad [data-move="left"]{grid-column:1;grid-row:2}
+.dpad [data-move="down"]{grid-column:2;grid-row:2}
+.dpad [data-move="right"]{grid-column:3;grid-row:2}
+.dpad{display:none}
+.panel{background:linear-gradient(165deg,#152b3d,#0d1c2b);border:1px solid #39576b;border-radius:17px;overflow:hidden;display:flex;flex-direction:column;min-height:350px}
+.paneltop{padding:19px 21px 15px;border-bottom:1px solid #45677d58;display:flex;justify-content:space-between;align-items:center}
+.label{font:700 11px var(--mono);letter-spacing:.16em;color:var(--blue)}.chip{font:700 10px var(--mono);border:1px solid #426d73;color:var(--teal);padding:5px 8px;border-radius:5px}
+.progress{height:4px;background:#253a4a}.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width .3s}
+.panelcontent{padding:26px 22px;flex:1;display:flex;flex-direction:column}
+.panelid{font:700 12px var(--mono);letter-spacing:.12em;color:var(--gold);margin-bottom:18px}
+.panelcontent h2{font-size:clamp(26px,2.8vw,35px);letter-spacing:-.05em;line-height:1.12;margin:0 0 17px}
+.panelcontent p{font-size:15px;line-height:1.7;color:#c0d3e0;margin:0 0 14px}
+.result{border-left:2px solid var(--teal);padding:13px 0 13px 14px;color:#d1efeb;line-height:1.55;margin-top:12px;font-size:14px}
+.panelbottom{border-top:1px solid #46637757;padding:17px 22px;color:#a2b8cb;font:12px var(--mono);line-height:1.65}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px}
+.pill{border:1px solid #355267;border-radius:18px;font-size:11px;color:var(--muted);padding:7px 10px;background:#0b1a29}
+.pill.got{background:#165044a1;color:#b5fff1;border-color:#3e9d8c}
+.cta{margin-top:19px;font:700 12px var(--mono);color:var(--teal);align-self:flex-start;border-bottom:1px solid #68e4ca66;padding-bottom:5px}
+.cta:hover{color:#fff}
+.section{margin-top:76px}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:22px}
+.section-head small{display:block;font:700 11px var(--mono);color:var(--teal);letter-spacing:.16em;margin-bottom:8px}
+.section-head h2{font-size:clamp(27px,4vw,45px);letter-spacing:-.045em;margin:0;line-height:1.1}
+.section-head .note{max-width:330px;font-size:13px;line-height:1.55;color:var(--muted);margin:0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tab{font:700 12px var(--mono);padding:12px 17px;background:#102337;border:1px solid #365468;color:#b8cbd9;border-radius:9px}
+.tab[aria-selected="true"]{border-color:var(--teal);background:#1e493e;color:#c9fff1}
+.tab-body{background:#112033cf;border:1px solid var(--line);border-radius:14px;padding:clamp(21px,4vw,34px);min-height:270px}
+.tab-body h3{font-size:22px;letter-spacing:-.03em;margin:0 0 14px}
+.tab-body p{color:#c2d4e0;line-height:1.73;max-width:900px}
+.factgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px}
+.fact{background:#0d1929;border:1px solid #30485d;border-radius:10px;padding:19px}
+.fact strong{display:block;font:700 22px var(--mono);color:var(--gold);margin-bottom:8px}
+.fact span{color:#acc3d2;font-size:13px;line-height:1.55}
+.index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.index button{text-align:left;border:1px solid #314d62;background:#112135;border-radius:12px;color:var(--ink);padding:20px;min-height:164px;transition:transform .18s,border-color .18s}
+.index button:hover{transform:translateY(-3px);border-color:var(--teal)}
+.index small{display:block;color:var(--gold);font:700 11px var(--mono);letter-spacing:.11em}
+.index strong{display:block;font-size:20px;letter-spacing:-.03em;margin:12px 0 7px}
+.index span{font-size:13px;line-height:1.5;color:var(--muted)}
+.footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;border-top:1px solid var(--line);margin-top:80px;padding-top:28px;color:#8daabd;font:12px var(--mono);line-height:1.7}
+.footer a{text-decoration:underline;text-underline-offset:4px}
+.footer a:hover{color:var(--teal)}
+.sr{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden;white-space:nowrap}
+@media(max-width:1040px){.arena{grid-template-columns:minmax(0,1.35fr) minmax(280px,.9fr)}.hero{grid-template-columns:1fr}.quick{justify-self:start;max-width:590px}}
+@media(max-width:850px){.arena{grid-template-columns:1fr}.panel{min-height:370px}.dpad{display:grid}.index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.shell{padding:15px 14px 45px}.top-right .live{display:none}.hero{padding:38px 0 27px}h1{font-size:clamp(40px,10vw,55px)}.ticker{margin-bottom:18px}.framebar{padding:12px}.canvaswrap{aspect-ratio:3 / 2}.buttons{width:100%;justify-content:space-between}.instructions{width:100%}.controlbar{padding:12px}.index{grid-template-columns:1fr}.section{margin-top:57px}.section-head{flex-direction:column;align-items:start}.factgrid{grid-template-columns:1fr}.panelcontent{padding:22px}.top-right a{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><div class="ident"><b>▧</b> LAB / ARG <span style="color:#66869a">001</span></div><div class="top-right"><span class="live"><i></i> EXPERIENCIA INTERACTIVA</span><a href="#resumen">LEER SIN JUGAR ↓</a></div></header>
+<section class="hero"><div><div class="kicker">INVESTIGACIÓN × JUEGO × INTELIGENCIA ARTIFICIAL</div><h1>No mires un portfolio.<br><span>Jugá el laboratorio.</span></h1><p class="intro">Un investigador independiente de Argentina que usa agentes de IA para convertir preguntas en experimentos y herramientas. <strong>Cada señal que atrapás revela algo que construyó, está investigando o aprendió a comprobar.</strong> Sin salir a buscar repositorios.</p></div><div class="quick"><strong>OBJETIVO / MISSION</strong>Recorré el tablero, capturá seis señales de investigación y descubrí el trabajo detrás de cada una. Si chocás, recalibramos. Acá los errores también enseñan.</div></section>
+<div class="ticker" aria-hidden="true"><div class="track" id="ticker"><span><em>●</em> RESEARCH</span><span>CONSTRUIR</span><span><em>●</em> TESTEAR</span><span>MEMORIA</span><span><em>●</em> COMPUTACIÓN CIENTÍFICA</span><span>AGENTES</span><span><em>●</em> EXPERIMENTAR</span><span>ARGENTINA</span><span><em>●</em> RESEARCH</span><span>CONSTRUIR</span><span><em>●</em> TESTEAR</span><span>MEMORIA</span><span><em>●</em> COMPUTACIÓN CIENTÍFICA</span><span>AGENTES</span><span><em>●</em> EXPERIMENTAR</span><span>ARGENTINA</span></div></div>
+<main class="arena" aria-label="Juego de exploración">
+<div class="gameframe">
+<div class="framebar"><div class="title">▶ <span>SIGNAL SNAKE</span> / RUN_01</div><div class="score">SEÑALES <span id="score">00</span>/06 &nbsp; <span style="color:var(--gold)" id="phase">STANDBY</span></div></div>
+<div class="canvaswrap" id="canvaswrap">
+<canvas id="board" width="720" height="480" aria-label="Juego Snake: mové la serpiente con flechas, WASD, gestos táctiles o los botones de dirección. Capturá los puntos luminosos.">Tu navegador necesita soporte de canvas para jugar. Podés leer las investigaciones más abajo.</canvas>
+<div class="overlayer" id="overlay">
+<div class="symbol" id="overlaySymbol">◈</div><h2 id="overlayTitle">Una señal. Seis descubrimientos.</h2><p id="overlayText">Manejá la serpiente, atrapá los nodos y conocé los proyectos que hay detrás. Podés jugar con flechas, WASD o controles táctiles.</p>
+<button class="primary" id="start" type="button">▶ EMPEZAR A JUGAR</button>
+</div></div>
+<div class="controlbar"><div class="instructions">FLECHAS / WASD para mover · ESPACIO para pausar<br>CELULAR: deslizá el dedo o usá las flechas.</div><div class="buttons"><button class="secondary" type="button" id="pause">Ⅱ PAUSA</button><button class="secondary" type="button" id="reset">↻ REINICIAR</button></div></div>
+<div class="dpad" aria-label="Controles táctiles"><button type="button" data-move="up" aria-label="Arriba">↑</button><button type="button" data-move="left" aria-label="Izquierda">←</button><button type="button" data-move="down" aria-label="Abajo">↓</button><button type="button" data-move="right" aria-label="Derecha">→</button></div>
+</div>
+<aside class="panel" aria-live="polite" aria-label="Hallazgos del laboratorio">
+<div class="paneltop"><span class="label">REGISTRO DE INVESTIGACIÓN</span><span class="chip" id="chip">EN ESPERA</span></div><div class="progress"><div id="progressbar"></div></div>
+<div class="panelcontent"><div class="panelid" id="entryId">TRANSMISIÓN / 000</div><h2 id="entryTitle">Cada punto es una historia real.</h2><p id="entryBody">No te voy a mandar a seis repositorios. A medida que jugás, esta pantalla te cuenta qué se hizo, cómo se probó y qué falta verificar.</p><div class="result" id="entryResult">Primero, capturá la señal luminosa que aparece en el tablero.</div><a class="cta" href="#resumen">O MIRÁ TODO SIN JUGAR ↓</a></div>
+<div class="panelbottom"><div>SEÑALES RECUPERADAS</div><div class="pills" id="pills"></div><div id="help" style="margin-top:13px">La partida conserva tus hallazgos aunque choques.</div></div>
+</aside>
+</main>
+<section class="section" id="resumen"><div class="section-head"><div><small>ARCHIVO DESBLOQUEADO / SIN PARTIDA</small><h2>Qué hice. Qué hago. Cómo.</h2></div><p class="note">Todo está acá mismo. Elegí una sección; no necesitás abrir enlaces para entender el trabajo.</p></div>
+<div class="tabs" role="tablist" aria-label="Explorar el trabajo"><button class="tab" role="tab" type="button" id="tab-hecho" aria-controls="tabContent" aria-selected="true" data-tab="hecho">01 / QUÉ HICE</button><button class="tab" role="tab" type="button" id="tab-ahora" aria-controls="tabContent" aria-selected="false" data-tab="ahora">02 / EN QUÉ ANDO</button><button class="tab" role="tab" type="button" id="tab-metodo" aria-controls="tabContent" aria-selected="false" data-tab="metodo">03 / CÓMO LABURO</button></div><div id="tabContent" class="tab-body" role="tabpanel" aria-labelledby="tab-hecho"></div></section>
+<section class="section" id="senales"><div class="section-head"><div><small>EXPLORACIÓN LIBRE / SIN OBLIGACIÓN DE JUGAR</small><h2>Seis señales. Seis historias.</h2></div><p class="note">Abrí cualquier registro. Cada uno resume un trabajo verificable, su alcance y sus límites.</p></div><div class="index" id="index"></div></section>
+<footer class="footer"><span>DE ARGENTINA, CON PREGUNTAS Y PRUEBAS. <span style="color:var(--gold)">✳</span><br>Vibe coding · investigación independiente · sin trackers</span><span><a href="https://github.com/chrishotza">GITHUB</a> · <a href="https://github.com/chrishotza/ChrisHotza/blob/main/README.archive-2026-10-16.md">ARCHIVO HISTÓRICO</a><br>Los repositorios son opcionales: toda la historia principal está acá.</span></footer>
+</div>
+<div class="sr" id="announce" aria-live="polite"></div>
+<script>
+(function(){
+"use strict";
+const $=id=>document.getElementById(id);
+const DATA=[
+{short:"BIOLOGÍA",tag:"01 / CIENCIA",title:"168 imágenes reales de microscopía",body:"Construí un pipeline de segmentación, detección y seguimiento celular. Lo corrí sobre 168 imágenes DIC-C2DH-HeLa (84 fotogramas de dos secuencias) para reconstruir trayectorias y analizarlas en el tiempo.",result:"Resultado: imágenes reales procesadas y métricas internas auditadas. No es una clasificación oficial ni una validación de descubrimientos biológicos.",card:"168 imágenes · tracking celular"},
+{short:"AGENTES",tag:"02 / HERRAMIENTAS IA",title:"Un atlas para agentes de IA",body:"Armé RepoOrbit para que un agente encuentre, clasifique y evalúe recursos de GitHub sin tragarse miles de READMEs. En su instantánea de octubre de 2026 contiene 1.462 rutas indexadas y distingue evidencia real de pistas no verificadas.",result:"Resultado: navegación estructurada, procedencia y grados de incertidumbre. Una entrada catalogada no equivale a software validado.",card:"1.462 rutas · RepoOrbit"},
+{short:"ENERGÍA",tag:"03 / SISTEMAS",title:"260 ejecuciones de un supervisor energético",body:"Construí y probé una capa de decisiones para sistemas de almacenamiento en baterías (BESS). El benchmark documentado recorre 26 escenarios con 10 repeticiones por escenario.",result:"Resultado: 260/260 ejecuciones satisfactorias dentro de ese banco de simulación. No significa que haya sido validado en una central real.",card:"260 simulaciones · BESS"},
+{short:"SOCIEDAD",tag:"04 / IMPACTO",title:"UnGesto: varias causas, un solo formulario",body:"Desarrollé un sistema donde una persona puede elegir varias causas, registrar las adhesiones en una sola operación y conservar la posibilidad de revocarlas. La intención es simplificar la participación sin sumar spam ni fricción.",result:"Resultado: flujo local operativo. Las adhesiones aún no se envían a campañas externas ni equivalen a firmas oficiales.",card:"UnGesto · participación"},
+{short:"MEMORIA",tag:"05 / IA EXPERIMENTAL",title:"Investigar memoria y self-model en IA",body:"En Skill-Conscious construí una arquitectura experimental de estado persistente, autoobservación y selección de trayectorias, acompañada por protocolos y pruebas causales.",result:"Resultado: ingeniería y evidencia documentadas, incluidas hipótesis no respaldadas. Esto no demuestra conciencia artificial.",card:"Skill-Conscious · memoria"},
+{short:"MÉTODO",tag:"06 / INVESTIGACIÓN",title:"Cómo trabajo con agentes de IA",body:"Yo planteo la pregunta, decido qué intentar y exijo condiciones de prueba. Las IAs ayudan a investigar, programar, ejecutar experimentos y documentar. Otros proyectos incluyen PromptForge, ATOF y un observatorio local de registros de DayZ.",result:"Resultado: prototipos, experimentos y correcciones. Un código que compila no prueba por sí solo que la hipótesis sea cierta.",card:"Preguntar · probar · revisar"}
+];
+const FACTS={
+hecho:{title:"No son capturas bonitas. Son sistemas y pruebas.",body:"Entre los trabajos públicos hay seguimiento celular con imágenes reales, herramientas para navegar repositorios desde agentes de IA, un supervisor de baterías probado en simulación y una plataforma de adhesiones sociales. Algunos son prototipos; otros tienen ensayos reproducibles. Ninguno se presenta como algo que no es.",items:[["168","imágenes de microscopía procesadas"],["1.462","rutas en un catálogo para agentes"],["260","corridas documentadas de simulación energética"]]},
+ahora:{title:"Sigo explorando sistemas complejos.",body:"Me interesa qué mecanismos hacen que un agente recuerde, se observe y se pueda evaluar sin confundir comportamiento con conciencia; cómo reducir ruido en el contexto de IA; y cómo aplicar experimentación medible a biología, energía, grafos y problemas cotidianos.",items:[["IA","estado persistente y self-model"],["AGENTES","herramientas y contexto verificable"],["CIENCIA","resultados con límites explícitos"]]},
+metodo:{title:"La dirección humana. La ejecución asistida por IA.",body:"Primero aparece un problema y una hipótesis. Después diseño un ensayo, la IA ayuda con código, búsqueda de alternativas y documentación, y las pruebas muestran qué cambió. Si los resultados contradicen la idea, reviso la idea. Eso es vibe coding con disciplina experimental, no una promesa de automatización mágica.",items:[["01","plantear preguntas"],["02","construir y medir"],["03","corregir según evidencia"]]}
+};
+const GRID={cols:30,rows:20,cell:24,w:720,h:480};
+const canvas=$("board"),ctx=canvas.getContext("2d"),announcer=$("announce");
+const state={mode:"idle",snake:[],dir:{x:1,y:0},queued:{x:1,y:0},target:{x:21,y:10},found:0,failures:0,acc:0,last:0,seed:0,flash:0,particles:[],tick:136,spawnAt:0};
+const reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const rand=()=>{state.seed=(Math.imul(state.seed,1664525)+1013904223)>>>0;return state.seed/4294967296};
+const setStatus=s=>{$("phase").textContent=s};
+function setup(seed){state.seed=seed||34127;state.snake=[{x:5,y:10},{x:4,y:10},{x:3,y:10}];state.dir={x:1,y:0};state.queued={x:1,y:0};state.acc=0;state.target={x:19,y:10};state.tick=136;state.particles=[];state.flash=0}
+function overlay(title,body,button,symbol){$("overlayTitle").textContent=title;$("overlayText").textContent=body;$("start").textContent=button;$("overlaySymbol").textContent=symbol;$("overlay").hidden=false}
+function showStatus(){const n=state.found;$("score").textContent=String(n).padStart(2,"0");$("progressbar").style.width=(100*n/DATA.length)+"%";$("chip").textContent=n===6?"COMPLETADO":n?"SEÑAL "+n+"/6":"EN ESPERA";$("pills").innerHTML="";DATA.forEach((d,i)=>{const x=document.createElement("span");x.className="pill"+(i<n?" got":"");x.textContent=(i<n?"✓ ":"◦ ")+d.short;$("pills").append(x)})}
+function updatePanel(item,idx){$("entryId").textContent=item.tag;$("entryTitle").textContent=item.title;$("entryBody").textContent=item.body;$("entryResult").textContent=item.result;announcer.textContent="Señal descubierta: "+item.title}
+function resetPanel(){$("entryId").textContent="TRANSMISIÓN / 000";$("entryTitle").textContent="Cada punto es una historia real.";$("entryBody").textContent="No hace falta visitar seis repositorios. A medida que jugás, esta pantalla explica qué se hizo, cómo se probó y qué falta validar.";$("entryResult").textContent="Primero, capturá la señal luminosa que aparece en el tablero."}
+function start(){state.found=0;state.failures=0;setup(34127);state.mode="running";$("overlay").hidden=true;setStatus("JUGANDO");showStatus();resetPanel();$("help").textContent="La partida conserva cada hallazgo aunque choques.";state.last=performance.now();canvas.focus()}
+function resume(){state.mode="running";$("overlay").hidden=true;setStatus("JUGANDO");state.last=performance.now();canvas.focus()}
+function pause(){if(state.mode==="running"){state.mode="paused";setStatus("PAUSA");overlay("La señal sigue ahí.","La investigación no se perdió. Continuá cuando quieras.","▶ CONTINUAR","Ⅱ")}else if(state.mode==="paused")resume()}
+function collision(){state.failures++;const found=state.found;setup(state.seed+found*811+31);spawnTarget();state.flash=performance.now()+310;$("help").textContent="Recalibración "+state.failures+". Conservaste las "+found+" señales recuperadas.";announcer.textContent="Choque detectado. Recalibración automática. Mantenés tus hallazgos."}
+function spawnTarget(){const used=new Set(state.snake.map(p=>p.x+","+p.y));for(let tries=0;tries<500;tries++){const x=1+Math.floor(rand()*(GRID.cols-2)),y=1+Math.floor(rand()*(GRID.rows-2));if(!used.has(x+","+y)&&Math.abs(x-state.snake[0].x)+Math.abs(y-state.snake[0].y)>6){state.target={x,y};return}}state.target={x:GRID.cols-3,y:GRID.rows-3}}
+function direction(x,y){if(state.mode!=="running")return;if(x===-state.dir.x&&y===-state.dir.y)return;if(x===state.queued.x&&y===state.queued.y)return;state.queued={x,y}}
+function step(){
+state.dir=state.queued;
+const head={x:state.snake[0].x+state.dir.x,y:state.snake[0].y+state.dir.y};
+const ate=head.x===state.target.x&&head.y===state.target.y;
+const chain=ate?state.snake:state.snake.slice(0,-1);
+if(head.x<0||head.x>=GRID.cols||head.y<0||head.y>=GRID.rows||chain.some(p=>p.x===head.x&&p.y===head.y)){collision();return}
+state.snake.unshift(head);
+if(ate){
+state.found++;
+updatePanel(DATA[state.found-1],state.found-1);
+for(let i=0;i<16;i++)state.particles.push({x:(state.target.x+.5)*24,y:(state.target.y+.5)*24,vx:(rand()-.5)*6,vy:(rand()-.5)*6,life:30,kind:state.found%2});
+state.flash=performance.now()+170;showStatus();
+state.tick=Math.max(94,136-state.found*7);
+if(state.found>=DATA.length){state.mode="won";setStatus("ÉXITO");overlay("Laboratorio completado.","Recuperaste las seis señales. Ya sabés qué hice, qué investigo y cómo trabajo con IA. Podés leer todos los hallazgos abajo o jugar otra vez.","↻ JUGAR DE NUEVO","✓");announcer.textContent="Laboratorio completado. Seis señales recuperadas."}
+else spawnTarget()
+}else state.snake.pop();
+}
+function roundBox(x,y,w,h,r,fill){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill()}
+function draw(t){
+const W=GRID.w,H=GRID.h;ctx.clearRect(0,0,W,H);const g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,"#0a1b2a");g.addColorStop(1,"#071521");ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ctx.strokeStyle="#33546a36";ctx.lineWidth=1;ctx.beginPath();for(let x=0;x<=GRID.cols;x++){ctx.moveTo(x*24+.5,0);ctx.lineTo(x*24+.5,H)}for(let y=0;y<=GRID.rows;y++){ctx.moveTo(0,y*24+.5);ctx.lineTo(W,y*24+.5)}ctx.stroke();
+for(let i=0;i<36;i++){let x=((i*127.1)%W),y=((i*91.3)%H);ctx.fillStyle=i%4===0?"#7bdcc850":"#4c9cb734";ctx.fillRect(x,y,1.7,1.7)}
+if(state.mode==="idle"){
+const xx=195+Math.sin(t*.0007)*52;ctx.save();ctx.shadowBlur=24;ctx.shadowColor="#66f7d6";for(let j=0;j<7;j++)roundBox(xx-j*20,240,17,17,5,"#2aab9e");roundBox(xx,240,18,17,5,"#baffed");ctx.restore();
+const py=Math.sin(t*.002)*8;ctx.save();ctx.shadowBlur=28;ctx.shadowColor="#f4c87b";roundBox(460,230+py,22,22,6,"#edc17c");ctx.restore();return
+}
+const pulse=reduced?0.4:(Math.sin(t*.005)+1)/2;
+const cell=24,tx=state.target.x*cell,ty=state.target.y*cell;
+if(state.mode!=="won"){
+ctx.save();ctx.shadowColor="#f6bf72";ctx.shadowBlur=15+pulse*16;roundBox(tx+4,ty+4,16,16,5,"#eec281");ctx.restore();
+ctx.strokeStyle="#f1cb89";ctx.globalAlpha=.33+pulse*.4;ctx.lineWidth=2;ctx.beginPath();ctx.arc(tx+12,ty+12,14+pulse*7,0,Math.PI*2);ctx.stroke();ctx.globalAlpha=1;
+}
+state.snake.forEach((piece,i)=>{
+const x=piece.x*cell,y=piece.y*cell;
+ctx.save();ctx.shadowBlur=i===0?16:4;ctx.shadowColor=i===0?"#83ffe0":"#2da996";
+roundBox(x+2,y+2,20,20,6,i===0?"#a1ffe7":i%2===0?"#38bea6":"#2aab9e");ctx.restore();
+if(i===0){ctx.fillStyle="#123e3a";if(state.dir.x!==0){ctx.fillRect(x+(state.dir.x>0?15:6),y+7,3,3);ctx.fillRect(x+(state.dir.x>0?15:6),y+15,3,3)}else{ctx.fillRect(x+7,y+(state.dir.y>0?15:6),3,3);ctx.fillRect(x+15,y+(state.dir.y>0?15:6),3,3)}}
+});
+state.particles=state.particles.filter(p=>p.life>0);state.particles.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.life-=1;ctx.globalAlpha=Math.max(0,p.life/30);ctx.fillStyle=p.kind?"#8bf0e2":"#f0c07e";ctx.fillRect(p.x,p.y,3,3)});ctx.globalAlpha=1;
+if(state.flash>t){ctx.fillStyle="#81ffe31b";ctx.fillRect(0,0,W,H)}
+}
+function loop(t){let dt=state.last?Math.min(t-state.last,190):0;state.last=t;if(state.mode==="running"){state.acc+=dt;while(state.acc>=state.tick){step();state.acc-=state.tick;if(state.mode!=="running")break}}draw(t);requestAnimationFrame(loop)}
+const keymap={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0],w:[0,-1],W:[0,-1],s:[0,1],S:[0,1],a:[-1,0],A:[-1,0],d:[1,0],D:[1,0]};
+document.addEventListener("keydown",e=>{if(e.target instanceof HTMLInputElement||e.target instanceof HTMLTextAreaElement)return;if(keymap[e.key]){if(state.mode==="running"){e.preventDefault();direction(...keymap[e.key])}}else if(e.code==="Space"){if(state.mode==="running"||state.mode==="paused"){e.preventDefault();pause()}}else if(e.key==="Enter"&&state.mode==="idle"){start()}});
+document.querySelectorAll("[data-move]").forEach(b=>b.addEventListener("click",()=>{const m={up:[0,-1],down:[0,1],left:[-1,0],right:[1,0]};direction(...m[b.dataset.move])}));
+let startTouch=null;canvas.addEventListener("touchstart",e=>{if(state.mode!=="running")return;const a=e.changedTouches[0];startTouch={x:a.clientX,y:a.clientY}},{passive:true});
+canvas.addEventListener("touchend",e=>{if(!startTouch||state.mode!=="running")return;const a=e.changedTouches[0],dx=a.clientX-startTouch.x,dy=a.clientY-startTouch.y;startTouch=null;if(Math.max(Math.abs(dx),Math.abs(dy))<20)return;if(Math.abs(dx)>Math.abs(dy))direction(Math.sign(dx),0);else direction(0,Math.sign(dy))},{passive:true});
+$("start").addEventListener("click",()=>{if(state.mode==="paused")resume();else start()});
+$("reset").addEventListener("click",()=>{state.mode="idle";state.found=0;setup(34127);showStatus();resetPanel();setStatus("STANDBY");overlay("Una señal. Seis descubrimientos.","Manejá la serpiente, atrapá los nodos y conocé los proyectos que hay detrás. Flechas, WASD o controles táctiles.","▶ EMPEZAR A JUGAR","◈")});
+$("pause").addEventListener("click",pause);
+const tabs=$("tabContent");
+function showTab(id){const f=FACTS[id];if(!f)return;tabs.replaceChildren();const heading=document.createElement("h3");heading.textContent=f.title;const p=document.createElement("p");p.textContent=f.body;const grid=document.createElement("div");grid.className="factgrid";f.items.forEach(pair=>{const card=document.createElement("div");card.className="fact";const b=document.createElement("strong");b.textContent=pair[0];const d=document.createElement("span");d.textContent=pair[1];card.append(b,d);grid.append(card)});tabs.append(heading,p,grid);document.querySelectorAll("[data-tab]").forEach(el=>{const yes=el.dataset.tab===id;el.setAttribute("aria-selected",yes?"true":"false");el.tabIndex=yes?0:-1;if(yes)tabs.setAttribute("aria-labelledby",el.id)})}
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
+document.querySelector(".tabs").addEventListener("keydown",e=>{const v=[...document.querySelectorAll("[data-tab]")],i=v.indexOf(document.activeElement);if(i<0)return;if(e.key==="ArrowRight"||e.key==="ArrowLeft"){e.preventDefault();const n=v[(i+(e.key==="ArrowRight"?1:v.length-1))%v.length];n.focus();showTab(n.dataset.tab)}});
+function renderIndex(){const idx=$("index");DATA.forEach((item,i)=>{const b=document.createElement("button");b.type="button";const s=document.createElement("small");s.textContent=String(i+1).padStart(2,"0")+" / "+item.short;const title=document.createElement("strong");title.textContent=item.title;const sub=document.createElement("span");sub.textContent=item.card;b.append(s,title,sub);b.addEventListener("click",()=>{updatePanel(item,i);$("entryId").textContent=item.tag+" / LECTURA LIBRE";$("entryTitle").scrollIntoView({behavior:reduced?"instant":"smooth",block:"center"});announcer.textContent="Mostrando información: "+item.title});idx.append(b)})}
+showTab("hecho");renderIndex();setup(34127);showStatus();requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
