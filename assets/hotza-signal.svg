@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="360" viewBox="0 0 1160 360" role="img" aria-labelledby="t d">
+<title id="t">CHRIS HOTZA — The human asks. The machine helps build.</title>
+<desc id="d">A futuristic dark interface with Chris Hotza's name, his independent researcher and vibe coder identity, and a glowing network orbit.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0A182A"/><stop offset=".65" stop-color="#070F1D"/><stop offset="1" stop-color="#10152B"/></linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#53F1D8"/><stop offset=".7" stop-color="#8977F3"/><stop offset="1" stop-color="#0A1728"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#49D7E7" stop-opacity=".20"/><stop offset="1" stop-color="#49D7E7" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1160" height="360" rx="20" fill="url(#bg)"/>
+<g><path d="M30 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M74 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M118 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M162 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M206 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M250 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M294 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M338 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M382 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M426 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M470 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M514 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M558 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M602 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M646 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M690 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M734 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M778 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M822 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M866 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M910 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M954 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M998 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M1042 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M1086 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M1130 24V336" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 32H1132" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 76H1132" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 120H1132" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 164H1132" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 208H1132" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 252H1132" stroke="#83ADD4" stroke-opacity=".055"/>
+<path d="M28 296H1132" stroke="#83ADD4" stroke-opacity=".055"/></g>
+<rect x="14" y="14" width="1132" height="332" rx="15" fill="none" stroke="#5F859A" stroke-opacity=".38"/>
+<path d="M44 75V50H70 M1116 285V310H1090" fill="none" stroke="#65EBD7" stroke-width="2" opacity=".6"/>
+<rect x="50" y="45" rx="12" width="14" height="14" fill="#54EBD5"><animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/></rect>
+<text x="76" y="57" fill="#A0F3E6" font-size="14" font-family="Consolas,Menlo,monospace" letter-spacing="2.5">TRANSMISSION // 001</text>
+<text x="52" y="155" fill="#EDF7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" letter-spacing="2" font-size="77">CHRIS HOTZA</text>
+<rect x="52" y="180" width="495" height="2" rx="1" fill="url(#rule)"/>
+<text x="52" y="211" fill="#8AB8D3" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">INDEPENDENT RESEARCHER  /  VIBE CODER</text>
+<text x="52" y="262" fill="#EAF4FF" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="600">I ask questions. AI helps me build.</text>
+<text x="52" y="293" fill="#80A8C5" font-family="Arial,Helvetica,sans-serif" font-size="18">My purpose: create value for society.</text>
+<text x="52" y="324" fill="#5A8398" font-family="Consolas,Menlo,monospace" font-size="12" letter-spacing="2">HUMAN CURIOSITY / MACHINE ASSISTANCE / EVIDENCE</text>
+<path d="M635 65V297" stroke="#8AA8C3" stroke-opacity=".22"/>
+<circle cx="892" cy="182" r="166" fill="url(#halo)"/>
+<circle cx="892" cy="182" r="135" stroke="#699CD8" stroke-opacity=".17" stroke-width="1.5" fill="none"/>
+<circle cx="892" cy="182" r="99" stroke="#65EBD7" stroke-opacity=".45" stroke-dasharray="2 14" stroke-width="2" fill="none"/>
+<g><circle cx="892" cy="182" r="141" stroke="#A48BFF" stroke-opacity=".35" stroke-width="1.8" stroke-dasharray="24 28" fill="none"/><animateTransform attributeName="transform" type="rotate" from="0 892 182" to="360 892 182" dur="90s" repeatCount="indefinite"/></g>
+<g><path d="M888 59 L965 92" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M965 92 L1006 147" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M1006 147 L1001 240" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M1001 240 L938 280" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M938 280 L859 297" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M859 297 L791 245" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M791 245 L786 146" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M786 146 L833 71" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M833 71 L888 59" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M888 59 L938 280" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M965 92 L859 297" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M1006 147 L791 245" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M1001 240 L786 146" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/>
+<path d="M938 280 L833 71" stroke="#6CD8E9" stroke-opacity=".20" stroke-width="1"/></g>
+<g><circle cx="888" cy="59" r="5" fill="#A68CFF" fill-opacity=".9"><animate attributeName="opacity" values=".4;1;.4" dur="4s" begin="0.00s" repeatCount="indefinite"/></circle>
+<circle cx="965" cy="92" r="3.4" fill="#57EFDC" fill-opacity=".65"><animate attributeName="opacity" values=".4;1;.4" dur="5s" begin="0.31s" repeatCount="indefinite"/></circle>
+<circle cx="1006" cy="147" r="3.4" fill="#57EFDC" fill-opacity=".65"><animate attributeName="opacity" values=".4;1;.4" dur="6s" begin="0.62s" repeatCount="indefinite"/></circle>
+<circle cx="1001" cy="240" r="5" fill="#A68CFF" fill-opacity=".9"><animate attributeName="opacity" values=".4;1;.4" dur="7s" begin="0.93s" repeatCount="indefinite"/></circle>
+<circle cx="938" cy="280" r="3.4" fill="#57EFDC" fill-opacity=".65"><animate attributeName="opacity" values=".4;1;.4" dur="4s" begin="1.24s" repeatCount="indefinite"/></circle>
+<circle cx="859" cy="297" r="3.4" fill="#57EFDC" fill-opacity=".65"><animate attributeName="opacity" values=".4;1;.4" dur="5s" begin="1.55s" repeatCount="indefinite"/></circle>
+<circle cx="791" cy="245" r="5" fill="#A68CFF" fill-opacity=".9"><animate attributeName="opacity" values=".4;1;.4" dur="6s" begin="1.86s" repeatCount="indefinite"/></circle>
+<circle cx="786" cy="146" r="3.4" fill="#57EFDC" fill-opacity=".65"><animate attributeName="opacity" values=".4;1;.4" dur="7s" begin="2.17s" repeatCount="indefinite"/></circle>
+<circle cx="833" cy="71" r="3.4" fill="#57EFDC" fill-opacity=".65"><animate attributeName="opacity" values=".4;1;.4" dur="4s" begin="2.48s" repeatCount="indefinite"/></circle></g>
+<circle cx="892" cy="182" r="63" fill="#0A2234" stroke="#5BD5DA" stroke-opacity=".7" stroke-width="1.5"/>
+<circle cx="892" cy="182" r="52" fill="none" stroke="#A48BFF" stroke-opacity=".35" stroke-dasharray="3 6"/>
+<text x="892" y="198" text-anchor="middle" font-size="53" font-family="Arial,Helvetica,sans-serif" font-weight="800" fill="#EBFFFF">H</text>
+<path d="M840 182H818 M944 182H966" stroke="#6DF1DF" stroke-opacity=".75"/>
+<text x="892" y="338" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="12" letter-spacing="3" fill="#8AADB7">EXPLORE  /  TEST  /  CREATE</text>
+</svg>
