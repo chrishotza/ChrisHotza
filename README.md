@@ -1,119 +1,157 @@
-<!-- Perfil de Chris Hotza. Diseño GitHub-native: accesible, sin JS, compatible con temas claro/oscuro. -->
+<!--
+CHRIS HOTZA / LABORATORIO ABIERTO
+README de perfil. Diseño original, SVG locales, interacción nativa de GitHub.
+Sin servicios externos de estadísticas, scripts, contadores ni chat simulado.
+La investigación histórica sigue en README.archive-2026-10-16.md y docs/.
+-->
+
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/chris-hotza-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/chris-hotza-light.svg">
-  <img width="100%" alt="Chris Hotza. Investigador independiente y vibe coder. Preguntas humanas, construcción asistida por inteligencia artificial." src="./assets/chris-hotza-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/lab-argentina-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/lab-argentina-light.svg">
+  <img src="./assets/lab-argentina-dark.svg" alt="Chris Hotza. Investigador y vibe coder de Argentina. Preguntas grandes, experimentos reales. Gráfica azul y celeste con sol geométrico inspirado en Argentina." width="100%">
 </picture>
 
 <br>
 
-**Investigador independiente** &nbsp;·&nbsp; **Vibe coder** &nbsp;·&nbsp; 🇦🇷 Argentina
+### Che, bienvenido al laboratorio. 🇦🇷
 
-### No tengo todas las respuestas. Por eso investigo.
+**Soy Chris. Investigador independiente, vibe coder y curioso por naturaleza.**
 
-Uso inteligencia artificial para convertir preguntas en código, experimentos y proyectos. Mi objetivo no es producir más software porque sí: **es generar valor para la sociedad**.
+Me gusta meterme en problemas que todavía no sé resolver. Investigo, propongo ideas y trabajo con inteligencia artificial para convertirlas en código, experimentos y herramientas que puedan servir de verdad.
 
-[**Explorar proyectos**](#proyectos) &nbsp;·&nbsp; [**Elegí un recorrido**](#recorridos) &nbsp;·&nbsp; [**Research archive**](docs/README.md)
+**Mi norte es simple: generar valor en la sociedad.**
 
-</div>
-
----
-
-<a name="recorridos"></a>
-
-### 🛰️ Elegí un recorrido
-
-*Tres puertas para entender mi trabajo. Abrí la que te interese.*
-
-<details>
-<summary><b>01. Quiero explorar los límites de la inteligencia artificial</b></summary>
-
-<br>
-
-**Pregunta:** ¿Podemos construir sistemas de IA con memoria, autoobservación y continuidad de estado, y comprobar qué aporta cada mecanismo?
-
-**Investigación:** [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious).
-
-Arquitectura experimental con self-model, memoria persistente y pruebas causales. **No es una afirmación de conciencia artificial.** El interés está en diseñar experimentos que permitan distinguir lo que funciona de lo que todavía es hipótesis.
-
-</details>
-
-<details>
-<summary><b>02. Busco herramientas que otras IAs puedan usar</b></summary>
-
-<br>
-
-**Pregunta:** ¿Cómo hacemos que los agentes encuentren recursos, trabajen con menos contexto y produzcan resultados verificables?
-
-**Construcciones:** [RepoOrbit](https://github.com/chrishotza/Repo-Orbit) y [PromptForge](https://github.com/chrishotza/PromptForge).
-
-Un atlas de repositorios navegable por agentes y un laboratorio para preparar, transformar y evaluar contextos de IA. Acá importa tanto la herramienta como la trazabilidad de sus decisiones.
-
-</details>
-
-<details>
-<summary><b>03. Quiero ver ciencia y proyectos con impacto</b></summary>
-
-<br>
-
-**Pregunta:** ¿Qué ocurre cuando llevamos la experimentación a problemas de biología, matemáticas y participación social?
-
-**Aplicaciones:** [AI4S Life Science](https://github.com/chrishotza/ai4s-life-science-2026), [ATOF](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework) y [UnGesto](https://github.com/chrishotza/UnGesto-).
-
-Seguimiento celular, optimización de grafos y una plataforma de adhesiones a causas elegidas. Son proyectos con alcances distintos; la utilidad real y la validación externa no se presuponen.
-
-</details>
-
----
-
-<a name="proyectos"></a>
-
-### 🔬 Proyectos seleccionados
-
-| | |
-| :--- | :--- |
-| **[🧠 Skill-Conscious](https://github.com/chrishotza/Skill-Conscious)** <br> Arquitectura experimental de IA: memoria, self-model y pruebas causales. | **[🪐 RepoOrbit](https://github.com/chrishotza/Repo-Orbit)** <br> Atlas de repositorios creado para que los agentes puedan descubrir, clasificar y verificar. |
-| **[🧩 PromptForge](https://github.com/chrishotza/PromptForge)** <br> Context engineering y evaluación reproducible de prompts. | **[🧬 AI4S Life Science](https://github.com/chrishotza/ai4s-life-science-2026)** <br> Investigación de trayectorias celulares a partir de microscopía. |
-| **[📐 ATOF](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework)** <br> Optimización y particionado de grafos con interfaces para agentes. | **[🌱 UnGesto](https://github.com/chrishotza/UnGesto-)** <br> Una selección de causas, un solo flujo de adhesión; integraciones externas en desarrollo. |
-
-<div align="center">
-
-**[Ver todos los repositorios públicos ↗](https://github.com/chrishotza?tab=repositories)**
+[**Explorá mis proyectos ↓**](#proyectos) &nbsp;·&nbsp; [**Conocé cómo laburo ↓**](#metodo) &nbsp;·&nbsp; [**Research archive ↗**](docs/README.md)
 
 </div>
 
 ---
 
-### ⚙️ Cómo trabajo
+> **La IA que labura con Chris:** *Él trae las preguntas, las ideas y el criterio. Yo lo ayudo a investigar, programar y probar caminos distintos. Lo que funciona se comprueba. Y lo que no, se vuelve a intentar.*
 
-**Curiosidad** → **Hipótesis** → **Construcción asistida por IA** → **Pruebas** → **Evidencia** → **Iteración**
+<a id="proyectos"></a>
 
-No soy una empresa de un solo hombre ni pretendo dominar todas las tecnologías que aparecen en estos repositorios. Soy un investigador que utiliza agentes y herramientas de IA para ir más lejos, más rápido, **sin confundir un prototipo con un resultado demostrado**.
+## ✦ Del laboratorio a los repositorios
+
+No hay una sola disciplina acá. Hay preguntas que terminaron convirtiéndose en proyectos. Tocá una tarjeta para entrar al repositorio y ver qué se construyó, qué se probó y qué falta.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/chrishotza/Skill-Conscious"><img src="./assets/proyecto-skill.svg" alt="Skill-Conscious: memoria, autorreferencia y estado en arquitecturas de IA." width="100%"></a>
+<br>
+<sub>Investigación de arquitecturas con estado persistente y autoobservación. No demuestra conciencia artificial.</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/chrishotza/Repo-Orbit"><img src="./assets/proyecto-orbit.svg" alt="RepoOrbit: un atlas de repositorios para agentes de inteligencia artificial." width="100%"></a>
+<br>
+<sub>Un atlas para que los agentes encuentren, clasifiquen y verifiquen repositorios sin leerlo todo.</sub>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="https://github.com/chrishotza/PromptForge"><img src="./assets/proyecto-prompt.svg" alt="PromptForge: laboratorio de ingeniería de contexto y evaluación de IA." width="100%"></a>
+<br>
+<sub>Ingeniería de contexto y experimentos reproducibles para trabajar mejor con modelos de IA.</sub>
+</td>
+<td valign="top">
+<a href="https://github.com/chrishotza/ai4s-life-science-2026"><img src="./assets/proyecto-cells.svg" alt="AI4S Life Science: seguimiento celular y análisis de trayectorias." width="100%"></a>
+<br>
+<sub>Microscopía, seguimiento de células y análisis temporal. Resultados internos documentados.</sub>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework"><img src="./assets/proyecto-atof.svg" alt="ATOF: optimización y particionado de grafos reproducible." width="100%"></a>
+<br>
+<sub>Herramientas para optimización y particionado de grafos, con interfaces pensadas para agentes.</sub>
+</td>
+<td valign="top">
+<a href="https://github.com/chrishotza/UnGesto-"><img src="./assets/proyecto-ungesto.svg" alt="UnGesto: plataforma de adhesiones a distintas causas sociales." width="100%"></a>
+<br>
+<sub>Una forma de acompañar varias causas desde una misma plataforma. Las integraciones externas siguen en desarrollo.</sub>
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+**[Ver todos los repositorios públicos →](https://github.com/chrishotza?tab=repositories)**
+
+</div>
+
+---
+
+<a id="metodo"></a>
+
+## ✦ Cómo laburo con IA
+
+**La dirección es humana. La construcción es colaborativa. La evidencia manda.**
+
+`PREGUNTA` → `HIPÓTESIS` → `IA + CÓDIGO` → `PRUEBAS` → `APRENDIZAJE`
+
+No me interesa juntar prototipos para la foto. Me interesa entender qué funciona, qué no, y qué podemos hacer con eso. Algunos proyectos son aplicaciones; otros siguen siendo investigaciones. Cada uno tiene sus límites y su propia evidencia.
+
+### ¿Por dónde querés empezar?
 
 <details>
-<summary><b>+ Otras investigaciones y proyectos</b></summary>
+<summary><b>🧠 Por las preguntas difíciles sobre inteligencia artificial</b></summary>
 
 <br>
 
-- [AERIS Dairy Twin](https://github.com/chrishotza/Aeris-Dairy-Twin): investigación de bienestar animal y señales multimodales.
-- [BESS Operational Intelligence](https://github.com/chrishotza/bess-operational-intelligence): inteligencia de decisión para almacenamiento energético.
-- [DayZ Console Observatory](https://github.com/chrishotza/DayZConsoleObservatory): herramientas locales para analizar registros históricos de servidores.
-- [Crypto Security Forensics Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab): investigación forense y corpus de evidencia técnica.
+**¿Qué puede aportar una arquitectura con memoria y autoobservación?**
+
+En [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious) investigo mecanismos computacionales de persistencia, autorreferencia y selección de trayectorias. El foco es construir protocolos y pruebas, no declarar resueltas preguntas filosóficas.
 
 </details>
 
 <details>
-<summary><b>🌐 In English / About me</b></summary>
+<summary><b>🛠️ Por las herramientas que usan otras IAs</b></summary>
 
 <br>
 
-I'm Chris Hotza, an independent researcher and vibe coder from Argentina.
+**¿Cómo hacemos que los agentes trabajen con más criterio y menos ruido?**
 
-**I ask the questions; AI helps me build and test possible answers.** My work spans experimental AI, scientific computing and practical tools. The purpose behind it is simple: create value for society.
+[RepoOrbit](https://github.com/chrishotza/Repo-Orbit), [PromptForge](https://github.com/chrishotza/PromptForge) y [ATOF](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework) exploran herramientas navegables por máquinas, interfaces claras, experimentos repetibles y trazabilidad.
 
-Explore the repositories, inspect the evidence, and judge the work for yourself.
+</details>
+
+<details>
+<summary><b>🌱 Por los problemas que importan fuera de la pantalla</b></summary>
+
+<br>
+
+También trabajo en [análisis celular](https://github.com/chrishotza/ai4s-life-science-2026), [bienestar animal](https://github.com/chrishotza/Aeris-Dairy-Twin), [inteligencia energética](https://github.com/chrishotza/bess-operational-intelligence) y [participación en causas sociales](https://github.com/chrishotza/UnGesto-).
+
+No son productos ni resultados equivalentes. Son distintas formas de intentar que la investigación llegue a problemas concretos.
+
+</details>
+
+<details>
+<summary><b>🗃️ Quiero ver el resto del laboratorio</b></summary>
+
+<br>
+
+Otros trabajos públicos incluyen [DayZ Console Observatory](https://github.com/chrishotza/DayZConsoleObservatory), [Crypto Security Forensics Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab) y [Flint Prop AMM Research](https://github.com/chrishotza/Flint-Prop-AMM-Research).
+
+Para recorrer la historia completa, están el [archivo de investigación](docs/README.md) y el [README original preservado](README.archive-2026-10-16.md).
+
+</details>
+
+<details>
+<summary><b>🌐 In English · A short introduction</b></summary>
+
+<br>
+
+Hi, I'm Chris Hotza, an independent researcher and vibe coder from Argentina.
+
+**Big questions. Real experiments.** I use AI to investigate, build, test and learn across scientific computing, experimental AI and useful tools. My motivation is to create value for society.
+
+I lead the questions and the direction. AI helps with the research and implementation. The evidence speaks for the results.
+
+**[Explore the projects](#proyectos)** · **[Research archive](docs/README.md)**
 
 </details>
 
@@ -121,8 +159,12 @@ Explore the repositories, inspect the evidence, and judge the work for yourself.
 
 <div align="center">
 
-**La curiosidad inicia el trabajo. La evidencia decide qué sigue.**
+**Hecho desde Argentina, con curiosidad, IA y bastante insistencia. 🧉**
 
-<sub>[Archivo de investigación](docs/README.md) · [README histórico preservado](README.archive-2026-10-16.md) · [GitHub @chrishotza](https://github.com/chrishotza)</sub>
+<sub>De acá para el mundo · From Argentina, with questions</sub>
+
+<br>
+
+<sub>[Archivo de investigación](docs/README.md) · [Historia completa preservada](README.archive-2026-10-16.md) · [GitHub @chrishotza](https://github.com/chrishotza)</sub>
 
 </div>
