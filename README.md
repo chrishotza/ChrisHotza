@@ -1,287 +1,200 @@
+<!-- CHRIS HOTZA // AI-NARRATED RESEARCH INTERFACE
+     Curated static profile. No live assistant, JavaScript or tracking.
+     Original profile README: README.archive-2026-10-16.md
+-->
+
 <div align="center">
 
-# README
+<img src="./assets/hotza-signal.svg" width="100%" alt="Chris Hotza: independent researcher and vibe coder. I ask questions. AI helps me build. My purpose is to create value for society." />
+
+<br />
+
+**INDEPENDENT RESEARCHER · VIBE CODER · AI-ASSISTED EXPERIMENTATION**
+
+*Curiosity is the starting point. Evidence decides what survives.*
+
+[**ENTER THE INTERFACE**](#the-interface) · [**EXPLORE THE WORK**](#explore-the-work) · [**EN ESPAÑOL**](#en-espanol) · [**RESEARCH ARCHIVE**](#research-archive)
 
 </div>
+
+---
+
+<a id="the-interface"></a>
+
+## > INTERFACE ONLINE_
+
+> **AI / NARRATOR:** You have reached Chris Hotza's GitHub.
+>
+> He doesn't fit neatly inside a single technical discipline. He follows questions across artificial intelligence, scientific computing, optimization, biology, energy systems and practical tools.
+>
+> **His method is unusual but simple:** the human leads the investigation; AI helps turn ideas into prototypes, code, experiments and documentation. The results still need to be tested.
+>
+> **His reason for doing it:** to create value for society.
+>
+> I'm here to introduce his work. Choose a question.
 
 <details>
-<summary>ES — Investigación independiente en conciencia, inteligencia artificial, computación científica y sistemas experimentales.</summary>
+<summary><b>01 // WHO IS THE HUMAN BEHIND THIS SIGNAL?</b> &nbsp; ▸ Identity</summary>
 
-# Chris Hotza
+<br />
 
-**Investigador independiente · Constructor · Sistemas experimentales**
+**AI:** Chris is an independent researcher and a vibe coder based in Argentina. Research is not one category among many for him; it is how he approaches unfamiliar problems.
 
-*Investigación en conciencia, modelos matemáticos, IA, computación científica, sistemas dinámicos y arquitecturas experimentales.*
+He is drawn to questions about how systems work, what persists, what changes, and whether an idea can be transformed into something observable and useful.
 
-[![Followers](https://img.shields.io/github/followers/chrishotza?style=for-the-badge&label=FOLLOWERS)](https://github.com/chrishotza?tab=followers)
-[![Repositorios públicos](https://img.shields.io/badge/Repositorios%20públicos-8-24292f?style=for-the-badge)](https://github.com/chrishotza?tab=repositories)
-[![Archivo de investigación](https://img.shields.io/badge/Archivo%20de%20investigación-Explorar-6f42c1?style=for-the-badge)](docs/README.md)
+He doesn't claim that curiosity is a qualification. The repositories are the record of what he has tried to build and evaluate.
 
-**Conciencia Fotónica → TCF → Operadores experimentales → AEVUM → Aplicaciones científicas → TIF → Skill-Conscious**
-
----
-
-## 🧭 Trayectoria de investigación
-
-Un archivo que conecta **conciencia, continuidad, memoria, estado, autorreferencia, computación científica y arquitecturas experimentales de IA**.
-
-<table style="width:100%; table-layout:fixed;">
-<tr>
-<td width="50%">
-
-### 🔬 Investigación central
-
-**Conciencia Fotónica**  
-→ [Archivo](docs/2025/01-photonic-consciousness.md)
-
-**TCF — Teoría de Continuidad Fundamental**  
-→ [Archivo](docs/2025/02-tcf.md)
-
-**SPNV · ALLR · B98 · COV · FDI1 · SFGA**  
-→ [Etapa experimental](docs/2026/01-between-tcf-and-aevum.md)
-
-**AEVUM · Node · Crypto · Node Zero**  
-→ [Archivo de AEVUM](docs/2026/02-aevum.md)
-
-</td>
-<td width="50%">
-
-### 🧪 Trabajo aplicado y experimental
-
-**HeroX / MAKO12 · Pulse Energy · Conscious Pulse**  
-→ [Colaboraciones](docs/2026/03-herox.md) · [Sistemas energéticos](docs/2026/04-pulse-energy.md)
-
-**AERIS · RNA 3D Folding · OnttoVoid · MAZU · Biohub**  
-→ [Aplicaciones científicas](docs/2026/06-scientific-challenges.md)
-
-**COV / SYN-RAM**  
-→ [Sistemas](docs/2026/05-diagnostics-and-synram.md)
-
-**Manifiesto del Ser · Conciencia Ontológica Cuántica · TIF · Skill-Conscious**  
-→ [Ontología y TIF](docs/2026/07-ontology-and-tif.md) · [Skill-Conscious](docs/2026/08-skill-conscious.md)
-
-</td>
-</tr>
-</table>
-
----
-
-## 📖 Resumen y evolución
-
-Mi investigación comenzó en octubre de 2025 con **Conciencia Fotónica**, explorando conciencia, autorreferencia, luz, oscilación, geometría y campos. Esa línea dio lugar a **TCF — Teoría de Continuidad Fundamental**, que pasó por distintas formulaciones y dominios hasta convertirse en un marco efectivo y multiescala. [Conciencia Fotónica](docs/2025/01-photonic-consciousness.md) · [TCF](docs/2025/02-tcf.md)
-
-A partir de TCF, varias ideas comenzaron a convertirse en mecanismos y sistemas experimentales: **SPNV, ALLR, B98, COV, FDI1 y SFGA**, alrededor de régimen, presión, irreversibilidad, coherencia, memoria, persistencia y transición. Después apareció **AEVUM**, llevando existencia, estado y continuidad a operadores computacionales y posteriormente a Node, Crypto y Node Zero. [Entre TCF y AEVUM](docs/2026/01-between-tcf-and-aevum.md) · [AEVUM](docs/2026/02-aevum.md)
-
-La investigación salió entonces del laboratorio propio y pasó a problemas externos y colaboraciones: **HeroX / MAKO12**, detección de grietas subsuperficiales; comunicación química con osciladores **Belousov–Zhabotinsky**; y **Pulse Energy**, una plataforma de control para microgrids y BESS que alcanzó una campaña Pre-HIL de 66.000 escenarios y evolucionó después hacia **Conscious Pulse**. [HeroX / MAKO12](docs/2026/03-herox.md) · [Pulse Energy / Conscious Pulse](docs/2026/04-pulse-energy.md)
-
-La misma línea continuó en **AERIS**, asistentes de investigación, **Kaggle RNA 3D Folding 2**, **OnttoVoid**, **MAZU**, **Biohub** y **COV / SYN-RAM**, donde memoria, continuidad, observación e intervención fueron llevadas a distintos sistemas. [Aplicaciones científicas](docs/2026/06-scientific-challenges.md) · [COV / SYN-RAM](docs/2026/05-diagnostics-and-synram.md)
-
-Con el tiempo, el foco se fue concentrando en **relación, continuidad, memoria, transición y autorreferencia**. De ahí surgieron el **Manifiesto Matemático del Ser**, la **Conciencia Ontológica Cuántica** y **TIF — Teoría de la Iteración Fuente**, intentando reducir parte de la trayectoria anterior a una dinámica mínima de configuración, memoria y reentrada. [Ontología y TIF](docs/2026/07-ontology-and-tif.md)
-
-La etapa actual es **Skill-Conscious**: una arquitectura experimental con memoria persistente, estado interno persistente, self-model, autoobservación, predicción del propio estado, selección de trayectorias, acción y continuidad del estado, junto con VIGILIA/SLEEP, SelfObserver, SelfPolicy, dinámica interna y protocolos de control. La investigación sigue siendo experimental y no presenta estos sistemas como una demostración de conciencia. [Skill-Conscious](docs/2026/08-skill-conscious.md)
-
----
-
-## ⭐ Repositorios públicos destacados
-
-<table style="width:100%; table-layout:fixed;">
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious)
-Arquitectura experimental basada en memoria persistente, estado interno, self-model, autoobservación y continuidad de trayectoria.
-
-### 🐄 [Aeris-Dairy-Twin](https://github.com/chrishotza/Aeris-Dairy-Twin)
-Investigación de digital twin para bienestar animal y monitoreo de unidades productivas.
-
-### 🧬 [Biohub-lab](https://github.com/chrishotza/Biohub-lab)
-Tracking celular 3D+tiempo centrado en continuidad, linajes y estado.
-
-### 🧭 [Adaptiv-Topologica-Optimization-Framework](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework)
-Selección adaptativa de algoritmos topológicos a partir de descriptores estructurales y dinámicos.
-
-### 🛡️ [Crypto-Security-Forensics-Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab)
-Investigación de seguridad y experimentación forense.
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ [bess-operational-intelligence](https://github.com/chrishotza/bess-operational-intelligence)
-Rama pública de la línea BESS / operational intelligence vinculada al trabajo de Pulse Energy.
-
-### 🧰 [PromptForge](https://github.com/chrishotza/PromptForge)
-Investigación y herramientas para prompting estructurado y workflows de IA.
-
-### 🏦 [Flint-Prop-AMM-Research](https://github.com/chrishotza/Flint-Prop-AMM-Research)
-Repositorio experimental centrado en mecanismos AMM / DeFi.
-
-### 🔍 [T3N-Enterprise-Audit-Agent](https://github.com/chrishotza/T3N-Enterprise-Audit-Agent)
-Experimentación con auditoría empresarial y agentes de IA.
-
-</td>
-</tr>
-</table>
-
-[Ver todos los repositorios públicos →](https://github.com/chrishotza?tab=repositories)
-
----
-
-## 📚 Archivo
-
-El README es el mapa. Las páginas del archivo contienen la cronología, contexto técnico, evidencia, límites y notas de cada etapa.
-
-[**Abrir archivo de investigación →**](docs/README.md)
-
-<div align="center">
-
-**Investigación → Modelos → Sistemas → Experimentos → Reevaluación → Nuevas arquitecturas**
-
-</div>
-
-</div>
-
-</div>
+**Human answer:** *"Quiero generar valor en la sociedad."*
 
 </details>
 
 <details>
-<summary>EN — Independent research in consciousness, artificial intelligence, scientific computing, and experimental systems.</summary>
+<summary><b>02 // HOW DOES HE BUILD WITH AI?</b> &nbsp; ▸ Method</summary>
 
-<div style="width:200%; margin-left:-100%;">
+<br />
 
-# Chris Hotza
+**AI:** Chris works through **AI-assisted development and vibe coding**. He frames the problem, proposes directions, sets constraints, evaluates iterations, and connects work across projects. AI tools contribute code, technical analysis, drafting and implementation.
 
-**Independent Researcher · Builder · Experimental Systems**
+That doesn't make a generated result automatically correct. A successful build is not a successful experiment; a passing test is not external validation; a promising hypothesis is not a scientific discovery.
 
-*Research across consciousness, mathematical models, AI, scientific computing, dynamic systems and experimental architectures.*
+**His responsibility remains human:** choosing the problem, challenging the output, maintaining the work, and stating honestly what has and hasn't been demonstrated.
 
-[![Followers](https://img.shields.io/github/followers/chrishotza?style=for-the-badge&label=FOLLOWERS)](https://github.com/chrishotza?tab=followers)
-[![Public Repositories](https://img.shields.io/badge/Public%20Repositories-8-24292f?style=for-the-badge)](https://github.com/chrishotza?tab=repositories)
-[![Research Archive](https://img.shields.io/badge/Research%20Archive-Explore-6f42c1?style=for-the-badge)](docs/README.md)
+**QUESTION → HYPOTHESIS → AI-ASSISTED BUILD → TEST → EVIDENCE → REVISE**
 
-**Photonic Consciousness → TCF → Experimental Operators → AEVUM → Scientific Applications → TIF → Skill-Conscious**
+</details>
 
----
+<details>
+<summary><b>03 // WHAT KIND OF QUESTIONS KEEP HIM BUSY?</b> &nbsp; ▸ Research</summary>
 
-## 🧭 Research trajectory
+<br />
 
-A research archive connecting **consciousness, continuity, memory, state, self-reference, scientific computing and experimental AI architectures**.
+**AI:** Self-models and continuity in AI. More efficient context representations. Graph optimization. How individual cells behave over time. Operational decisions in energy storage. Forensic analysis of complex systems.
 
-<table style="width:100%; table-layout:fixed;">
-<tr>
-<td width="50%">
+These are different research domains, **not claims of a single proven theory of everything**. Some repositories contain working applications, others experimental frameworks, curated evidence or unfinished research. Each must be judged on its own documented results.
 
-### 🔬 Core research
+Start with [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious), [PromptForge](https://github.com/chrishotza/PromptForge), [ATOF](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework) and [AI4S Life Science](https://github.com/chrishotza/ai4s-life-science-2026).
 
-**Photonic Consciousness**  
-→ [Archive](docs/2025/01-photonic-consciousness.md)
+</details>
 
-**TCF — Fundamental Continuity Theory**  
-→ [Archive](docs/2025/02-tcf.md)
+<details>
+<summary><b>04 // WHAT DOES SOCIETY GET OUT OF IT?</b> &nbsp; ▸ Purpose</summary>
 
-**SPNV · ALLR · B98 · COV · FDI1 · SFGA**  
-→ [Experimental stage](docs/2026/01-between-tcf-and-aevum.md)
+<br />
 
-**AEVUM · Node · Crypto · Node Zero**  
-→ [AEVUM archive](docs/2026/02-aevum.md)
+**AI:** That is the question Chris wants his work to answer.
 
-</td>
-<td width="50%">
+Some projects explore foundational ideas. Others aim at useful systems: animal-welfare monitoring, energy decision support, accessible tools for community-server administrators, or easier participation in social causes.
 
-### 🧪 Applied & experimental work
+A project's social value should be assessed through real outcomes, not the ambition written in a README. **The intention is to build things that become useful beyond the person who imagined them.**
 
-**HeroX / MAKO12 · Pulse Energy · Conscious Pulse**  
-→ [Collaborations](docs/2026/03-herox.md) · [Energy systems](docs/2026/04-pulse-energy.md)
+See [AERIS](https://github.com/chrishotza/Aeris-Dairy-Twin), [BESS Operational Intelligence](https://github.com/chrishotza/bess-operational-intelligence), [DayZ Console Observatory](https://github.com/chrishotza/DayZConsoleObservatory) and [UnGesto](https://github.com/chrishotza/UnGesto-).
 
-**AERIS · RNA 3D Folding · OnttoVoid · MAZU · Biohub**  
-→ [Scientific applications](docs/2026/06-scientific-challenges.md)
+</details>
 
-**COV / SYN-RAM**  
-→ [Systems](docs/2026/05-diagnostics-and-synram.md)
+<details>
+<summary><b>05 // CAN I TRUST THE CLAIMS?</b> &nbsp; ▸ Evidence protocol</summary>
 
-**Mathematical Manifesto of Being · Ontological Quantum Consciousness · TIF · Skill-Conscious**  
-→ [Ontology & TIF](docs/2026/07-ontology-and-tif.md) · [Skill-Conscious](docs/2026/08-skill-conscious.md)
+<br />
 
-</td>
-</tr>
-</table>
+**AI:** Don't trust a visual identity, a benchmark headline or my narration in isolation. Follow the repository links. Read the methods, tests, limitations and status files.
+
+Chris's projects include explicit evidence boundaries: [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious) does not demonstrate phenomenal consciousness; [AI4S Life Science](https://github.com/chrishotza/ai4s-life-science-2026) separates internal metrics from official evaluation; [UnGesto](https://github.com/chrishotza/UnGesto-) does not claim third-party petitions have received signatures without an authorized integration.
+
+**A better question than “what do you claim?” is “what can I verify?”**
+
+</details>
+
+<sub>INTERFACE NOTE: This is a scripted, expandable README experience narrated in an AI voice, not a live chatbot. It uses GitHub's native Markdown/HTML support and requires no JavaScript, account or external tracking.</sub>
 
 ---
 
-## 📖 Summary & evolution
+<a id="explore-the-work"></a>
 
-My research began in October 2025 with **Photonic Consciousness**, exploring consciousness, self-reference, light, oscillation, geometry and fields. That line led to **TCF — Fundamental Continuity Theory**, which passed through different formulations and domains before becoming an effective multiscale framework. [Photonic Consciousness](docs/2025/01-photonic-consciousness.md) · [TCF](docs/2025/02-tcf.md)
+## > EXPLORE THE WORK_
 
-From TCF, several ideas began turning into mechanisms and experimental systems: **SPNV, ALLR, B98, COV, FDI1 and SFGA**, around regime, pressure, irreversibility, coherence, memory, persistence and transition. **AEVUM** followed, taking questions of existence, state and continuity into computational operators and later into Node, Crypto and Node Zero. [Between TCF and AEVUM](docs/2026/01-between-tcf-and-aevum.md) · [AEVUM](docs/2026/02-aevum.md)
+**Different projects. One recurring pattern: investigate → build → test → improve.**
 
-The research then moved outside my own laboratory into external problems and collaborations: **HeroX / MAKO12** for subsurface crack detection; chemical communication with **Belousov–Zhabotinsky** oscillators; and **Pulse Energy**, a control platform for microgrids and BESS that reached a 66,000-scenario Pre-HIL campaign and later evolved into **Conscious Pulse**. [HeroX / MAKO12](docs/2026/03-herox.md) · [Pulse Energy / Conscious Pulse](docs/2026/04-pulse-energy.md)
+| 🧠 Intelligence & agents | 🔬 Scientific exploration |
+| :--- | :--- |
+| **[Skill-Conscious](https://github.com/chrishotza/Skill-Conscious)** — experimental architecture for persistent state, self-models and causal tests. | **[AI4S Life Science](https://github.com/chrishotza/ai4s-life-science-2026)** — image-based cell tracking and temporal phenotype research. |
+| **[PromptForge](https://github.com/chrishotza/PromptForge)** — reproducible context engineering and evaluation harnesses. | **[AERIS Dairy Twin](https://github.com/chrishotza/Aeris-Dairy-Twin)** — multimodal animal-welfare state estimation. |
+| **[RepoOrbit](https://github.com/chrishotza/Repo-Orbit)** — a repository atlas designed for AI agents, with provenance and explicit uncertainty. | **[ATOF](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework)** — graph partitioning with reproducible, agent-readable interfaces. |
 
-The same line continued through **AERIS**, research-assistant work, **Kaggle RNA 3D Folding 2**, **OnttoVoid**, **MAZU**, **Biohub**, and **COV / SYN-RAM**, where memory, continuity, observation and intervention were carried into different systems. [Scientific applications](docs/2026/06-scientific-challenges.md) · [COV / SYN-RAM](docs/2026/05-diagnostics-and-synram.md)
+| ⚡ Applied systems | 🌍 Tools for real people |
+| :--- | :--- |
+| **[BESS Operational Intelligence](https://github.com/chrishotza/bess-operational-intelligence)** — supervisory energy-storage decision research. | **[UnGesto](https://github.com/chrishotza/UnGesto-)** — choose multiple social causes and register adhesions in one flow; external petition integrations remain a goal. |
+| **[Crypto Security Forensics Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab)** — documented research evidence on trading and execution systems. | **[DayZ Console Observatory](https://github.com/chrishotza/DayZConsoleObservatory)** — local browser interface for historical console-server logs and incident review. |
 
-Over time, the focus narrowed toward **relation, continuity, memory, transition and self-reference**. This led to the **Mathematical Manifesto of Being**, **Ontological Quantum Consciousness**, and **TIF — Source Iteration Theory**, attempting to reduce part of the previous trajectory to a minimal dynamic of configuration, memory and re-entry. [Ontology and TIF](docs/2026/07-ontology-and-tif.md)
+<details>
+<summary><b>▸ EXPAND // More public research and experiments</b></summary>
 
-The current stage is **Skill-Conscious**: an experimental architecture with persistent memory, persistent internal state, self-model, self-observation, self-state prediction, trajectory selection, action and state continuity, together with VIGILIA/SLEEP, SelfObserver, SelfPolicy, internal dynamics and control protocols. The research remains experimental and does not present these systems as a demonstration of consciousness. [Skill-Conscious](docs/2026/08-skill-conscious.md)
+- **[Adaptive Topological Optimization (historical)](https://github.com/chrishotza/adaptive-topological-optimization)** — earlier graph-optimization research and benchmark archive.
+- **[BLOC-RELOC v2](https://github.com/chrishotza/bloc-reloc-v2)** — experimental graph-partitioning validation.
+- **[Flint Prop AMM Research](https://github.com/chrishotza/Flint-Prop-AMM-Research)** — read-only observations of public market data and order-book reconstruction.
+- **[T3N Enterprise Audit Agent](https://github.com/chrishotza/T3N-Enterprise-Audit-Agent)** — experimental Rust/WASM contract and enterprise-agent work.
+- **[COV-IA](https://github.com/chrishotza/cov-ia)** — historical AI-inference optimization research; reported figures require independent examination.
+- **[All public repositories](https://github.com/chrishotza?tab=repositories)** — the complete public catalog.
 
----
-
-## ⭐ Selected public repositories
-
-<table style="width:100%; table-layout:fixed;">
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious)
-Experimental architecture built around persistent memory, internal state, self-modeling, self-observation and trajectory continuity.
-
-### 🐄 [Aeris-Dairy-Twin](https://github.com/chrishotza/Aeris-Dairy-Twin)
-Digital-twin research for animal welfare and production-unit monitoring.
-
-### 🧬 [Biohub-lab](https://github.com/chrishotza/Biohub-lab)
-3D + time cell-tracking research focused on continuity, lineage and state.
-
-### 🧭 [Adaptiv-Topologica-Optimization-Framework](https://github.com/chrishotza/Adaptiv-Topologica-Optimization-Framework)
-Adaptive selection of topological algorithms from structural and dynamic network descriptors.
-
-### 🛡️ [Crypto-Security-Forensics-Lab](https://github.com/chrishotza/Crypto-Security-Forensics-Lab)
-Security research and forensic experimentation.
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ [bess-operational-intelligence](https://github.com/chrishotza/bess-operational-intelligence)
-Public branch of the BESS / operational-intelligence line connected to the Pulse Energy work.
-
-### 🧰 [PromptForge](https://github.com/chrishotza/PromptForge)
-Research and tooling around structured prompting and AI workflows.
-
-### 🏦 [Flint-Prop-AMM-Research](https://github.com/chrishotza/Flint-Prop-AMM-Research)
-Experimental research repository focused on AMM / DeFi mechanisms.
-
-### 🔍 [T3N-Enterprise-Audit-Agent](https://github.com/chrishotza/T3N-Enterprise-Audit-Agent)
-Enterprise auditing and AI-agent experimentation.
-
-</td>
-</tr>
-</table>
-
-[View all public repositories →](https://github.com/chrishotza?tab=repositories)
+</details>
 
 ---
 
-## 📚 Archive
+## > HUMAN × AI // OPERATING PRINCIPLES_
 
-The README is the map. The detailed stage pages contain the chronology, technical context, evidence, limitations and source notes.
+| Human signal | AI assistance | Reality check |
+| :--- | :--- | :--- |
+| Curiosity and direction | Exploration and research support | Is the question well-posed? |
+| Hypothesis and constraints | Code and prototype construction | Does it actually run? |
+| Judgment and responsibility | Iteration, testing and documentation | Can anyone reproduce the result? |
+| Social purpose | Scale and acceleration | Does it help someone? |
 
-[**Open the research archive →**](docs/README.md)
+**I don't need every idea to be right. I need the process to help find out.**
+
+---
+
+<a id="en-espanol"></a>
+
+<details>
+<summary><b>🇦🇷 EN ESPAÑOL // La persona detrás de la señal</b> &nbsp; ▸ Abrir transmisión</summary>
+
+<br />
+
+> **IA / NARRADORA:** Estás frente al GitHub de Chris Hotza, investigador independiente y vibe coder argentino.
+>
+> Su especialidad no es fingir que domina todas las disciplinas. Es **hacer preguntas**, investigar problemas, proponer caminos y utilizar inteligencia artificial para construir herramientas y experimentos.
+>
+> La IA aporta implementación, análisis y velocidad. Chris aporta dirección, criterio, preguntas y responsabilidad sobre lo que se publica.
+>
+> Su objetivo es claro: **generar valor en la sociedad**.
+
+**¿Qué investiga?** Conciencia y modelos computacionales como hipótesis de investigación, arquitecturas experimentales de IA, optimización matemática, análisis celular, energía, sistemas complejos y herramientas prácticas.
+
+**¿Cómo trabaja?** Problema → hipótesis → prototipo asistido por IA → prueba → evidencia → corrección.
+
+**¿Por dónde empezar?** [Skill-Conscious](https://github.com/chrishotza/Skill-Conscious) · [RepoOrbit](https://github.com/chrishotza/Repo-Orbit) · [PromptForge](https://github.com/chrishotza/PromptForge) · [UnGesto](https://github.com/chrishotza/UnGesto-).
+
+**¿Qué espera de su trabajo?** Que las ideas no terminen siendo solamente ideas, sino investigaciones honestas y, cuando sea posible, soluciones útiles para otras personas.
+
+</details>
+
+<a id="research-archive"></a>
+
+## > RESEARCH ARCHIVE_
+
+This landing page is the introduction, **not a substitute for the technical record**.
+
+- **[Research archive and chronology](docs/README.md)** — historical progression through photonic-consciousness research, TCF, AEVUM, TIF, applied experiments and Skill-Conscious.
+- **[Original profile README, preserved verbatim](README.archive-2026-10-16.md)** — previous long-form bilingual introduction, retained with its relative links intact.
+- **[Complete repository index](https://github.com/chrishotza?tab=repositories)** — browse ongoing and historical public projects.
+
+---
 
 <div align="center">
 
-**Research → Models → Systems → Experiments → Re-evaluation → New architectures**
+**AI / NARRATOR:** *I can introduce the researcher. Only the work can answer for itself.*
+
+**[Explore the repositories](https://github.com/chrishotza?tab=repositories)** · **[Follow the research](https://github.com/chrishotza)**
+
+<sub>Built with curiosity, AI assistance and the intention to make something useful.</sub>
 
 </div>
-
-</div>
-
-</div>
-
-</details>
