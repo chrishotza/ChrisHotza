@@ -1,9 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="250" viewBox="0 0 680 250" role="img" aria-labelledby="t d">
-<title id="t">bess-operational-intelligence — INTELIGENCIA ENERGÉTICA</title><desc id="d">Original geometric project illustration for bess-operational-intelligence.</desc>
+<title id="t">bess-operational-intelligence — INTELIGENCIA ENERGÉTICA</title><desc id="d">ConsciousPulse supervisory intelligence for BESS systems: reserve-aware operation, peak management and recovery research.</desc>
 <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0C1929"/><stop offset="1" stop-color="#17243B"/></linearGradient><radialGradient id="g"><stop stop-color="#B6E887" stop-opacity=".16"/><stop offset="1" stop-color="#B6E887" stop-opacity="0"/></radialGradient><clipPath id="c"><rect width="680" height="250" rx="17"/></clipPath></defs>
 <g clip-path="url(#c)"><rect width="680" height="250" fill="url(#b)"/><circle cx="545" cy="128" r="171" fill="url(#g)"/><path d="M5 6V244" stroke="#B6E887" stroke-width="10"/><path d="M38 44H109" stroke="#B6E887" stroke-width="2.4"/>
-<text x="38" y="35" font-family="Consolas,Menlo,monospace" font-size="12" font-weight="700" letter-spacing=".95" fill="#B6E887">10  /  INTELIGENCIA ENERGÉTICA</text>
+<text x="38" y="35" font-family="Consolas,Menlo,monospace" font-size="12" font-weight="700" letter-spacing=".95" fill="#B6E887">10  /  CONSCIOUSPULSE · ENERGÍA</text>
 <text x="36" y="127" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="800" letter-spacing="-1.4" fill="#F2F8FE">BESS Intelligence</text>
-<text x="39" y="167" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#A8BCCF">Baterías · energía · decisiones</text>
-<path d="M39 194H381" stroke="#3A526B" stroke-width="1"/><text x="39" y="225" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="1.4" fill="#B6E887">ABRIR REPOSITORIO</text><path d="M320 219H353L345 211M353 219L345 227" fill="none" stroke="#B6E887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g fill="none" stroke="#B6E887" stroke-width="2.3"><rect x="451" y="91" width="56" height="102" rx="7" fill="#B6E887" fill-opacity=".07"/><rect x="518" y="70" width="56" height="123" rx="7" fill="#B6E887" fill-opacity=".07"/><rect x="585" y="91" width="56" height="102" rx="7" fill="#B6E887" fill-opacity=".07"/><path d="M466 111h27M466 129h27M466 147h27M466 165h27M533 91h26M533 109h26M533 127h26M533 145h26M533 163h26M600 111h27M600 129h27M600 147h27M600 165h27" opacity=".52"/><path d="M545 48L527 97H545L533 132L573 80H553L563 48Z" fill="#B6E887" fill-opacity=".5"/><path d="M464 210H625M492 203v7M549 203v7M613 203v7" opacity=".6"/><circle cx="546" cy="194" r="21" fill="#102039"/><path d="M548 178l-8 15h9l-4 13 13-18h-8l4-10" stroke-width="2.5"/></g></g>
+<text x="39" y="167" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#A8BCCF">ConsciousPulse · reservas · resiliencia</text>
+<path d="M39 194H381" stroke="#3A526B" stroke-width="1"/><text x="39" y="225" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="1.4" fill="#B6E887">ABRIR REPOSITORIO</text><path d="M320 219H353L345 211M353 219L345 227" fill="none" stroke="#B6E887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g fill="none" stroke="#B6E887" stroke-linejoin="round" stroke-linecap="round">
+<circle cx="548" cy="120" r="39" stroke-width="2.6"/>
+<circle cx="548" cy="120" r="30" stroke-width="1" stroke-dasharray="3 6" opacity=".46"/>
+<path d="M527 124H536L542 110L552 135L560 116L569 119" stroke-width="3.7"/>
+<circle cx="548" cy="120" r="5" fill="#B6E887" stroke="none"/>
+<path d="M531 85Q515 63 488 64M567 90Q599 61 625 76M550 160Q568 181 606 179" stroke-width="2.2" opacity=".85"/>
+<circle cx="488" cy="64" r="7" fill="#B6E887" stroke="none"/><circle cx="625" cy="76" r="7" fill="#B6E887" stroke="none"/><circle cx="606" cy="179" r="7" fill="#B6E887" stroke="none"/>
+<g fill="#A8BCCF" stroke="none" font-size="11" font-family="Arial,Helvetica,sans-serif" font-weight="bold" letter-spacing=".8"><text x="451" y="49">RESERVE</text><text x="599" y="57">PEAK</text><text x="574" y="204">RECOVERY</text></g>
+<g fill="#B6E887" fill-opacity=".10" stroke-width="1.7"><rect x="465" y="161" width="27" height="37" rx="3"/><rect x="499" y="170" width="27" height="28" rx="3"/><rect x="535" y="182" width="27" height="25" rx="3"/></g>
+<path d="M470 176h17M470 184h17M504 181h17M504 190h17M539 192h17" stroke-width="2" opacity=".5"/>
+<path d="M478 154Q477 123 509 118M512 165Q516 159 530 154M550 178V165" opacity=".55" stroke-width="1.4" stroke-dasharray="3 5"/>
+</g></g>
 <rect x="1" y="1" width="678" height="248" rx="17" fill="none" stroke="#456176" stroke-opacity=".52" stroke-width="2"/></svg>
