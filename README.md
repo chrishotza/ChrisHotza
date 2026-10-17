@@ -1,14 +1,16 @@
 <!-- REAL README GAME / GitHub native HTML-only state machine. No JS, redirects or external execution. -->
-## 🎮 Una partida adentro de este README
+## 🎮 JUGÁ ACÁ MISMO
+
+**TRES EN RAYA · VOS CONTRA LA MÁQUINA**
 
 **Creo cosas con IA.** La máquina está jugando al tres en raya. ¿Le ganás?
 
 Esto **es un juego con reglas, turnos y adversario automático**: elegís una posición, la computadora hace su movimiento y ves el tablero actualizado, **sin salir de esta página**. No es un chat con IA en vivo: todas las respuestas legales están calculadas previamente.
 
 <details>
-<summary><b>▶ JUGAR AHORA — X CONTRA LA MÁQUINA</b></summary>
+<summary><b>▶ INICIAR PARTIDA · 1 CLIC</b></summary>
 
-**X = vos** · **O = máquina** · **1–9 = casillas disponibles**. Tres en línea gana. Tocá una jugada debajo del tablero. Las demás opciones del mismo turno se cerrarán automáticamente.
+**✕ = vos** · **● = máquina** · **1–9 = casillas disponibles**. Tres en línea gana. Tocá una jugada debajo del tablero. Las demás opciones del mismo turno se cerrarán automáticamente.
 
 <pre>
     1   2   3
@@ -21,19 +23,19 @@ C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
-**TU TURNO · ELEGÍ LA PRIMERA CASILLA**
+**TU TURNO · HACÉ TU PRIMERA JUGADA**
 
 <details name="tx1">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** B2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ 3 │
+A │ ✕ │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -42,16 +44,16 @@ C │ 7 │ 8 │ 9 │
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -60,18 +62,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t01x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -79,23 +81,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t01x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -103,41 +105,41 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t01x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t016x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -145,41 +147,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t016x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0165x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -187,25 +189,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t016x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -213,25 +215,25 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t01x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -239,23 +241,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t01x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -263,43 +265,43 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t0x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t02x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -307,41 +309,41 @@ C │ O │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t02x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t023x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -349,23 +351,23 @@ C │ O │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t023x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ O │ O │
+C │ ● │ ● │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -373,41 +375,41 @@ C │ O │ O │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t023x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0237x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -415,7 +417,7 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -424,36 +426,36 @@ Tablero lleno, sin ganador.
 </details>
 
 <details name="t02x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t025x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -461,23 +463,23 @@ C │ O │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t025x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ O │ O │
+C │ ● │ ● │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -485,41 +487,41 @@ C │ O │ O │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t025x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0257x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -527,7 +529,7 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -536,36 +538,36 @@ Tablero lleno, sin ganador.
 </details>
 
 <details name="t02x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t027x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -573,41 +575,41 @@ C │ O │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t027x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0273x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -615,43 +617,43 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t027x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0275x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -659,7 +661,7 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -668,36 +670,36 @@ Tablero lleno, sin ganador.
 </details>
 
 <details name="t02x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t028x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ O │ X │
+C │ ● │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -705,23 +707,23 @@ C │ O │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t028x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -729,41 +731,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t028x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0287x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -771,7 +773,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -782,16 +784,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t0x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -800,18 +802,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t03x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -819,23 +821,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t03x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -843,23 +845,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t03x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -867,23 +869,23 @@ C │ X │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t03x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -891,23 +893,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t03x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -915,23 +917,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t0x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -940,18 +942,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t05x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -959,23 +961,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t05x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -983,59 +985,59 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t05x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t056x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0561x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1043,25 +1045,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t056x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1069,41 +1071,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t056x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0567x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1111,7 +1113,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -1120,18 +1122,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t05x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -1139,23 +1141,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t05x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1163,61 +1165,61 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t0x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t06x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t061x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1225,41 +1227,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t061x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0615x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1267,25 +1269,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t061x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1293,25 +1295,25 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t06x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -1319,59 +1321,59 @@ C │ X │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t06x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t065x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0651x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1379,25 +1381,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t065x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1405,41 +1407,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t065x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0657x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1447,7 +1449,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -1456,36 +1458,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t06x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t067x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1493,23 +1495,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t067x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1517,41 +1519,41 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t067x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0675x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1559,7 +1561,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -1568,36 +1570,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t06x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t068x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1605,23 +1607,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t068x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1629,23 +1631,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t068x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1653,7 +1655,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -1662,36 +1664,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t0x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t07x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -1699,23 +1701,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t07x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -1723,23 +1725,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t07x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -1747,41 +1749,41 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t07x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t076x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1789,23 +1791,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t076x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1813,41 +1815,41 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t076x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t0765x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -1855,7 +1857,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -1864,18 +1866,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t07x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1883,43 +1885,43 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t0x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t08x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1927,23 +1929,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t08x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1951,23 +1953,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t08x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -1975,41 +1977,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t08x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t086x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2017,23 +2019,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t086x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2041,23 +2043,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t086x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2065,25 +2067,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t08x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2091,7 +2093,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -2100,16 +2102,16 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ 1 │ X │ 3 │
+A │ 1 │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -2118,16 +2120,16 @@ C │ 7 │ 8 │ 9 │
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -2136,18 +2138,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t10x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -2155,23 +2157,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t10x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -2179,41 +2181,41 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t10x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t106x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2221,41 +2223,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t106x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1065x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2263,25 +2265,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t106x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2289,25 +2291,25 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t10x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -2315,23 +2317,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t10x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2339,23 +2341,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t1x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -2364,18 +2366,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t12x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2383,23 +2385,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t12x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2407,23 +2409,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t12x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2431,23 +2433,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t12x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2455,59 +2457,59 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t12x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t128x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1283x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2515,25 +2517,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t128x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2541,23 +2543,23 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t128x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2565,7 +2567,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -2574,16 +2576,16 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t1x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -2592,18 +2594,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t13x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2611,23 +2613,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t13x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2635,23 +2637,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t13x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2659,23 +2661,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t13x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2683,41 +2685,41 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t13x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t138x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2725,41 +2727,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t138x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1386x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2767,25 +2769,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t138x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2793,7 +2795,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -2802,16 +2804,16 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t1x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -2820,18 +2822,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t15x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2839,23 +2841,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t15x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2863,23 +2865,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t15x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2887,23 +2889,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t15x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -2911,41 +2913,41 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t15x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t158x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2953,41 +2955,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t158x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1586x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -2995,25 +2997,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t158x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3021,7 +3023,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -3030,36 +3032,36 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t1x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t16x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3067,23 +3069,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t16x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3091,23 +3093,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t16x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3115,23 +3117,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t16x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3139,59 +3141,59 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t16x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t168x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1683x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3199,43 +3201,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t168x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1685x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3243,25 +3245,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t168x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3269,7 +3271,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -3278,36 +3280,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t1x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t17x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3315,23 +3317,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t17x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3339,23 +3341,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t17x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3363,23 +3365,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t17x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -3387,41 +3389,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t17x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t178x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3429,23 +3431,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t178x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3453,23 +3455,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t178x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3477,7 +3479,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -3486,72 +3488,72 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t1x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t18x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t182x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1823x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3559,25 +3561,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t182x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3585,23 +3587,23 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t182x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3609,43 +3611,43 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t18x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t183x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3653,41 +3655,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t183x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1836x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3695,25 +3697,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t183x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3721,43 +3723,43 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t18x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t185x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3765,41 +3767,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t185x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1856x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3807,25 +3809,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t185x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3833,61 +3835,61 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t18x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t186x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1863x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3895,43 +3897,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t186x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t1865x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3939,25 +3941,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t186x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -3965,43 +3967,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t18x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t187x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4009,23 +4011,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t187x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4033,23 +4035,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t187x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4057,7 +4059,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -4068,16 +4070,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** B2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ 1 │ 2 │ X │
+A │ 1 │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -4086,36 +4088,36 @@ C │ 7 │ 8 │ 9 │
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t20x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -4123,41 +4125,41 @@ C │ O │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t20x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t203x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4165,23 +4167,23 @@ C │ O │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t203x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ O │ O │
+C │ ● │ ● │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4189,41 +4191,41 @@ C │ O │ O │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t203x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2037x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4231,7 +4233,7 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -4240,36 +4242,36 @@ Tablero lleno, sin ganador.
 </details>
 
 <details name="t20x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t205x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4277,23 +4279,23 @@ C │ O │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t205x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ O │ O │
+C │ ● │ ● │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4301,41 +4303,41 @@ C │ O │ O │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t205x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2057x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4343,7 +4345,7 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -4352,36 +4354,36 @@ Tablero lleno, sin ganador.
 </details>
 
 <details name="t20x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ X │
+A │ ✕ │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t207x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ X │
+A │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4389,41 +4391,41 @@ C │ O │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t207x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2073x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4431,43 +4433,43 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t207x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2075x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4475,7 +4477,7 @@ C │ O │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -4484,36 +4486,36 @@ Tablero lleno, sin ganador.
 </details>
 
 <details name="t20x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t208x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ O │ X │
+C │ ● │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4521,23 +4523,23 @@ C │ O │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t208x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4545,41 +4547,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t208x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2087x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ X │
+A │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4587,7 +4589,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -4598,16 +4600,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t2x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -4616,18 +4618,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t21x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4635,23 +4637,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t21x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4659,23 +4661,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t21x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4683,23 +4685,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t21x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4707,59 +4709,59 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t21x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t218x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2183x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4767,25 +4769,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t218x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4793,23 +4795,23 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t218x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4817,7 +4819,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -4826,16 +4828,16 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t2x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -4844,18 +4846,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t23x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4863,23 +4865,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t23x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4887,23 +4889,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t23x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4911,23 +4913,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t23x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -4935,59 +4937,59 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t23x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t238x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2381x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -4995,25 +4997,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t238x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5021,41 +5023,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t238x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2387x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5063,7 +5065,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -5074,16 +5076,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t2x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -5092,18 +5094,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t25x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5111,23 +5113,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t25x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5135,23 +5137,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t25x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5159,23 +5161,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t25x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5183,23 +5185,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t25x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5207,43 +5209,43 @@ C │ 7 │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t2x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t26x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5251,23 +5253,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t26x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5275,23 +5277,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t26x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5299,23 +5301,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t26x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5323,41 +5325,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t26x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t268x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5365,23 +5367,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t268x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5389,23 +5391,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t268x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5413,7 +5415,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -5422,36 +5424,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t2x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t27x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5459,23 +5461,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t27x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5483,23 +5485,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t27x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5507,23 +5509,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t27x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -5531,41 +5533,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t27x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t278x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5573,41 +5575,41 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t278x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2783x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5615,25 +5617,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t278x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5641,7 +5643,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -5650,72 +5652,72 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t2x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t28x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t281x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2813x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5723,25 +5725,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t281x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5749,23 +5751,23 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t281x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5773,61 +5775,61 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t28x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t283x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2831x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5835,25 +5837,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t283x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5861,41 +5863,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t283x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2837x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5903,7 +5905,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -5912,18 +5914,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t28x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5931,41 +5933,41 @@ C │ 7 │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t28x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t286x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5973,23 +5975,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t286x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -5997,23 +5999,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t286x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6021,43 +6023,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t28x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t287x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6065,41 +6067,41 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t287x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t2873x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6107,25 +6109,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t287x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6133,7 +6135,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -6144,7 +6146,7 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B2
 
@@ -6153,7 +6155,7 @@ Tres en línea. La máquina perdió. Partida terminada.
   ┌───┬───┬───┐
 A │ 1 │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -6162,16 +6164,16 @@ C │ 7 │ 8 │ 9 │
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -6180,18 +6182,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t30x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -6199,23 +6201,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t30x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -6223,23 +6225,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t30x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -6247,23 +6249,23 @@ C │ X │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t30x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -6271,23 +6273,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t30x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6295,23 +6297,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t3x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -6320,18 +6322,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t31x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6339,23 +6341,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t31x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6363,23 +6365,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t31x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6387,23 +6389,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t31x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6411,41 +6413,41 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t31x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t318x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6453,41 +6455,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t318x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3186x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6495,25 +6497,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t318x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6521,7 +6523,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -6530,16 +6532,16 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t3x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -6548,18 +6550,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t32x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6567,23 +6569,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t32x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6591,23 +6593,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t32x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6615,23 +6617,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t32x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6639,59 +6641,59 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t32x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t328x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3281x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6699,25 +6701,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t328x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6725,41 +6727,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t328x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3287x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6767,7 +6769,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -6778,16 +6780,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t3x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -6796,18 +6798,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t35x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6815,23 +6817,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t35x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6839,23 +6841,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t35x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6863,23 +6865,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t35x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -6887,41 +6889,41 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t35x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t358x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6929,23 +6931,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t358x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6953,23 +6955,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t358x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -6977,7 +6979,7 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -6986,36 +6988,36 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t3x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t36x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7023,23 +7025,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t36x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7047,23 +7049,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t36x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7071,23 +7073,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t36x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7095,59 +7097,59 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t36x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t368x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3681x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7155,25 +7157,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t368x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7181,23 +7183,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t368x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7205,7 +7207,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -7214,36 +7216,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t3x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t37x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7251,23 +7253,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t37x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7275,23 +7277,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t37x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7299,23 +7301,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t37x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -7323,41 +7325,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t37x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t378x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7365,23 +7367,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t378x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7389,23 +7391,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t378x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7413,7 +7415,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -7422,54 +7424,54 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t3x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t38x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t381x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7477,41 +7479,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t381x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3816x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7519,25 +7521,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t381x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7545,61 +7547,61 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t38x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t382x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3821x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7607,25 +7609,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t382x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7633,41 +7635,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t382x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3827x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7675,7 +7677,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -7684,36 +7686,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t38x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t385x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7721,23 +7723,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t385x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7745,23 +7747,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t385x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7769,61 +7771,61 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t38x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t386x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t3861x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7831,25 +7833,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t386x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7857,23 +7859,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t386x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7881,43 +7883,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t38x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t387x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7925,23 +7927,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t387x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7949,23 +7951,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t387x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -7973,7 +7975,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -7984,16 +7986,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>⑤ B2 · jugar X</b></summary>
+<summary><b>⑤ B2 · PONER ✕</b></summary>
 
 **Vos:** B2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -8002,16 +8004,16 @@ C │ 7 │ 8 │ 9 │
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -8020,36 +8022,36 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t41x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t413x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8057,23 +8059,23 @@ C │ O │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t413x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8081,41 +8083,41 @@ C │ O │ X │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t413x4">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4138x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8123,7 +8125,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -8132,36 +8134,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t41x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t415x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8169,23 +8171,23 @@ C │ O │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t415x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8193,23 +8195,23 @@ C │ O │ X │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t415x4">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8217,43 +8219,43 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t41x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t416x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -8261,41 +8263,41 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t416x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4165x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -8303,25 +8305,25 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t416x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -8329,25 +8331,25 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t41x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8355,59 +8357,59 @@ C │ 7 │ X │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t41x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t418x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4183x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8415,25 +8417,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t418x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8441,23 +8443,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t418x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8465,7 +8467,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -8474,36 +8476,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t4x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t42x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ X │ 6 │
+B │ ● │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8511,41 +8513,41 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t42x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t423x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ O │ O │
+C │ ● │ ● │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -8553,23 +8555,23 @@ C │ O │ O │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t423x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ O │
+C │ ● │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -8577,41 +8579,41 @@ C │ O │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t423x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4237x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ O │
+C │ ● │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -8619,7 +8621,7 @@ C │ O │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -8628,18 +8630,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t42x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8647,23 +8649,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t42x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ O │ X │ 6 │
+B │ ● │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8671,23 +8673,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t42x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ O │ X │ 6 │
+B │ ● │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8695,23 +8697,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t4x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -8720,36 +8722,36 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t43x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t431x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8757,23 +8759,23 @@ C │ O │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t431x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8781,41 +8783,41 @@ C │ O │ X │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t431x4">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4318x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8823,7 +8825,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -8832,16 +8834,16 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t43x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -8851,23 +8853,23 @@ C │ 7 │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t43x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8875,23 +8877,23 @@ C │ X │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t43x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8899,23 +8901,23 @@ C │ 7 │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t43x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -8923,23 +8925,23 @@ C │ 7 │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t4x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -8948,36 +8950,36 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t45x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t451x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -8985,23 +8987,23 @@ C │ O │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t451x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9009,23 +9011,23 @@ C │ O │ X │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t451x4">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9033,23 +9035,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t45x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ X │ X │
+B │ ✕ │ ✕ │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -9059,23 +9061,23 @@ C │ 7 │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t45x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9083,23 +9085,23 @@ C │ X │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t45x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9107,23 +9109,23 @@ C │ 7 │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t45x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9131,61 +9133,61 @@ C │ 7 │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t4x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t46x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t461x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -9193,41 +9195,41 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t461x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4615x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -9235,25 +9237,25 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t461x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -9261,25 +9263,25 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t46x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9287,23 +9289,23 @@ C │ X │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t46x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9311,23 +9313,23 @@ C │ X │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t46x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ 9 │
+C │ ✕ │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9335,23 +9337,23 @@ C │ X │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t46x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9359,43 +9361,43 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t4x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t47x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9403,23 +9405,23 @@ C │ 7 │ X │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t47x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9427,23 +9429,23 @@ C │ 7 │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t47x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9451,23 +9453,23 @@ C │ 7 │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t47x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ 9 │
+C │ ✕ │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9475,23 +9477,23 @@ C │ X │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t47x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9499,79 +9501,79 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t4x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t48x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t481x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t4813x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ X │ O │
+B │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9579,25 +9581,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t481x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ X │ X │
+B │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9605,23 +9607,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t481x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9629,25 +9631,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t48x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ X │ 6 │
+B │ ✕ │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9655,23 +9657,23 @@ C │ 7 │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t48x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ X │
+B │ 4 │ ✕ │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9679,23 +9681,23 @@ C │ 7 │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t48x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9703,23 +9705,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t48x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ X │ 6 │
+B │ 4 │ ✕ │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9727,7 +9729,7 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -9736,7 +9738,7 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B2
 
@@ -9745,7 +9747,7 @@ La máquina hizo tres en línea. Partida terminada.
   ┌───┬───┬───┐
 A │ 1 │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -9754,16 +9756,16 @@ C │ 7 │ 8 │ 9 │
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -9772,18 +9774,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t50x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9791,23 +9793,23 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t50x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ 9 │
+C │ ● │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9815,59 +9817,59 @@ C │ O │ 8 │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t50x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t506x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5061x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -9875,25 +9877,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t506x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -9901,41 +9903,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t506x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5067x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -9943,7 +9945,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -9952,18 +9954,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t50x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -9971,23 +9973,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t50x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -9995,23 +9997,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t5x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -10020,18 +10022,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t51x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10039,23 +10041,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t51x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10063,23 +10065,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t51x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10087,23 +10089,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t51x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10111,41 +10113,41 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t51x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t518x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10153,41 +10155,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t518x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5186x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10195,25 +10197,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t518x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10221,7 +10223,7 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -10230,16 +10232,16 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t5x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -10248,18 +10250,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t52x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10267,23 +10269,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t52x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10291,23 +10293,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t52x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10315,23 +10317,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t52x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10339,23 +10341,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t52x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10363,23 +10365,23 @@ C │ 7 │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t5x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
 C │ 7 │ 8 │ 9 │
   └───┴───┴───┘
@@ -10388,18 +10390,18 @@ C │ 7 │ 8 │ 9 │
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t53x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10407,23 +10409,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t53x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ O │
+C │ 7 │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10431,23 +10433,23 @@ C │ 7 │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t53x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10455,23 +10457,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t53x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10479,41 +10481,41 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t53x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t538x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10521,23 +10523,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t538x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10545,23 +10547,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t538x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10569,7 +10571,7 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -10578,36 +10580,36 @@ La máquina hizo tres en línea. Partida terminada.
 </details>
 
 <details name="t5x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t56x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10615,23 +10617,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t56x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10639,23 +10641,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t56x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10663,23 +10665,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t56x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10687,59 +10689,59 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t56x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t568x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5681x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10747,25 +10749,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t568x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10773,23 +10775,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t568x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10797,7 +10799,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -10806,36 +10808,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t5x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t57x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10843,23 +10845,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t57x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10867,23 +10869,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t57x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10891,23 +10893,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t57x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -10915,41 +10917,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t57x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t578x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10957,23 +10959,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t578x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -10981,23 +10983,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t578x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11005,7 +11007,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -11014,54 +11016,54 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t5x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t58x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t581x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11069,41 +11071,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t581x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5816x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11111,25 +11113,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t581x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11137,25 +11139,25 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t58x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11163,41 +11165,41 @@ C │ 7 │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t58x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t583x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11205,23 +11207,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t583x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11229,23 +11231,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t583x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11253,61 +11255,61 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t58x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t586x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t5861x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11315,25 +11317,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t586x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11341,23 +11343,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t586x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11365,43 +11367,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t58x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t587x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11409,23 +11411,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t587x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11433,23 +11435,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t587x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11457,7 +11459,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -11468,7 +11470,7 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B2
 
@@ -11477,63 +11479,63 @@ Tres en línea. La máquina perdió. Partida terminada.
   ┌───┬───┬───┐
 A │ 1 │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t60x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t601x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11541,41 +11543,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t601x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6015x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11583,25 +11585,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t601x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11609,25 +11611,25 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t60x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -11635,59 +11637,59 @@ C │ X │ 8 │ 9 │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t60x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t605x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6051x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11695,25 +11697,25 @@ C │ X │ X │ O │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t605x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11721,41 +11723,41 @@ C │ X │ 8 │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t605x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6057x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11763,7 +11765,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -11772,36 +11774,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t60x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t607x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11809,23 +11811,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t607x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11833,41 +11835,41 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t607x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6075x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -11875,7 +11877,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -11884,36 +11886,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t60x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t608x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11921,23 +11923,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t608x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11945,23 +11947,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t608x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -11969,7 +11971,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -11978,36 +11980,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t6x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t61x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12015,23 +12017,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t61x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12039,23 +12041,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t61x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12063,23 +12065,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t61x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12087,59 +12089,59 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t61x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t618x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6183x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12147,43 +12149,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t618x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6185x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12191,25 +12193,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t618x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12217,7 +12219,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -12226,36 +12228,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t6x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t62x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12263,23 +12265,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t62x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12287,23 +12289,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t62x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12311,23 +12313,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t62x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12335,41 +12337,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t62x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t628x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12377,23 +12379,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t628x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12401,23 +12403,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t628x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12425,7 +12427,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -12434,36 +12436,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t6x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t63x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12471,23 +12473,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t63x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12495,23 +12497,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t63x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12519,23 +12521,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t63x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12543,59 +12545,59 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t63x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t638x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6381x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12603,25 +12605,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t638x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12629,23 +12631,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t638x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12653,7 +12655,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -12662,36 +12664,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t6x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ 9 │
+C │ ✕ │ 8 │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t65x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12699,23 +12701,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t65x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12723,23 +12725,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t65x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ O │
+C │ ✕ │ 8 │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12747,23 +12749,23 @@ C │ X │ 8 │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t65x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12771,59 +12773,59 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t65x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t658x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6581x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12831,25 +12833,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t658x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12857,23 +12859,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t658x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -12881,7 +12883,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -12890,36 +12892,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t6x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ 9 │
+C │ ✕ │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t67x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12927,23 +12929,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t67x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12951,23 +12953,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t67x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12975,23 +12977,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t67x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -12999,23 +13001,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t67x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13023,79 +13025,79 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t6x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t68x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t681x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6813x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13103,43 +13105,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t681x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6815x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13147,25 +13149,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t681x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13173,43 +13175,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t68x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t682x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13217,23 +13219,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t682x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13241,23 +13243,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t682x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13265,61 +13267,61 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t68x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t683x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6831x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13327,25 +13329,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t683x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13353,23 +13355,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t683x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13377,61 +13379,61 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t68x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t685x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t6851x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13439,25 +13441,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t685x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13465,23 +13467,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t685x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13489,25 +13491,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t68x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13515,7 +13517,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -13524,7 +13526,7 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B2
 
@@ -13533,45 +13535,45 @@ Tres en línea. La máquina perdió. Partida terminada.
   ┌───┬───┬───┐
 A │ 1 │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t7x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t70x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -13579,23 +13581,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t70x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -13603,23 +13605,23 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t70x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ 9 │
+C │ ● │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
@@ -13627,41 +13629,41 @@ C │ O │ X │ 9 │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t70x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t706x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ O │
+B │ 4 │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13669,23 +13671,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t706x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13693,41 +13695,41 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t706x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t7065x5">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13735,7 +13737,7 @@ C │ X │ X │ O │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -13744,18 +13746,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t70x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13763,43 +13765,43 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t7x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t71x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13807,23 +13809,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t71x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13831,23 +13833,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t71x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13855,23 +13857,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t71x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -13879,41 +13881,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t71x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t718x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13921,23 +13923,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t718x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13945,23 +13947,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t718x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -13969,7 +13971,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -13978,36 +13980,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t7x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t72x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14015,23 +14017,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t72x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14039,23 +14041,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t72x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14063,23 +14065,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t72x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14087,41 +14089,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t72x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t728x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14129,41 +14131,41 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t728x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t7283x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14171,25 +14173,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t728x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14197,7 +14199,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -14206,36 +14208,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t7x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t73x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14243,23 +14245,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t73x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14267,23 +14269,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t73x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14291,23 +14293,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t73x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14315,41 +14317,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t73x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t738x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14357,23 +14359,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t738x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14381,23 +14383,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t738x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14405,7 +14407,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -14414,36 +14416,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t7x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ 9 │
+C │ 7 │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t75x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14451,23 +14453,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t75x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14475,23 +14477,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t75x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ O │
+C │ 7 │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14499,23 +14501,23 @@ C │ 7 │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t75x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14523,41 +14525,41 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t75x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t758x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14565,23 +14567,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t758x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14589,23 +14591,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t758x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14613,7 +14615,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -14622,36 +14624,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t7x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ 9 │
+C │ ✕ │ ✕ │ 9 │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t76x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14659,23 +14661,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t76x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14683,23 +14685,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t76x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14707,23 +14709,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t76x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ O │
+C │ ✕ │ ✕ │ ● │
   └───┴───┴───┘
 </pre>
 
@@ -14731,23 +14733,23 @@ C │ X │ X │ O │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t76x3">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14755,61 +14757,61 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t7x2">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t78x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t781x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14817,23 +14819,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t781x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14841,23 +14843,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t781x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14865,43 +14867,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t78x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t782x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14909,41 +14911,41 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t782x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t7823x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14951,25 +14953,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t782x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -14977,43 +14979,43 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t78x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t783x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15021,23 +15023,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t783x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15045,23 +15047,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t783x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15069,43 +15071,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t78x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t785x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15113,23 +15115,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t785x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15137,23 +15139,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t785x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15161,25 +15163,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t78x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15187,7 +15189,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -15196,7 +15198,7 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="tx1">
-<summary><b>⑨ C3 · jugar X</b></summary>
+<summary><b>⑨ C3 · PONER ✕</b></summary>
 
 **Vos:** C3 　 **CPU:** B2
 
@@ -15205,45 +15207,45 @@ Tres en línea. La máquina perdió. Partida terminada.
   ┌───┬───┬───┐
 A │ 1 │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 2/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8x2">
-<summary><b>① A1 · jugar X</b></summary>
+<summary><b>① A1 · PONER ✕</b></summary>
 
 **Vos:** A1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t80x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ X │ O │
+A │ ✕ │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15251,23 +15253,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t80x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15275,23 +15277,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t80x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15299,41 +15301,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t80x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t806x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15341,23 +15343,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t806x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15365,23 +15367,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t806x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ O │ O │
+A │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15389,25 +15391,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t80x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ X │ 2 │ O │
+A │ ✕ │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15415,79 +15417,79 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t8x2">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ 3 │
+A │ ● │ ✕ │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t81x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t812x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8123x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15495,25 +15497,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t812x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15521,23 +15523,23 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t812x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15545,43 +15547,43 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t81x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t813x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15589,41 +15591,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t813x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8136x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15631,25 +15633,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t813x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15657,43 +15659,43 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t81x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t815x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15701,41 +15703,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t815x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8156x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15743,25 +15745,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t815x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15769,61 +15771,61 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t81x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t816x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8163x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15831,43 +15833,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t816x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8165x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15875,25 +15877,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t816x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15901,43 +15903,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t81x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t817x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15945,23 +15947,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t817x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15969,23 +15971,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t817x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -15993,7 +15995,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -16002,72 +16004,72 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t8x2">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t82x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t821x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8213x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16075,25 +16077,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t821x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16101,23 +16103,23 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t821x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16125,61 +16127,61 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t82x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t823x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8231x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16187,25 +16189,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t823x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16213,41 +16215,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t823x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8237x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16255,7 +16257,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -16264,18 +16266,18 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t82x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16283,41 +16285,41 @@ C │ 7 │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t82x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t826x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16325,23 +16327,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t826x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16349,23 +16351,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t826x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16373,43 +16375,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t82x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t827x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16417,41 +16419,41 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t827x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8273x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16459,25 +16461,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t827x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16485,7 +16487,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -16494,54 +16496,54 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t8x2">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t83x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t831x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16549,41 +16551,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t831x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8316x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16591,25 +16593,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t831x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16617,61 +16619,61 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t83x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t832x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8321x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16679,25 +16681,25 @@ C │ O │ X │ X │
 
 Tablero lleno, sin ganador.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t832x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16705,41 +16707,41 @@ C │ O │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t832x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8327x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16747,7 +16749,7 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -16756,36 +16758,36 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t83x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t835x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16793,23 +16795,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t835x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16817,23 +16819,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t835x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16841,61 +16843,61 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t83x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t836x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8361x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16903,25 +16905,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t836x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16929,23 +16931,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t836x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16953,43 +16955,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t83x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t837x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -16997,23 +16999,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t837x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17021,23 +17023,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t837x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17045,7 +17047,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -17054,54 +17056,54 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t8x2">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t85x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t851x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17109,41 +17111,41 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t851x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8516x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17151,25 +17153,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t851x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17177,25 +17179,25 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t85x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17203,41 +17205,41 @@ C │ 7 │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t85x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ 8 │ X │
+C │ 7 │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t853x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ 8 │ X │
+C │ ● │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17245,23 +17247,23 @@ C │ O │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t853x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17269,23 +17271,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t853x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17293,61 +17295,61 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t85x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t856x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8561x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17355,25 +17357,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t856x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17381,23 +17383,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t856x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17405,43 +17407,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t85x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t857x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17449,23 +17451,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t857x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17473,23 +17475,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t857x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17497,7 +17499,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -17506,72 +17508,72 @@ Tres en línea. La máquina perdió. Partida terminada.
 </details>
 
 <details name="t8x2">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t86x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t861x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8613x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17579,43 +17581,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t861x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8615x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17623,25 +17625,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t861x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17649,43 +17651,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t86x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t862x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ O │ X │
+C │ ✕ │ ● │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17693,23 +17695,23 @@ C │ X │ O │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t862x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17717,23 +17719,23 @@ C │ X │ 8 │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t862x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17741,61 +17743,61 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t86x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t863x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8631x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ O │
+B │ ✕ │ ● │ ● │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17803,25 +17805,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t863x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17829,23 +17831,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t863x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17853,61 +17855,61 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t86x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t865x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8651x5">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ O │ O │ X │
+B │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17915,25 +17917,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t865x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ 8 │ X │
+C │ ✕ │ 8 │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17941,23 +17943,23 @@ C │ X │ 8 │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t865x4">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17965,25 +17967,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t86x3">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -17991,61 +17993,61 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t8x2">
-<summary><b>⑧ C2 · jugar X</b></summary>
+<summary><b>⑧ C2 · PONER ✕</b></summary>
 
 **Vos:** C2 　 **CPU:** A1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 3/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t87x3">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t871x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18053,23 +18055,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t871x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18077,23 +18079,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t871x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18101,43 +18103,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t87x3">
-<summary><b>③ A3 · jugar X</b></summary>
+<summary><b>③ A3 · PONER ✕</b></summary>
 
 **Vos:** A3 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t872x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** B1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ X │
+A │ ● │ ✕ │ ✕ │
   ├───┼───┼───┤
-B │ O │ O │ 6 │
+B │ ● │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18145,41 +18147,41 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t872x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 5/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t8723x5">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ X │
+A │ ● │ ● │ ✕ │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18187,25 +18189,25 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t872x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ X │
+A │ ● │ 2 │ ✕ │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18213,43 +18215,43 @@ C │ O │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t87x3">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t873x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18257,23 +18259,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t873x4">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18281,23 +18283,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t873x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ X │ O │ 6 │
+B │ ✕ │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18305,43 +18307,43 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t87x3">
-<summary><b>⑥ B3 · jugar X</b></summary>
+<summary><b>⑥ B3 · PONER ✕</b></summary>
 
 **Vos:** B3 　 **CPU:** A3
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
 **TURNO 4/5 · ELEGÍ TU PRÓXIMA CASILLA VACÍA**
 
 <details name="t875x4">
-<summary><b>② A2 · jugar X</b></summary>
+<summary><b>② A2 · PONER ✕</b></summary>
 
 **Vos:** A2 　 **CPU:** C1
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ X │ O │
+A │ ● │ ✕ │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ O │ X │ X │
+C │ ● │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18349,23 +18351,23 @@ C │ O │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t875x4">
-<summary><b>④ B1 · jugar X</b></summary>
+<summary><b>④ B1 · PONER ✕</b></summary>
 
 **Vos:** B1 　 **CPU:** A2
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ O │ O │
+A │ ● │ ● │ ● │
   ├───┼───┼───┤
-B │ X │ O │ X │
+B │ ✕ │ ● │ ✕ │
   ├───┼───┼───┤
-C │ 7 │ X │ X │
+C │ 7 │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18373,23 +18375,23 @@ C │ 7 │ X │ X │
 
 La máquina hizo tres en línea. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 <details name="t875x4">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ O │
+A │ ● │ 2 │ ● │
   ├───┼───┼───┤
-B │ 4 │ O │ X │
+B │ 4 │ ● │ ✕ │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18397,25 +18399,25 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
 </details>
 
 <details name="t87x3">
-<summary><b>⑦ C1 · jugar X</b></summary>
+<summary><b>⑦ C1 · PONER ✕</b></summary>
 
 **Vos:** C1 · la máquina no pudo responder
 
 <pre>
     1   2   3
   ┌───┬───┬───┐
-A │ O │ 2 │ 3 │
+A │ ● │ 2 │ 3 │
   ├───┼───┼───┤
-B │ 4 │ O │ 6 │
+B │ 4 │ ● │ 6 │
   ├───┼───┼───┤
-C │ X │ X │ X │
+C │ ✕ │ ✕ │ ✕ │
   └───┴───┴───┘
 </pre>
 
@@ -18423,7 +18425,7 @@ C │ X │ X │ X │
 
 Tres en línea. La máquina perdió. Partida terminada.
 
-**Otra partida:** actualizá esta misma página o cerrá y volvé a abrir el cartucho.
+**↻ REVANCHA:** actualizá esta misma página (F5).
 
 </details>
 
@@ -18434,7 +18436,7 @@ Tres en línea. La máquina perdió. Partida terminada.
 
 </details>
 
-<sub>Hecho con HTML nativo de GitHub, sin JavaScript, enlaces ni recarga durante la partida. El adversario es una estrategia determinista precalculada; no utiliza un modelo online.</sub>
+<sub>Para una nueva partida, recargá esta misma página. Hecho con HTML nativo de GitHub, sin JavaScript, enlaces ni recarga durante la partida. El adversario es una estrategia determinista precalculada; no utiliza un modelo online.</sub>
 
 ---
 
