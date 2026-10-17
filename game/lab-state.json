@@ -1,13 +1,15 @@
 {
   "version": 1,
-  "turn": 2,
-  "xp": 27,
+  "turn": 3,
+  "xp": 40,
   "level": 1,
   "inventory": {
     "skill": {
       "python": 1
     },
-    "plugin": {},
+    "plugin": {
+      "github": 1
+    },
     "model": {
       "qwen": 1
     },
@@ -26,9 +28,15 @@
       "actor": "chrishotza",
       "kind": "model",
       "key": "qwen"
+    },
+    {
+      "turn": 3,
+      "actor": "chrishotza",
+      "kind": "plugin",
+      "key": "github"
     }
   ],
   "actors": {
-    "chrishotza": 2
+    "chrishotza": 3
   }
 }
