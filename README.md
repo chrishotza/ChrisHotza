@@ -15,9 +15,9 @@
 
 </div>
 
-**Un mini-FPS retro por decisiones:** avanzá por un laboratorio en primera persona, enfrentate a bugs, levantá skills y complementos, integrá una IA y compilá un setup. Las pantallas son dibujos originales, no capturas del DOOM comercial.
+**Un mini-FPS retro por decisiones:** avanzá por un laboratorio en primera persona, enfrentate a bugs, levantá skills y complementos, integrá una IA y compilá un setup. Las pantallas son dibujos originales, no capturas del DOOM comercial. **Las escenas están abiertas para que cada acción funcione en un solo clic.**
 
-**Cómo jugar:** tocá las acciones debajo de cada pantalla. Te llevan a otra escena de *esta misma página*. No se abren repositorios, Issues ni sitios externos. Si usás un navegador que no abre una sección automáticamente, pulsá su título.
+**Cómo jugar:** tocá las acciones debajo de cada pantalla. Te llevan a otra escena de *esta misma página*. No se abren repositorios, Issues ni sitios externos. Un clic salta a la siguiente imagen y sus controles, **siempre dentro del mismo README**.
 
 <details open>
 <summary><b>00 / Sector 00 · Ingreso — COMENZAR ACÁ</b></summary>
@@ -36,8 +36,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>01 / Sector 01 · Primer bug — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>01 / Sector 01 · Primer bug — ESCENA</b></summary>
 
 <a name="dl-01"></a>
 
@@ -53,8 +53,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>02 / Sector 02 · Primera skill — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>02 / Sector 02 · Primera skill — ESCENA</b></summary>
 
 <a name="dl-02"></a>
 
@@ -70,8 +70,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>03 / Sector 03 · Error eliminado — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>03 / Sector 03 · Error eliminado — ESCENA</b></summary>
 
 <a name="dl-03"></a>
 
@@ -87,8 +87,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>04 / Sector 04 · Herramientas — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>04 / Sector 04 · Herramientas — ESCENA</b></summary>
 
 <a name="dl-04"></a>
 
@@ -104,8 +104,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>05 / Sector 05 · Python equipado — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>05 / Sector 05 · Python equipado — ESCENA</b></summary>
 
 <a name="dl-05"></a>
 
@@ -121,8 +121,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>06 / Sector 06 · Decisión — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>06 / Sector 06 · Decisión — ESCENA</b></summary>
 
 <a name="dl-06"></a>
 
@@ -138,8 +138,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>07 / Sector 07 · Botín de pruebas — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>07 / Sector 07 · Botín de pruebas — ESCENA</b></summary>
 
 <a name="dl-07"></a>
 
@@ -155,8 +155,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>08 / Sector 08 · CI lista — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>08 / Sector 08 · CI lista — ESCENA</b></summary>
 
 <a name="dl-08"></a>
 
@@ -172,8 +172,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>09 / Sector 09 · Un resultado negativo — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>09 / Sector 09 · Un resultado negativo — ESCENA</b></summary>
 
 <a name="dl-09"></a>
 
@@ -189,8 +189,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>10 / Sector 10 · Elegir una IA — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>10 / Sector 10 · Elegir una IA — ESCENA</b></summary>
 
 <a name="dl-10"></a>
 
@@ -206,8 +206,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>11 / Sector 11 · Otro bug — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>11 / Sector 11 · Otro bug — ESCENA</b></summary>
 
 <a name="dl-11"></a>
 
@@ -223,8 +223,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>12 / Sector 12 · Python + Qwen + Actions — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>12 / Sector 12 · Python + Qwen + Actions — ESCENA</b></summary>
 
 <a name="dl-12"></a>
 
@@ -240,8 +240,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>13 / Sector 13 · Falta contexto — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>13 / Sector 13 · Falta contexto — ESCENA</b></summary>
 
 <a name="dl-13"></a>
 
@@ -257,8 +257,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>14 / Sector 14 · Bug corregido — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>14 / Sector 14 · Bug corregido — ESCENA</b></summary>
 
 <a name="dl-14"></a>
 
@@ -274,8 +274,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>15 / Sector 15 · Reiniciá con evidencia — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>15 / Sector 15 · Reiniciá con evidencia — ESCENA</b></summary>
 
 <a name="dl-15"></a>
 
@@ -291,8 +291,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>16 / Sector 16 · Completaste el nivel — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>16 / Sector 16 · Completaste el nivel — ESCENA</b></summary>
 
 <a name="dl-16"></a>
 
@@ -308,8 +308,8 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 </details>
 
-<details>
-<summary><b>17 / Sector 17 · Producción falló — ABRIR ESCENA</b></summary>
+<details open>
+<summary><b>17 / Sector 17 · Producción falló — ESCENA</b></summary>
 
 <a name="dl-17"></a>
 
