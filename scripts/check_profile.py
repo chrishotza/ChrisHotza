@@ -60,6 +60,32 @@ def main() -> int:
     for language in ("EN", "ES"):
         if readme.count(f"<strong>{language}</strong>") != 15:
             errors.append(f"Missing or duplicate {language} descriptions")
+
+    # A global EN/ES total alone could hide a broken card (e.g. two English
+    # descriptions on one repository and none on another). Enforce locality.
+    table_match = re.search(r"<table>(.*?)</table>", readme, re.DOTALL)
+    if table_match is None:
+        errors.append("Missing HTML gallery table")
+        cards: list[str] = []
+    else:
+        cards = re.findall(
+            r'<td width="50%" valign="top">(.*?)</td>',
+            table_match.group(1), re.DOTALL,
+        )
+        if len(cards) != 14:
+            errors.append(f"Expected 14 table cards, found {len(cards)}")
+    # The final UnGesto card remains intentionally outside the table.
+    if "</table>" in readme:
+        cards.append(readme.split("</table>", 1)[1])
+    for i, card in enumerate(cards, start=1):
+        for language in ("EN", "ES"):
+            matches = re.findall(
+                rf"<strong>{language}</strong> · ([^<]+)", card
+            )
+            if len(matches) != 1 or len(matches[0].strip()) < 35:
+                errors.append(f"Card {i}: exactly one meaningful {language} description required")
+        if card.count('<img src="./assets/') != 1:
+            errors.append(f"Card {i}: expected exactly one illustration")
     if "<script" in readme.lower() or "<iframe" in readme.lower():
         errors.append("Executable/embed HTML is not allowed in GitHub profile Markdown")
     for name in PRIVATE:
@@ -69,6 +95,8 @@ def main() -> int:
     for repo, image, alt, width in images:
         if not alt.strip() or width not in {"100%", "49%"}:
             errors.append(f"Bad alt text or width for {repo}")
+        if len(alt.strip()) < 20 or "project artwork" in alt.lower():
+            errors.append(f"Alt text for {repo} must describe the actual illustration")
         img_path = ROOT / "assets" / image
         if not img_path.is_file():
             errors.append(f"Missing SVG: {image}")
