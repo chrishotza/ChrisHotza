@@ -25,9 +25,9 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 ### VIBE CODER / AGENTE EN EVOLUCIÓN ∞
 
-**Nivel 1** · **40 XP** · **3 jugadas** · **0 setups creados**
+**Nivel 2** · **65 XP** · **4 jugadas** · **1 setups creados**
 
-▰▰▰▰▰▰▰▰▱▱  → Siguiente nivel: 50 XP
+▰▰▰▱▱▱▱▱▱▱  → Siguiente nivel: 100 XP
 
 </div>
 
@@ -72,17 +72,18 @@ Cada enlace prepara la jugada. **Hay que pulsar Submit new issue** para que se p
 
 #### 🖥️ Setup actual
 
-**SIN COMPILAR.** Juntá skills, IAs y complementos. Después elegí *Compilar un setup*.
+**Research Stack #1** — Explorar hipótesis con pruebas, fuentes y trazabilidad.
 
 | Skill | IA | Complemento |
 | :-- | :-- | :-- |
-| Por elegir | Por elegir | Por elegir |
+| Python | Qwen | GitHub Actions |
 
 <details>
 <summary><b>📟 Últimas jugadas de la comunidad</b></summary>
 
 | Turno | Jugador | Acción |
 | --: | :-- | :-- |
+| 4 | @chrishotza | SETUP: Research Stack |
 | 3 | @chrishotza | COMPLEMENTO: GitHub Actions |
 | 2 | @chrishotza | MODELO: Qwen |
 | 1 | @chrishotza | SKILL: Python |
