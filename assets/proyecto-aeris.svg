@@ -1,9 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="250" viewBox="0 0 680 250" role="img" aria-labelledby="t d">
-<title id="t">Aeris-Dairy-Twin — BIENESTAR ANIMAL</title><desc id="d">Original geometric project illustration for Aeris-Dairy-Twin.</desc>
+<title id="t">Aeris-Dairy-Twin — BIENESTAR ANIMAL</title><desc id="d">A natural dairy-cow silhouette accompanied by welfare and monitoring signals.</desc>
 <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0C1929"/><stop offset="1" stop-color="#17243B"/></linearGradient><radialGradient id="g"><stop stop-color="#7DE9BF" stop-opacity=".16"/><stop offset="1" stop-color="#7DE9BF" stop-opacity="0"/></radialGradient><clipPath id="c"><rect width="680" height="250" rx="17"/></clipPath></defs>
 <g clip-path="url(#c)"><rect width="680" height="250" fill="url(#b)"/><circle cx="545" cy="128" r="171" fill="url(#g)"/><path d="M5 6V244" stroke="#7DE9BF" stroke-width="10"/><path d="M38 44H109" stroke="#7DE9BF" stroke-width="2.4"/>
 <text x="38" y="35" font-family="Consolas,Menlo,monospace" font-size="12" font-weight="700" letter-spacing=".95" fill="#7DE9BF">06  /  BIENESTAR ANIMAL</text>
 <text x="36" y="127" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="800" letter-spacing="-1.4" fill="#F2F8FE">Aeris-Dairy-Twin</text>
-<text x="39" y="167" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#A8BCCF">Señales · sensores · alertas</text>
-<path d="M39 194H381" stroke="#3A526B" stroke-width="1"/><text x="39" y="225" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="1.4" fill="#7DE9BF">ABRIR REPOSITORIO</text><path d="M320 219H353L345 211M353 219L345 227" fill="none" stroke="#7DE9BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g fill="none" stroke="#7DE9BF" stroke-width="2.5" stroke-linejoin="round"><path d="M485 81Q498 64 518 73L536 83Q556 73 576 84L585 76L604 85L594 109L593 153Q576 182 544 194L509 164L498 134L482 118Z" fill="#7DE9BF" fill-opacity=".055"/><path d="M481 88L457 72L450 99L481 107M594 90L618 72L632 101L596 111" fill="#7DE9BF" fill-opacity=".12"/><path d="M503 129Q544 121 587 129M521 152L542 160L559 152"/><circle cx="512" cy="119" r="4" fill="#7DE9BF"/><circle cx="578" cy="119" r="4" fill="#7DE9BF"/><circle cx="547" cy="93" r="17" stroke-dasharray="3 5" opacity=".65"/><path d="M462 201h26l9-13 12 24 12-20 7 9h30" stroke-width="2"/><path d="M595 202h15l11-26 12 23h18" stroke-width="2" opacity=".65"/></g></g>
+<text x="39" y="167" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#A8BCCF">Bienestar · sensores · alertas</text>
+<path d="M39 194H381" stroke="#3A526B" stroke-width="1"/><text x="39" y="225" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="1.4" fill="#7DE9BF">ABRIR REPOSITORIO</text><path d="M320 219H353L345 211M353 219L345 227" fill="none" stroke="#7DE9BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g stroke="#7DE9BF" stroke-linejoin="round" stroke-linecap="round">
+<path d="M483 106 C486 87 507 81 532 83 C553 82 575 92 584 108 L591 101 C596 88 607 83 620 89 C633 92 638 105 633 118 C630 127 618 133 604 129 L590 126 L578 145 L563 148 L557 192 L543 192 L540 151 L518 150 L510 193 L497 193 L494 146 L486 135 L480 183 L468 183 L472 132 C465 121 465 113 483 106 Z" fill="#7DE9BF" fill-opacity=".085" stroke-width="3"/>
+<path d="M598 97 C584 93 583 82 580 73 C596 74 603 81 604 91" fill="#7DE9BF" fill-opacity=".14" stroke-width="2.3"/>
+<path d="M622 96 C630 81 640 81 647 88 C640 100 633 104 623 103" fill="#7DE9BF" fill-opacity=".14" stroke-width="2.3"/>
+<path d="M609 117 C622 112 631 115 631 122 C625 131 615 131 606 127" fill="#7DE9BF" fill-opacity=".14" stroke-width="2"/>
+<circle cx="617" cy="103" r="3" fill="#BFFFEA" stroke="none"/><circle cx="626" cy="122" r="1.8" fill="#BFFFEA" stroke="none"/>
+<path d="M485 106 C466 96 466 81 472 75" fill="none" stroke-width="2.5"/>
+<path d="M520 150 C524 171 542 172 546 152" fill="none" stroke-width="2" opacity=".6"/>
+<circle cx="479" cy="66" r="17" fill="#0C1929" stroke-width="1.5" opacity=".95"/>
+<path d="M468 66 H473 L476 59 L480 73 L484 63 L488 66 H491" fill="none" stroke-width="1.7"/>
+<circle cx="632" cy="172" r="16" fill="#0C1929" stroke-width="1.5" opacity=".95"/>
+<path d="M626 180 C622 177 623 174 627 169 C632 161 636 165 637 172 L638 178" fill="none" stroke-width="1.8"/>
+<path d="M494 76 Q523 45 565 65M604 156 Q626 151 632 156" fill="none" stroke-width="1.5" stroke-dasharray="3 5" opacity=".35"/>
+<circle cx="565" cy="65" r="4" fill="#7DE9BF" stroke="none"/>
+</g></g>
 <rect x="1" y="1" width="678" height="248" rx="17" fill="none" stroke="#456176" stroke-opacity=".52" stroke-width="2"/></svg>
