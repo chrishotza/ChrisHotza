@@ -48,10 +48,10 @@ Bilingual EN / ES, no JavaScript, no external image hosts, no private repositori
 <p><strong>ES</strong> · Seguimiento celular por microscopía y análisis temporal de fenotipos.</p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/chrishotza/Aeris-Dairy-Twin"><img src="./assets/proyecto-aeris.svg" alt="Aeris-Dairy-Twin project artwork" width="100%"></a>
+<a href="https://github.com/chrishotza/Aeris-Dairy-Twin"><img src="./assets/proyecto-aeris.svg" alt="Aeris-Dairy-Twin: dairy cow silhouette and welfare monitoring signals" width="100%"></a>
 <p><a href="https://github.com/chrishotza/Aeris-Dairy-Twin"><strong>Aeris-Dairy-Twin</strong></a></p>
-<p><strong>EN</strong> · Multimodal research for interpreting livestock welfare signals.</p>
-<p><strong>ES</strong> · Investigación multimodal para interpretar señales de bienestar ganadero.</p>
+<p><strong>EN</strong> · From animal to farm: interpretable welfare states and early warnings from behavioral and environmental signals (simulation-backed).</p>
+<p><strong>ES</strong> · Del animal a la granja: estados de bienestar y alertas tempranas a partir de señales de conducta y ambiente (validación simulada).</p>
 </td>
 </tr>
 <tr>
@@ -76,10 +76,10 @@ Bilingual EN / ES, no JavaScript, no external image hosts, no private repositori
 <p><strong>ES</strong> · Validación experimental de particionado de grafos y reubicación de nodos.</p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/chrishotza/bess-operational-intelligence"><img src="./assets/proyecto-bess.svg" alt="bess-operational-intelligence project artwork" width="100%"></a>
-<p><a href="https://github.com/chrishotza/bess-operational-intelligence"><strong>bess-operational-intelligence</strong></a></p>
-<p><strong>EN</strong> · Simulation-based supervisory decisions for battery energy storage.</p>
-<p><strong>ES</strong> · Decisiones supervisoras basadas en simulación para almacenamiento de energía.</p>
+<a href="https://github.com/ConsciousPulse/bess-operational-intelligence"><img src="./assets/proyecto-bess.svg" alt="ConsciousPulse BESS: reserve, peak-load and recovery decision intelligence" width="100%"></a>
+<p><a href="https://github.com/ConsciousPulse/bess-operational-intelligence"><strong>ConsciousPulse · BESS Intelligence</strong></a></p>
+<p><strong>EN</strong> · ConsciousPulse supervisory intelligence for battery storage: reserve-aware decisions, peak management and outage recovery, evaluated in simulation.</p>
+<p><strong>ES</strong> · Inteligencia supervisora de ConsciousPulse para baterías: reservas, gestión de picos y recuperación ante cortes, evaluada en simulaciones.</p>
 </td>
 </tr>
 <tr>
@@ -114,12 +114,12 @@ Bilingual EN / ES, no JavaScript, no external image hosts, no private repositori
 
 <div align="center">
 
-<a href="https://github.com/chrishotza/UnGesto-"><img src="./assets/proyecto-ungesto.svg" alt="UnGesto- project artwork" width="49%"></a>
+<a href="https://github.com/chrishotza/UnGesto-"><img src="./assets/proyecto-ungesto.svg" alt="UnGesto: one voluntary action connecting multiple chosen social causes" width="49%"></a>
 
 <strong><a href="https://github.com/chrishotza/UnGesto-">UnGesto-</a></strong>
 
-<sub><strong>EN</strong> · Explore social causes and register support; external official signatures remain pending.</sub>
+<sub><strong>EN</strong> · One gesture, many causes: choose real petitions and register support for several selected causes through one form and consent.</sub>
 
-<sub><strong>ES</strong> · Explorar causas sociales y registrar adhesiones; el envío oficial externo sigue pendiente.</sub>
+<sub><strong>ES</strong> · Un solo gesto, muchas causas: elegí peticiones reales y registrá tu apoyo a varias con un único formulario y autorización.</sub>
 
 </div>
