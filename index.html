@@ -102,26 +102,35 @@ canvas{width:100%;height:100%;display:block;touch-action:none}
 <body>
 <div class="shell">
 <header class="topbar"><div class="ident"><b>▧</b> LAB / ARG <span style="color:#66869a">001</span></div><div class="top-right"><span class="live"><i></i> EXPERIENCIA INTERACTIVA</span><a href="#resumen">LEER SIN JUGAR ↓</a></div></header>
-<section class="hero"><div><div class="kicker">INVESTIGACIÓN × JUEGO × INTELIGENCIA ARTIFICIAL</div><h1>No mires un portfolio.<br><span>Jugá el laboratorio.</span></h1><p class="intro">Un investigador independiente de Argentina que usa agentes de IA para convertir preguntas en experimentos y herramientas. <strong>Cada señal que atrapás revela algo que construyó, está investigando o aprendió a comprobar.</strong> Sin salir a buscar repositorios.</p></div><div class="quick"><strong>OBJETIVO / MISSION</strong>Recorré el tablero, capturá seis señales de investigación y descubrí el trabajo detrás de cada una. Si chocás, recalibramos. Acá los errores también enseñan.</div></section>
+<section class="hero"><div><div class="kicker">INVESTIGACIÓN × JUEGO × INTELIGENCIA ARTIFICIAL</div><h1>No mires un portfolio.<br><span>Jugá el laboratorio.</span></h1><p class="intro">Un investigador independiente de Argentina que usa agentes de IA para convertir preguntas en experimentos y herramientas. <strong>Cada señal que atrapás revela algo que construyó, está investigando o aprendió a comprobar.</strong> Sin salir a buscar repositorios.</p></div><div class="quick"><strong>OBJETIVO / MISSION</strong>Recorré el tablero, capturá seis investigaciones reales y luego desbloqueá skills, complementos, modelos de IA y setups sin límite. Si chocás, recalibramos. Acá los errores también enseñan.</div></section>
 <div class="ticker" aria-hidden="true"><div class="track" id="ticker"><span><em>●</em> RESEARCH</span><span>CONSTRUIR</span><span><em>●</em> TESTEAR</span><span>MEMORIA</span><span><em>●</em> COMPUTACIÓN CIENTÍFICA</span><span>AGENTES</span><span><em>●</em> EXPERIMENTAR</span><span>ARGENTINA</span><span><em>●</em> RESEARCH</span><span>CONSTRUIR</span><span><em>●</em> TESTEAR</span><span>MEMORIA</span><span><em>●</em> COMPUTACIÓN CIENTÍFICA</span><span>AGENTES</span><span><em>●</em> EXPERIMENTAR</span><span>ARGENTINA</span></div></div>
 <main class="arena" aria-label="Juego de exploración">
 <div class="gameframe">
-<div class="framebar"><div class="title">▶ <span>SIGNAL SNAKE</span> / RUN_01</div><div class="score">SEÑALES <span id="score">00</span>/06 &nbsp; <span style="color:var(--gold)" id="phase">STANDBY</span></div></div>
+<div class="framebar"><div class="title">▶ <span>VIBE SNAKE ∞</span> / INFINITE RUN</div><div class="score">LOOT <span id="score">00</span>/∞ &nbsp; <span style="color:var(--gold)" id="phase">STANDBY</span></div></div>
 <div class="canvaswrap" id="canvaswrap">
 <canvas id="board" width="720" height="480" aria-label="Juego Snake: mové la serpiente con flechas, WASD, gestos táctiles o los botones de dirección. Capturá los puntos luminosos.">Tu navegador necesita soporte de canvas para jugar. Podés leer las investigaciones más abajo.</canvas>
 <div class="overlayer" id="overlay">
-<div class="symbol" id="overlaySymbol">◈</div><h2 id="overlayTitle">Una señal. Seis descubrimientos.</h2><p id="overlayText">Manejá la serpiente, atrapá los nodos y conocé los proyectos que hay detrás. Podés jugar con flechas, WASD o controles táctiles.</p>
+<div class="symbol" id="overlaySymbol">◈</div><h2 id="overlayTitle">Un agente. Infinitas combinaciones.</h2><p id="overlayText">Capturá skills, modelos, complementos y setups. Empezás con seis investigaciones reales; después la evolución no termina. Podés jugar con flechas, WASD o controles táctiles.</p>
 <button class="primary" id="start" type="button">▶ EMPEZAR A JUGAR</button>
 </div></div>
-<div class="controlbar"><div class="instructions">FLECHAS / WASD para mover · ESPACIO para pausar<br>CELULAR: deslizá el dedo o usá las flechas.</div><div class="buttons"><button class="secondary" type="button" id="pause">Ⅱ PAUSA</button><button class="secondary" type="button" id="reset">↻ REINICIAR</button></div></div>
+<div class="controlbar"><div class="instructions">FLECHAS / WASD para mover · ESPACIO para pausar<br>CELULAR: deslizá el dedo o usá las flechas.</div><div class="buttons"><button class="secondary" type="button" id="pause">Ⅱ PAUSA</button><button class="secondary" type="button" id="reset">↻ REINTENTAR</button></div></div>
 <div class="dpad" aria-label="Controles táctiles"><button type="button" data-move="up" aria-label="Arriba">↑</button><button type="button" data-move="left" aria-label="Izquierda">←</button><button type="button" data-move="down" aria-label="Abajo">↓</button><button type="button" data-move="right" aria-label="Derecha">→</button></div>
 </div>
 <aside class="panel" aria-live="polite" aria-label="Hallazgos del laboratorio">
 <div class="paneltop"><span class="label">REGISTRO DE INVESTIGACIÓN</span><span class="chip" id="chip">EN ESPERA</span></div><div class="progress"><div id="progressbar"></div></div>
 <div class="panelcontent"><div class="panelid" id="entryId">TRANSMISIÓN / 000</div><h2 id="entryTitle">Cada punto es una historia real.</h2><p id="entryBody">No te voy a mandar a seis repositorios. A medida que jugás, esta pantalla te cuenta qué se hizo, cómo se probó y qué falta verificar.</p><div class="result" id="entryResult">Primero, capturá la señal luminosa que aparece en el tablero.</div><a class="cta" href="#resumen">O MIRÁ TODO SIN JUGAR ↓</a></div>
-<div class="panelbottom"><div>SEÑALES RECUPERADAS</div><div class="pills" id="pills"></div><div id="help" style="margin-top:13px">La partida conserva tus hallazgos aunque choques.</div></div>
+<div class="panelbottom"><div>ÚLTIMOS LOOTS / INVENTARIO</div><div class="pills" id="pills"></div><div id="help" style="margin-top:13px">El progreso se acumula indefinidamente y queda guardado en este navegador.</div></div>
 </aside>
 </main>
+<section class="section" id="evolucion">
+<div class="section-head"><div><small>AGENTE EN PROGRESIÓN / INFINITE LOOP</small><h2>Una skill más. Otra IA. Otro setup.</h2></div><p class="note">Cada cuatro recompensas después de las seis investigaciones iniciales se compila una combinación. El agente no tiene nivel máximo.</p></div>
+<div class="factgrid">
+<div class="fact"><strong>LV <span id="agentLevel">1</span></strong><span>Nivel del agente</span></div>
+<div class="fact"><strong><span id="collectedSkills">0</span> + <span id="collectedPlugins">0</span></strong><span>Skills + complementos adquiridos</span></div>
+<div class="fact"><strong><span id="collectedModels">0</span> / <span id="compiledSetups">0</span></strong><span>Modelos de IA / setups compilados</span></div>
+</div>
+<div class="tab-body" style="margin-top:16px;min-height:100px"><h3>Últimos setups generados</h3><div id="recentBuilds"><p>Capturá seis señales para desbloquear el ciclo infinito.</p></div><p><small>Son configuraciones de juego, no conexiones reales con proveedores. Tus logros de esta versión del Snake se guardan en este navegador. El agente comunitario del README utiliza GitHub Actions y mantiene su propio progreso compartido.</small></p></div>
+</section>
 <section class="section" id="resumen"><div class="section-head"><div><small>ARCHIVO DESBLOQUEADO / SIN PARTIDA</small><h2>Qué hice. Qué hago. Cómo.</h2></div><p class="note">Todo está acá mismo. Elegí una sección; no necesitás abrir enlaces para entender el trabajo.</p></div>
 <div class="tabs" role="tablist" aria-label="Explorar el trabajo"><button class="tab" role="tab" type="button" id="tab-hecho" aria-controls="tabContent" aria-selected="true" data-tab="hecho">01 / QUÉ HICE</button><button class="tab" role="tab" type="button" id="tab-ahora" aria-controls="tabContent" aria-selected="false" data-tab="ahora">02 / EN QUÉ ANDO</button><button class="tab" role="tab" type="button" id="tab-metodo" aria-controls="tabContent" aria-selected="false" data-tab="metodo">03 / CÓMO LABURO</button></div><div id="tabContent" class="tab-body" role="tabpanel" aria-labelledby="tab-hecho"></div></section>
 <section class="section" id="senales"><div class="section-head"><div><small>EXPLORACIÓN LIBRE / SIN OBLIGACIÓN DE JUGAR</small><h2>Seis señales. Seis historias.</h2></div><p class="note">Abrí cualquier registro. Cada uno resume un trabajo verificable, su alcance y sus límites.</p></div><div class="index" id="index"></div></section>
@@ -140,6 +149,35 @@ const DATA=[
 {short:"MEMORIA",tag:"05 / IA EXPERIMENTAL",title:"Investigar memoria y self-model en IA",body:"En Skill-Conscious construí una arquitectura experimental de estado persistente, autoobservación y selección de trayectorias, acompañada por protocolos y pruebas causales.",result:"Resultado: ingeniería y evidencia documentadas, incluidas hipótesis no respaldadas. Esto no demuestra conciencia artificial.",card:"Skill-Conscious · memoria"},
 {short:"MÉTODO",tag:"06 / INVESTIGACIÓN",title:"Cómo trabajo con agentes de IA",body:"Yo planteo la pregunta, decido qué intentar y exijo condiciones de prueba. Las IAs ayudan a investigar, programar, ejecutar experimentos y documentar. Otros proyectos incluyen PromptForge, ATOF y un observatorio local de registros de DayZ.",result:"Resultado: prototipos, experimentos y correcciones. Un código que compila no prueba por sí solo que la hipótesis sea cierta.",card:"Preguntar · probar · revisar"}
 ];
+const SKILLS=["Python","SQL","Computer Vision","Testing","Agent Memory","Optimización","Auditoría","Razonamiento","Debugging","Seguridad","Matemática","APIs","Investigación","Observabilidad","Reproducibilidad"];
+const MODELS=["GPT","Claude","Gemini","Llama","Qwen","Gemma","DeepSeek","Mistral"];
+const PLUGINS=["GitHub Actions","Playwright","Ollama","n8n","FastAPI","Docker","Hugging Face","Supabase","Render","Kaggle","Pandas","Gradio","LangChain"];
+const SETUPS=["Research Stack","Builder Stack","Vision Stack","Security Stack","Agent Ops","Science Lab","RAG Stack","Data Lab"];
+function getLoot(n){
+  if(n<DATA.length)return DATA[n];
+  const a=n-DATA.length,kind=a%4,round=Math.floor(a/4),ix=round;
+  if(kind===0){const skill=SKILLS[ix%SKILLS.length];return {short:"SKILL",tag:"LOOT "+(n+1)+" / SKILL",title:"Skill adquirida: "+skill,body:"El agente desbloqueó "+skill+". Esta habilidad representa una capacidad de trabajo dentro de la simulación del vibe coder.",result:"Skills acumuladas: "+(round+1)+". Cada vuelta suma habilidades, incluso cuando se repite una especialización.",card:skill}}
+  if(kind===1){const name=PLUGINS[ix%PLUGINS.length];return {short:"PLUGIN",tag:"LOOT "+(n+1)+" / COMPLEMENTO",title:"Complemento obtenido: "+name,body:"Sumaste "+name+" al inventario virtual del agente. El complemento abre nuevas combinaciones de trabajo, pero no instala ni conecta automáticamente servicios externos.",result:"Herramientas virtuales obtenidas: "+(round+1)+". Los complementos se acumulan.",card:name}}
+  if(kind===2){const ai=MODELS[ix%MODELS.length];return {short:"MODELO",tag:"LOOT "+(n+1)+" / INTELIGENCIA ARTIFICIAL",title:"IA incorporada: "+ai,body:"Se suma "+ai+" al equipo simulado. El agente puede reunir varios modelos y combinarlos con habilidades y complementos para diseñar un setup.",result:"Modelos recolectados: "+(round+1)+". No requiere claves API ni llama a los proveedores.",card:ai}}
+  const skill=SKILLS[ix%SKILLS.length],model=MODELS[ix%MODELS.length],plugin=PLUGINS[ix%PLUGINS.length],type=SETUPS[ix%SETUPS.length];
+  return {short:"SETUP",tag:"LOOT "+(n+1)+" / BUILD",title:"Setup #"+(round+1)+": "+type,body:"Compilaste una configuración virtual: "+model+" + "+skill+" + "+plugin+". El agente ahora tiene otra manera de encarar un problema. No se ejecuta software externo.",result:"Cada cuarta recompensa crea un setup distinto. Ya compilaste "+(round+1)+" configuraciones. No hay fin de juego.",card:type}
+}
+function refreshEvolution(){
+  const n=state.found,extra=Math.max(0,n-DATA.length);
+  const count=(type)=>Math.floor(extra/4)+(extra%4>(type)?1:0);
+  const skills=count(0),plugins=count(1),models=count(2),setups=count(3);
+  const sc=document.getElementById("collectedSkills");if(sc)sc.textContent=skills;
+  const pc=document.getElementById("collectedPlugins");if(pc)pc.textContent=plugins;
+  const mc=document.getElementById("collectedModels");if(mc)mc.textContent=models;
+  const bc=document.getElementById("compiledSetups");if(bc)bc.textContent=setups;
+  const level=document.getElementById("agentLevel");if(level)level.textContent=String(Math.floor(n/5)+1);
+  const list=document.getElementById("recentBuilds");if(!list)return;
+  list.replaceChildren();
+  const found=[];
+  for(let i=n-1;i>=Math.max(DATA.length,n-32);i--){if((i-DATA.length)%4===3)found.push(getLoot(i));if(found.length>=4)break}
+  if(!found.length){list.textContent="Todavía no hay setups compilados. Seguí capturando señales: cada cuarta recompensa después de las primeras seis genera uno.";return}
+  for(const item of found){const p=document.createElement("p");p.textContent="◈ "+item.title+" — "+item.body;list.append(p)}
+}
 const FACTS={
 hecho:{title:"No son capturas bonitas. Son sistemas y pruebas.",body:"Entre los trabajos públicos hay seguimiento celular con imágenes reales, herramientas para navegar repositorios desde agentes de IA, un supervisor de baterías probado en simulación y una plataforma de adhesiones sociales. Algunos son prototipos; otros tienen ensayos reproducibles. Ninguno se presenta como algo que no es.",items:[["168","imágenes de microscopía procesadas"],["1.462","rutas en un catálogo para agentes"],["260","corridas documentadas de simulación energética"]]},
 ahora:{title:"Sigo explorando sistemas complejos.",body:"Me interesa qué mecanismos hacen que un agente recuerde, se observe y se pueda evaluar sin confundir comportamiento con conciencia; cómo reducir ruido en el contexto de IA; y cómo aplicar experimentación medible a biología, energía, grafos y problemas cotidianos.",items:[["IA","estado persistente y self-model"],["AGENTES","herramientas y contexto verificable"],["CIENCIA","resultados con límites explícitos"]]},
@@ -148,15 +186,16 @@ metodo:{title:"La dirección humana. La ejecución asistida por IA.",body:"Prime
 const GRID={cols:30,rows:20,cell:24,w:720,h:480};
 const canvas=$("board"),ctx=canvas.getContext("2d"),announcer=$("announce");
 const state={mode:"idle",snake:[],dir:{x:1,y:0},queued:{x:1,y:0},target:{x:21,y:10},found:0,failures:0,acc:0,last:0,seed:0,flash:0,particles:[],tick:136,spawnAt:0};
+try{state.found=Math.max(0,Math.min(10000000,Math.floor(Number(localStorage.getItem("hotza-vibesnake-loot"))||0)))}catch(e){}
 const reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const rand=()=>{state.seed=(Math.imul(state.seed,1664525)+1013904223)>>>0;return state.seed/4294967296};
 const setStatus=s=>{$("phase").textContent=s};
 function setup(seed){state.seed=seed||34127;state.snake=[{x:5,y:10},{x:4,y:10},{x:3,y:10}];state.dir={x:1,y:0};state.queued={x:1,y:0};state.acc=0;state.target={x:19,y:10};state.tick=136;state.particles=[];state.flash=0}
 function overlay(title,body,button,symbol){$("overlayTitle").textContent=title;$("overlayText").textContent=body;$("start").textContent=button;$("overlaySymbol").textContent=symbol;$("overlay").hidden=false}
-function showStatus(){const n=state.found;$("score").textContent=String(n).padStart(2,"0");$("progressbar").style.width=(100*n/DATA.length)+"%";$("chip").textContent=n===6?"COMPLETADO":n?"SEÑAL "+n+"/6":"EN ESPERA";$("pills").innerHTML="";DATA.forEach((d,i)=>{const x=document.createElement("span");x.className="pill"+(i<n?" got":"");x.textContent=(i<n?"✓ ":"◦ ")+d.short;$("pills").append(x)})}
+function showStatus(){const n=state.found;$("score").textContent=String(n).padStart(2,"0");$("progressbar").style.width=(100*(n%10)/10)+"%";$("chip").textContent=n?"LEVEL "+(Math.floor(n/5)+1):"EN ESPERA";$("pills").replaceChildren();for(let i=Math.max(0,n-6);i<n;i++){const d=getLoot(i),x=document.createElement("span");x.className="pill got";x.textContent="✓ "+d.short;$("pills").append(x)}if(!n){const x=document.createElement("span");x.className="pill";x.textContent="◦ CAPTURÁ UNA SEÑAL";$("pills").append(x)}refreshEvolution();try{localStorage.setItem("hotza-vibesnake-loot",String(n))}catch(e){}}
 function updatePanel(item,idx){$("entryId").textContent=item.tag;$("entryTitle").textContent=item.title;$("entryBody").textContent=item.body;$("entryResult").textContent=item.result;announcer.textContent="Señal descubierta: "+item.title}
 function resetPanel(){$("entryId").textContent="TRANSMISIÓN / 000";$("entryTitle").textContent="Cada punto es una historia real.";$("entryBody").textContent="No hace falta visitar seis repositorios. A medida que jugás, esta pantalla explica qué se hizo, cómo se probó y qué falta validar.";$("entryResult").textContent="Primero, capturá la señal luminosa que aparece en el tablero."}
-function start(){state.found=0;state.failures=0;setup(34127);state.mode="running";$("overlay").hidden=true;setStatus("JUGANDO");showStatus();resetPanel();$("help").textContent="La partida conserva cada hallazgo aunque choques.";state.last=performance.now();canvas.focus()}
+function start(){state.failures=0;setup(34127);state.mode="running";$("overlay").hidden=true;setStatus("JUGANDO");showStatus();resetPanel();$("help").textContent="El inventario y el nivel quedan guardados en este navegador, incluso si chocás.";state.last=performance.now();canvas.focus()}
 function resume(){state.mode="running";$("overlay").hidden=true;setStatus("JUGANDO");state.last=performance.now();canvas.focus()}
 function pause(){if(state.mode==="running"){state.mode="paused";setStatus("PAUSA");overlay("La señal sigue ahí.","La investigación no se perdió. Continuá cuando quieras.","▶ CONTINUAR","Ⅱ")}else if(state.mode==="paused")resume()}
 function collision(){state.failures++;const found=state.found;setup(state.seed+found*811+31);spawnTarget();state.flash=performance.now()+310;$("help").textContent="Recalibración "+state.failures+". Conservaste las "+found+" señales recuperadas.";announcer.textContent="Choque detectado. Recalibración automática. Mantenés tus hallazgos."}
@@ -171,12 +210,11 @@ if(head.x<0||head.x>=GRID.cols||head.y<0||head.y>=GRID.rows||chain.some(p=>p.x==
 state.snake.unshift(head);
 if(ate){
 state.found++;
-updatePanel(DATA[state.found-1],state.found-1);
+updatePanel(getLoot(state.found-1),state.found-1);
 for(let i=0;i<16;i++)state.particles.push({x:(state.target.x+.5)*24,y:(state.target.y+.5)*24,vx:(rand()-.5)*6,vy:(rand()-.5)*6,life:30,kind:state.found%2});
 state.flash=performance.now()+170;showStatus();
-state.tick=Math.max(94,136-state.found*7);
-if(state.found>=DATA.length){state.mode="won";setStatus("ÉXITO");overlay("Laboratorio completado.","Recuperaste las seis señales. Ya sabés qué hice, qué investigo y cómo trabajo con IA. Podés leer todos los hallazgos abajo o jugar otra vez.","↻ JUGAR DE NUEVO","✓");announcer.textContent="Laboratorio completado. Seis señales recuperadas."}
-else spawnTarget()
+state.tick=Math.max(84,136-state.found*2);
+spawnTarget()
 }else state.snake.pop();
 }
 function roundBox(x,y,w,h,r,fill){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill()}
@@ -210,7 +248,7 @@ document.querySelectorAll("[data-move]").forEach(b=>b.addEventListener("click",(
 let startTouch=null;canvas.addEventListener("touchstart",e=>{if(state.mode!=="running")return;const a=e.changedTouches[0];startTouch={x:a.clientX,y:a.clientY}},{passive:true});
 canvas.addEventListener("touchend",e=>{if(!startTouch||state.mode!=="running")return;const a=e.changedTouches[0],dx=a.clientX-startTouch.x,dy=a.clientY-startTouch.y;startTouch=null;if(Math.max(Math.abs(dx),Math.abs(dy))<20)return;if(Math.abs(dx)>Math.abs(dy))direction(Math.sign(dx),0);else direction(0,Math.sign(dy))},{passive:true});
 $("start").addEventListener("click",()=>{if(state.mode==="paused")resume();else start()});
-$("reset").addEventListener("click",()=>{state.mode="idle";state.found=0;setup(34127);showStatus();resetPanel();setStatus("STANDBY");overlay("Una señal. Seis descubrimientos.","Manejá la serpiente, atrapá los nodos y conocé los proyectos que hay detrás. Flechas, WASD o controles táctiles.","▶ EMPEZAR A JUGAR","◈")});
+$("reset").addEventListener("click",()=>{state.mode="idle";setup(34127);showStatus();resetPanel();setStatus("STANDBY");overlay("Un agente. Infinitas combinaciones.","Capturá skills, modelos, complementos y setups. Empezás con seis investigaciones reales; después la evolución no termina. Flechas, WASD o controles táctiles.","▶ EMPEZAR A JUGAR","◈")});
 $("pause").addEventListener("click",pause);
 const tabs=$("tabContent");
 function showTab(id){const f=FACTS[id];if(!f)return;tabs.replaceChildren();const heading=document.createElement("h3");heading.textContent=f.title;const p=document.createElement("p");p.textContent=f.body;const grid=document.createElement("div");grid.className="factgrid";f.items.forEach(pair=>{const card=document.createElement("div");card.className="fact";const b=document.createElement("strong");b.textContent=pair[0];const d=document.createElement("span");d.textContent=pair[1];card.append(b,d);grid.append(card)});tabs.append(heading,p,grid);document.querySelectorAll("[data-tab]").forEach(el=>{const yes=el.dataset.tab===id;el.setAttribute("aria-selected",yes?"true":"false");el.tabIndex=yes?0:-1;if(yes)tabs.setAttribute("aria-labelledby",el.id)})}
