@@ -234,6 +234,77 @@ def update_readme(text, game):
     last = text.index(END, first) + len(END)
     return text[:first] + game + text[last:]
 
+
+def render_avatar(state):
+    from html import escape
+    lvl = state["level"]
+    turns = state["turn"]
+    xp = state["xp"]
+    inventory = state["inventory"]
+    skills = sum(inventory["skill"].values())
+    models = sum(inventory["model"].values())
+    plugins = sum(inventory["plugin"].values())
+    builds = sum(inventory["build"].values())
+    phase = min(5, (lvl - 1) // 5)
+    skin = ["#8ecde4", "#70ddcd", "#e9c883", "#e4a9e8", "#80acff", "#f2ca84"][phase]
+    eyes = "#0c2c36"
+    # A compact, increasingly upgraded pixel agent.
+    avatar = [
+        "....1111....", "...122221...", "..12222221..", "..12333221..",
+        "..12222221..", "...111111...", "..44444444..", ".4444444444.",
+        ".44.4444.44.", "..4.4444.4..", "....5..5....", "...55..55...",
+    ]
+    paint = {"1":"#46778f", "2":skin, "3":eyes, "4":"#28757b", "5":"#c8def5"}
+    pixels = []
+    for y, row in enumerate(avatar):
+        for x, c in enumerate(row):
+            if c != ".":
+                pixels.append('<rect x="%d" y="%d" width="14" height="14" rx="2" fill="%s"/>' %
+                              (148 + x*14, 62 + y*14, paint[c]))
+    # Number of orbiting nodes grows with levels; a model is a choice in the simulation,
+    # not a claim that the provider was connected.
+    rings = []
+    n = min(16, max(3, lvl + models // 2))
+    import math
+    for i in range(n):
+        a = i * 2 * math.pi / n
+        px = 233 + math.cos(a) * (118 + (i % 3) * 15)
+        py = 154 + math.sin(a) * (99 + (i % 3) * 12)
+        rings.append('<circle cx="%.1f" cy="%.1f" r="%d" fill="%s" opacity=".85"/>' %
+                     (px, py, 3 + (i % 4), "#f2c77a" if i % 3 == 0 else skin))
+    def label(category):
+        x = inventory[category]
+        return escape(" · ".join(ACTIONS[category][k] for k in
+                       sorted(x, key=lambda v: (-x[v], v))[:4]) if x else "SIN ELEGIR")
+    pct = xp % 50 / 50
+    return """<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="304" viewBox="0 0 1040 304" role="img" aria-labelledby="title description">
+<title id="title">Agente vibe coder comunitario, nivel %d</title>
+<desc id="description">Personaje pixelado que gana niveles, skills, modelos de IA y complementos con jugadas reales por GitHub Issues.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1727"/><stop offset="1" stop-color="#142d40"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".9" fill="#48849b" opacity=".31"/></pattern></defs>
+<rect x="0" y="0" width="1040" height="304" rx="17" fill="url(#bg)"/>
+<rect x="0" y="0" width="1040" height="304" rx="17" fill="url(#dots)"/>
+<path d="M400 24V279" stroke="#426177" stroke-width="1"/>
+<circle cx="233" cy="154" r="117" stroke="%s" stroke-opacity=".45" stroke-dasharray="3 12" fill="none"/>
+<circle cx="233" cy="154" r="92" stroke="#50768c" opacity=".4" fill="none"/>
+%s
+<g>%s</g>
+<text x="34" y="34" fill="#8cbdcd" font-family="Consolas,Menlo,monospace" font-size="13" font-weight="700" letter-spacing="2">AGENTE / VIBE CODER</text>
+<text x="30" y="282" fill="%s" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="2">EVOLUCION COMPARTIDA / ARG</text>
+<text x="430" y="58" fill="%s" font-family="Consolas,Menlo,monospace" font-size="27" font-weight="800">LEVEL %03d</text>
+<text x="886" y="56" fill="#e8c681" font-family="Consolas,Menlo,monospace" font-size="16" font-weight="700">%d XP</text>
+<rect x="431" y="76" width="557" height="12" rx="6" fill="#274657"/>
+<rect x="431" y="76" width="%.1f" height="12" rx="6" fill="%s"/>
+<text x="431" y="122" fill="#e8eff8" font-family="Consolas,Menlo,monospace" font-size="17">SKILLS    %03d   <tspan fill="#9cbed2">%s</tspan></text>
+<text x="431" y="167" fill="#e8eff8" font-family="Consolas,Menlo,monospace" font-size="17">PLUGINS   %03d   <tspan fill="#9cbed2">%s</tspan></text>
+<text x="431" y="212" fill="#e8eff8" font-family="Consolas,Menlo,monospace" font-size="17">MODELOS   %03d   <tspan fill="#9cbed2">%s</tspan></text>
+<path d="M430 228H987" stroke="#41677c"/>
+<text x="431" y="255" fill="#e8c681" font-family="Consolas,Menlo,monospace" font-size="15">SETUPS %03d  /  JUGADAS %05d  /  SIN LIMITE</text>
+<rect x="1" y="1" width="1038" height="302" rx="17" stroke="#446579" stroke-width="2" fill="none"/>
+</svg>""" % (lvl, skin, "\n".join(rings), "\n".join(pixels), skin, skin, lvl, xp,
+           557 * pct, skin, skills, label("skill"), plugins, label("plugin"),
+           models, label("model"), builds, turns)
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--title", default="")
@@ -257,6 +328,7 @@ def main():
     new = update_readme(text, render(state))
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     README.write_text(new, encoding="utf-8")
+    (ROOT / "assets" / "agent-evolution.svg").write_text(render_avatar(state), encoding="utf-8")
     print("Move processed, turn %d, level %d" % (state["turn"], state["level"]))
 
 if __name__ == "__main__":
