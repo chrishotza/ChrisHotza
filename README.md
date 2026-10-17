@@ -19,9 +19,9 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 ### VIBE CODER / AGENTE EN EVOLUCIÓN ∞
 
-**Nivel 1** · **0 XP** · **0 jugadas** · **0 setups creados**
+**Nivel 1** · **12 XP** · **1 jugadas** · **0 setups creados**
 
-▱▱▱▱▱▱▱▱▱▱  → Siguiente nivel: 50 XP
+▰▰▱▱▱▱▱▱▱▱  → Siguiente nivel: 50 XP
 
 </div>
 
@@ -29,7 +29,7 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 | 🧠 SKILLS ADQUIRIDAS | 🧩 COMPLEMENTOS | 🤖 IAs SUMADAS |
 | :-- | :-- | :-- |
-| Sin adquirir | Sin adquirir | Sin adquirir |
+| Python ×1 | Sin adquirir | Sin adquirir |
 
 #### 🎮 Elegí la próxima evolución
 
@@ -63,6 +63,7 @@ Cada enlace prepara la jugada. **Hay que pulsar Submit new issue** para que se p
 
 </details>
 
+
 #### 🖥️ Setup actual
 
 **SIN COMPILAR.** Juntá skills, IAs y complementos. Después elegí *Compilar un setup*.
@@ -70,6 +71,15 @@ Cada enlace prepara la jugada. **Hay que pulsar Submit new issue** para que se p
 | Skill | IA | Complemento |
 | :-- | :-- | :-- |
 | Por elegir | Por elegir | Por elegir |
+
+<details>
+<summary><b>📟 Últimas jugadas de la comunidad</b></summary>
+
+| Turno | Jugador | Acción |
+| --: | :-- | :-- |
+| 1 | @chrishotza | SKILL: Python |
+
+</details>
 
 <sub>∞ Sin nivel máximo. El estado se actualiza a cada jugada confirmada. La lista de setups recientes se conserva acotada para mantener el README rápido; el XP y el progreso siguen creciendo. Los nombres de modelos y complementos son opciones simuladas, no conexiones activas.</sub>
 

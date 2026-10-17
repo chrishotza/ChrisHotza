@@ -1,15 +1,26 @@
 {
   "version": 1,
-  "turn": 0,
-  "xp": 0,
+  "turn": 1,
+  "xp": 12,
   "level": 1,
   "inventory": {
-    "skill": {},
+    "skill": {
+      "python": 1
+    },
     "plugin": {},
     "model": {},
     "build": {}
   },
   "setups": [],
-  "history": [],
-  "actors": {}
+  "history": [
+    {
+      "turn": 1,
+      "actor": "chrishotza",
+      "kind": "skill",
+      "key": "python"
+    }
+  ],
+  "actors": {
+    "chrishotza": 1
+  }
 }
