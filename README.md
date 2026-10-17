@@ -15,14 +15,14 @@
 
 </div>
 
-**Un mini-FPS retro por decisiones:** avanzá por un laboratorio en primera persona, enfrentate a bugs, levantá skills y complementos, integrá una IA y compilá un setup. Las pantallas son dibujos originales, no capturas del DOOM comercial. **Las escenas están abiertas para que cada acción funcione en un solo clic.**
+**Un mini-FPS retro por decisiones:** avanzá por un laboratorio en primera persona, enfrentate a bugs, levantá skills y complementos, integrá una IA y compilá un setup. Las pantallas son dibujos originales, no capturas del DOOM comercial. **Los 18 cuadros se muestran directamente, para que cada movimiento requiera un solo clic.**
 
 **Cómo jugar:** tocá las acciones debajo de cada pantalla. Te llevan a otra escena de *esta misma página*. No se abren repositorios, Issues ni sitios externos. Un clic salta a la siguiente imagen y sus controles, **siempre dentro del mismo README**.
 
-<details open>
-<summary><b>00 / Sector 00 · Ingreso — COMENZAR ACÁ</b></summary>
+<a name="dl00"></a>
 
-<a name="dl-00"></a>
+#### 🎮 00 / Sector 00 · Ingreso — COMENZAR ACÁ
+
 
 <div align="center">
 
@@ -34,12 +34,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ ENTRAR**](#dl01) &nbsp;·&nbsp; [**← REVISAR EL COSTADO**](#dl02)
 
-</details>
 
-<details open>
-<summary><b>01 / Sector 01 · Primer bug — ESCENA</b></summary>
+---
 
-<a name="dl-01"></a>
+
+<a name="dl01"></a>
+
+#### 🎮 01 / Sector 01 · Primer bug — ESCENA
+
 
 <div align="center">
 
@@ -51,12 +53,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**◎ DISPARAR**](#dl03) &nbsp;·&nbsp; [**→ LEER LA CONSOLA**](#dl04) &nbsp;·&nbsp; [**↓ RETROCEDER**](#dl00)
 
-</details>
 
-<details open>
-<summary><b>02 / Sector 02 · Primera skill — ESCENA</b></summary>
+---
 
-<a name="dl-02"></a>
+
+<a name="dl02"></a>
+
+#### 🎮 02 / Sector 02 · Primera skill — ESCENA
+
 
 <div align="center">
 
@@ -68,12 +72,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**+ RECOGER PYTHON**](#dl05) &nbsp;·&nbsp; [**→ VOLVER AL PASILLO**](#dl01)
 
-</details>
 
-<details open>
-<summary><b>03 / Sector 03 · Error eliminado — ESCENA</b></summary>
+---
 
-<a name="dl-03"></a>
+
+<a name="dl03"></a>
+
+#### 🎮 03 / Sector 03 · Error eliminado — ESCENA
+
 
 <div align="center">
 
@@ -85,12 +91,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ ENTRAR AL NÚCLEO**](#dl06) &nbsp;·&nbsp; [**+ TOMAR EL BOTÍN**](#dl07) &nbsp;·&nbsp; [**→ ESCANEAR TERMINAL**](#dl04)
 
-</details>
 
-<details open>
-<summary><b>04 / Sector 04 · Herramientas — ESCENA</b></summary>
+---
 
-<a name="dl-04"></a>
+
+<a name="dl04"></a>
+
+#### 🎮 04 / Sector 04 · Herramientas — ESCENA
+
 
 <div align="center">
 
@@ -102,12 +110,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**+ EQUIPAR GITHUB ACTIONS**](#dl08) &nbsp;·&nbsp; [**← VOLVER AL PASILLO**](#dl01)
 
-</details>
 
-<details open>
-<summary><b>05 / Sector 05 · Python equipado — ESCENA</b></summary>
+---
 
-<a name="dl-05"></a>
+
+<a name="dl05"></a>
+
+#### 🎮 05 / Sector 05 · Python equipado — ESCENA
+
 
 <div align="center">
 
@@ -119,12 +129,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ IR A REVISAR CÓDIGO**](#dl09) &nbsp;·&nbsp; [**→ VOLVER AL COMBATE**](#dl01)
 
-</details>
 
-<details open>
-<summary><b>06 / Sector 06 · Decisión — ESCENA</b></summary>
+---
 
-<a name="dl-06"></a>
+
+<a name="dl06"></a>
+
+#### 🎮 06 / Sector 06 · Decisión — ESCENA
+
 
 <div align="center">
 
@@ -136,12 +148,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ ABRIR LA PUERTA**](#dl10) &nbsp;·&nbsp; [**← VER SI HAY UN ENEMIGO**](#dl11)
 
-</details>
 
-<details open>
-<summary><b>07 / Sector 07 · Botín de pruebas — ESCENA</b></summary>
+---
 
-<a name="dl-07"></a>
+
+<a name="dl07"></a>
+
+#### 🎮 07 / Sector 07 · Botín de pruebas — ESCENA
+
 
 <div align="center">
 
@@ -153,12 +167,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**+ EQUIPAR PRUEBAS**](#dl03) &nbsp;·&nbsp; [**↑ SEGUIR AL NÚCLEO**](#dl06)
 
-</details>
 
-<details open>
-<summary><b>08 / Sector 08 · CI lista — ESCENA</b></summary>
+---
 
-<a name="dl-08"></a>
+
+<a name="dl08"></a>
+
+#### 🎮 08 / Sector 08 · CI lista — ESCENA
+
 
 <div align="center">
 
@@ -170,12 +186,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ ENTRAR AL NÚCLEO**](#dl06) &nbsp;·&nbsp; [**← REVISAR ARCHIVOS**](#dl09)
 
-</details>
 
-<details open>
-<summary><b>09 / Sector 09 · Un resultado negativo — ESCENA</b></summary>
+---
 
-<a name="dl-09"></a>
+
+<a name="dl09"></a>
+
+#### 🎮 09 / Sector 09 · Un resultado negativo — ESCENA
+
 
 <div align="center">
 
@@ -187,12 +205,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ AUDITAR EL NÚCLEO**](#dl06) &nbsp;·&nbsp; [**← BUSCAR MÁS HERRAMIENTAS**](#dl04)
 
-</details>
 
-<details open>
-<summary><b>10 / Sector 10 · Elegir una IA — ESCENA</b></summary>
+---
 
-<a name="dl-10"></a>
+
+<a name="dl10"></a>
+
+#### 🎮 10 / Sector 10 · Elegir una IA — ESCENA
+
 
 <div align="center">
 
@@ -204,12 +224,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**+ INCORPORAR QWEN AL SETUP**](#dl12) &nbsp;·&nbsp; [**→ ESPERAR SIN TESTEAR**](#dl13) &nbsp;·&nbsp; [**← REVISAR EL CORREDOR**](#dl11)
 
-</details>
 
-<details open>
-<summary><b>11 / Sector 11 · Otro bug — ESCENA</b></summary>
+---
 
-<a name="dl-11"></a>
+
+<a name="dl11"></a>
+
+#### 🎮 11 / Sector 11 · Otro bug — ESCENA
+
 
 <div align="center">
 
@@ -221,12 +243,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**◎ DISPARAR / MITIGAR**](#dl14) &nbsp;·&nbsp; [**↓ HUIR A REINICIAR**](#dl15) &nbsp;·&nbsp; [**← VOLVER AL MODELO**](#dl10)
 
-</details>
 
-<details open>
-<summary><b>12 / Sector 12 · Python + Qwen + Actions — ESCENA</b></summary>
+---
 
-<a name="dl-12"></a>
+
+<a name="dl12"></a>
+
+#### 🎮 12 / Sector 12 · Python + Qwen + Actions — ESCENA
+
 
 <div align="center">
 
@@ -238,12 +262,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ PROBAR ANTES DE LANZAR**](#dl16) &nbsp;·&nbsp; [**! LANZAR SIN PRUEBAS**](#dl17)
 
-</details>
 
-<details open>
-<summary><b>13 / Sector 13 · Falta contexto — ESCENA</b></summary>
+---
 
-<a name="dl-13"></a>
+
+<a name="dl13"></a>
+
+#### 🎮 13 / Sector 13 · Falta contexto — ESCENA
+
 
 <div align="center">
 
@@ -255,12 +281,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↶ REVISAR CONFIGURACIÓN**](#dl10) &nbsp;·&nbsp; [**↑ BUSCAR EL PROBLEMA**](#dl11)
 
-</details>
 
-<details open>
-<summary><b>14 / Sector 14 · Bug corregido — ESCENA</b></summary>
+---
 
-<a name="dl-14"></a>
+
+<a name="dl14"></a>
+
+#### 🎮 14 / Sector 14 · Bug corregido — ESCENA
+
 
 <div align="center">
 
@@ -272,12 +300,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↑ RETOMAR LA INVESTIGACIÓN**](#dl10) &nbsp;·&nbsp; [**→ AUDITAR LOGS**](#dl09)
 
-</details>
 
-<details open>
-<summary><b>15 / Sector 15 · Reiniciá con evidencia — ESCENA</b></summary>
+---
 
-<a name="dl-15"></a>
+
+<a name="dl15"></a>
+
+#### 🎮 15 / Sector 15 · Reiniciá con evidencia — ESCENA
+
 
 <div align="center">
 
@@ -289,12 +319,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**↻ REINICIAR EN EL README**](#dl00) &nbsp;·&nbsp; [**→ VOLVER AL REGISTRO**](#dl09)
 
-</details>
 
-<details open>
-<summary><b>16 / Sector 16 · Completaste el nivel — ESCENA</b></summary>
+---
 
-<a name="dl-16"></a>
+
+<a name="dl16"></a>
+
+#### 🎮 16 / Sector 16 · Completaste el nivel — ESCENA
+
 
 <div align="center">
 
@@ -306,12 +338,14 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**▶ JUGAR OTRA VUELTA**](#dl00) &nbsp;·&nbsp; [**↗ VER AGENTE EN EVOLUCIÓN**](#vibe-lab) &nbsp;·&nbsp; [**→ VER OTRO MINI JUEGO**](#lab-snake)
 
-</details>
 
-<details open>
-<summary><b>17 / Sector 17 · Producción falló — ESCENA</b></summary>
+---
 
-<a name="dl-17"></a>
+
+<a name="dl17"></a>
+
+#### 🎮 17 / Sector 17 · Producción falló — ESCENA
+
 
 <div align="center">
 
@@ -323,7 +357,9 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 
 [**← REVISAR LOS LOGS**](#dl09) &nbsp;·&nbsp; [**↻ VOLVER AL SETUP**](#dl12)
 
-</details>
+
+---
+
 
 <sub>Motor Markdown de estados enlazados: 18 escenas y navegación interna. Es jugable por clics; **no ejecuta DOOM original, WebAssembly, audio ni controles WASD**. El modo Snake en tiempo real es otro proyecto separado, pero este juego corre íntegramente dentro del README.</sub>
 
