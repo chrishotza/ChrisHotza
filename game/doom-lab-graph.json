@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "title": "Doom-Lab, juego de elección interactiva en el README",
+  "copyright": "Gráficos propios; no contiene Doom WAD, música ni sprites de id Software",
+  "states": [
+    {
+      "id": "dl00",
+      "title": "Sector 00 · Ingreso",
+      "mode": "door",
+      "actions": [
+        [
+          "↑ ENTRAR",
+          "dl01"
+        ],
+        [
+          "← REVISAR EL COSTADO",
+          "dl02"
+        ]
+      ]
+    },
+    {
+      "id": "dl01",
+      "title": "Sector 01 · Primer bug",
+      "mode": "enemy",
+      "actions": [
+        [
+          "◎ DISPARAR",
+          "dl03"
+        ],
+        [
+          "→ LEER LA CONSOLA",
+          "dl04"
+        ],
+        [
+          "↓ RETROCEDER",
+          "dl00"
+        ]
+      ]
+    },
+    {
+      "id": "dl02",
+      "title": "Sector 02 · Primera skill",
+      "mode": "skill",
+      "actions": [
+        [
+          "+ RECOGER PYTHON",
+          "dl05"
+        ],
+        [
+          "→ VOLVER AL PASILLO",
+          "dl01"
+        ]
+      ]
+    },
+    {
+      "id": "dl03",
+      "title": "Sector 03 · Error eliminado",
+      "mode": "clear",
+      "actions": [
+        [
+          "↑ ENTRAR AL NÚCLEO",
+          "dl06"
+        ],
+        [
+          "+ TOMAR EL BOTÍN",
+          "dl07"
+        ],
+        [
+          "→ ESCANEAR TERMINAL",
+          "dl04"
+        ]
+      ]
+    },
+    {
+      "id": "dl04",
+      "title": "Sector 04 · Herramientas",
+      "mode": "terminal",
+      "actions": [
+        [
+          "+ EQUIPAR GITHUB ACTIONS",
+          "dl08"
+        ],
+        [
+          "← VOLVER AL PASILLO",
+          "dl01"
+        ]
+      ]
+    },
+    {
+      "id": "dl05",
+      "title": "Sector 05 · Python equipado",
+      "mode": "skillgot",
+      "actions": [
+        [
+          "↑ IR A REVISAR CÓDIGO",
+          "dl09"
+        ],
+        [
+          "→ VOLVER AL COMBATE",
+          "dl01"
+        ]
+      ]
+    },
+    {
+      "id": "dl06",
+      "title": "Sector 06 · Decisión",
+      "mode": "portal",
+      "actions": [
+        [
+          "↑ ABRIR LA PUERTA",
+          "dl10"
+        ],
+        [
+          "← VER SI HAY UN ENEMIGO",
+          "dl11"
+        ]
+      ]
+    },
+    {
+      "id": "dl07",
+      "title": "Sector 07 · Botín de pruebas",
+      "mode": "loot",
+      "actions": [
+        [
+          "+ EQUIPAR PRUEBAS",
+          "dl03"
+        ],
+        [
+          "↑ SEGUIR AL NÚCLEO",
+          "dl06"
+        ]
+      ]
+    },
+    {
+      "id": "dl08",
+      "title": "Sector 08 · CI lista",
+      "mode": "terminalgot",
+      "actions": [
+        [
+          "↑ ENTRAR AL NÚCLEO",
+          "dl06"
+        ],
+        [
+          "← REVISAR ARCHIVOS",
+          "dl09"
+        ]
+      ]
+    },
+    {
+      "id": "dl09",
+      "title": "Sector 09 · Un resultado negativo",
+      "mode": "logs",
+      "actions": [
+        [
+          "↑ AUDITAR EL NÚCLEO",
+          "dl06"
+        ],
+        [
+          "← BUSCAR MÁS HERRAMIENTAS",
+          "dl04"
+        ]
+      ]
+    },
+    {
+      "id": "dl10",
+      "title": "Sector 10 · Elegir una IA",
+      "mode": "model",
+      "actions": [
+        [
+          "+ INCORPORAR QWEN AL SETUP",
+          "dl12"
+        ],
+        [
+          "→ ESPERAR SIN TESTEAR",
+          "dl13"
+        ],
+        [
+          "← REVISAR EL CORREDOR",
+          "dl11"
+        ]
+      ]
+    },
+    {
+      "id": "dl11",
+      "title": "Sector 11 · Otro bug",
+      "mode": "enemybig",
+      "actions": [
+        [
+          "◎ DISPARAR / MITIGAR",
+          "dl14"
+        ],
+        [
+          "↓ HUIR A REINICIAR",
+          "dl15"
+        ],
+        [
+          "← VOLVER AL MODELO",
+          "dl10"
+        ]
+      ]
+    },
+    {
+      "id": "dl12",
+      "title": "Sector 12 · Python + Qwen + Actions",
+      "mode": "setup",
+      "actions": [
+        [
+          "↑ PROBAR ANTES DE LANZAR",
+          "dl16"
+        ],
+        [
+          "! LANZAR SIN PRUEBAS",
+          "dl17"
+        ]
+      ]
+    },
+    {
+      "id": "dl13",
+      "title": "Sector 13 · Falta contexto",
+      "mode": "error",
+      "actions": [
+        [
+          "↶ REVISAR CONFIGURACIÓN",
+          "dl10"
+        ],
+        [
+          "↑ BUSCAR EL PROBLEMA",
+          "dl11"
+        ]
+      ]
+    },
+    {
+      "id": "dl14",
+      "title": "Sector 14 · Bug corregido",
+      "mode": "clear",
+      "actions": [
+        [
+          "↑ RETOMAR LA INVESTIGACIÓN",
+          "dl10"
+        ],
+        [
+          "→ AUDITAR LOGS",
+          "dl09"
+        ]
+      ]
+    },
+    {
+      "id": "dl15",
+      "title": "Sector 15 · Reiniciá con evidencia",
+      "mode": "error",
+      "actions": [
+        [
+          "↻ REINICIAR EN EL README",
+          "dl00"
+        ],
+        [
+          "→ VOLVER AL REGISTRO",
+          "dl09"
+        ]
+      ]
+    },
+    {
+      "id": "dl16",
+      "title": "Sector 16 · Completaste el nivel",
+      "mode": "win",
+      "actions": [
+        [
+          "▶ JUGAR OTRA VUELTA",
+          "dl00"
+        ],
+        [
+          "↗ VER AGENTE EN EVOLUCIÓN",
+          "vibe-lab"
+        ],
+        [
+          "→ VER OTRO MINI JUEGO",
+          "lab-snake"
+        ]
+      ]
+    },
+    {
+      "id": "dl17",
+      "title": "Sector 17 · Producción falló",
+      "mode": "error",
+      "actions": [
+        [
+          "← REVISAR LOS LOGS",
+          "dl09"
+        ],
+        [
+          "↻ VOLVER AL SETUP",
+          "dl12"
+        ]
+      ]
+    }
+  ],
+  "rule": "Todas las transiciones son anclas dentro de README.md. Sin script ni motor en ejecución."
+}

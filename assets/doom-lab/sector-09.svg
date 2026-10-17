@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="864" height="486" viewBox="0 0 864 486" role="img" aria-labelledby="t d">
+<title id="t">Sector 09 · Un resultado negativo</title><desc id="d">Imagen original de un minijuego estilo DOOM. REGISTRO DE EXPERIMENTOS.</desc>
+<defs>
+<linearGradient id="back" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#091020"/><stop offset=".60" stop-color="#15253e"/><stop offset="1" stop-color="#0b1426"/></linearGradient>
+<linearGradient id="roof" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1c283b"/><stop offset="1" stop-color="#34465e"/></linearGradient>
+<linearGradient id="wall" x1="0" y1="0" x2="1" y2=".1"><stop stop-color="#32445a"/><stop offset="1" stop-color="#101d32"/></linearGradient>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#344359"/><stop offset="1" stop-color="#111a2b"/></linearGradient>
+<radialGradient id="light"><stop stop-color="#b3e898" stop-opacity=".34"/><stop offset=".56" stop-color="#b3e898" stop-opacity=".09"/><stop offset="1" stop-color="#b3e898" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="864" height="486" fill="url(#back)"/>
+<path d="M0 42H864L657 167H117Z" fill="url(#roof)"/>
+<path d="M0 425H864L657 290H117Z" fill="url(#floor)"/>
+<path d="M0 42L117 167L117 290L0 425Z" fill="url(#wall)" stroke="#66839a" stroke-opacity=".3" stroke-width="3"/>
+<path d="M864 42L657 167L657 290L864 425Z" fill="#192c3e" stroke="#66839a" stroke-opacity=".3" stroke-width="3"/>
+<path d="M117 167H657V290H117Z" fill="#1e2e41" stroke="#5f748b" stroke-width="3"/>
+<path d="M0 42L117 167M864 42L657 167M0 425L117 290M864 425L657 290" fill="none" stroke="#b3e898" stroke-opacity=".37" stroke-width="4"/>
+<path d="M147 43V426M627 43V426" stroke="#93a5ac" stroke-opacity=".06" stroke-width="3"/>
+<rect x="77" y="158" width="620" height="140" fill="url(#light)"/>
+<path d="M0 180L117 210M864 180L657 210" stroke="#7fa0b6" stroke-opacity=".09"/><path d="M0 219L121 222M864 219L653 222" stroke="#7fa0b6" stroke-opacity=".09"/><path d="M0 258L125 234M864 258L649 234" stroke="#7fa0b6" stroke-opacity=".09"/><path d="M0 297L129 246M864 297L645 246" stroke="#7fa0b6" stroke-opacity=".09"/><path d="M0 336L133 258M864 336L641 258" stroke="#7fa0b6" stroke-opacity=".09"/><path d="M0 375L137 270M864 375L637 270" stroke="#7fa0b6" stroke-opacity=".09"/><path d="M0 414L141 282M864 414L633 282" stroke="#7fa0b6" stroke-opacity=".09"/><rect x="271" y="155" width="232" height="174" rx="8" fill="#0a202c" stroke="#b3e898" stroke-width="5"/>
+  <rect x="283" y="171" width="208" height="139" fill="#0e3037" stroke="#74b2b0" stroke-opacity=".3"/>
+  <text x="298" y="196" font-family="Consolas,monospace" fill="#b3e898" font-size="16" font-weight="700">LAB://SYS</text><rect x="298" y="215" width="150" height="4" fill="#b3e898" opacity="0.26"/><rect x="298" y="230" width="116" height="4" fill="#b3e898" opacity="0.33"/><rect x="298" y="245" width="82" height="4" fill="#b3e898" opacity="0.4"/><rect x="298" y="260" width="150" height="4" fill="#b3e898" opacity="0.47000000000000003"/><rect x="298" y="275" width="116" height="4" fill="#b3e898" opacity="0.54"/><rect x="0" y="0" width="864" height="49" fill="#07121eed"/><rect x="0" y="425" width="864" height="61" fill="#07121eeb"/>
+<path d="M0 49H864" stroke="#5f8aa3" stroke-opacity=".55"/>
+<text x="23" y="31" fill="#93dbe1" font-family="Consolas,monospace" font-weight="700" font-size="19" letter-spacing="2">DOOM-LAB // DL09</text>
+<text x="842" y="31" fill="#e5c390" text-anchor="end" font-family="Consolas,monospace" font-size="16">REGISTRO DE EXPERIMENTOS</text>
+<text x="20" y="464" fill="#e7edf5" font-family="Consolas,monospace" font-size="24" font-weight="800">HP 100</text>
+<rect x="162" y="440" width="130" height="25" rx="4" fill="#33495c"/><rect x="162" y="440" width="130" height="25" rx="4" fill="#54c7a7"/>
+<text x="325" y="464" fill="#e5c390" font-family="Consolas,monospace" font-size="23">AMMO 05</text>
+<text x="845" y="464" text-anchor="end" fill="#b3e898" font-family="Consolas,monospace" font-size="19" font-weight="800">[EVIDENCIA]</text>
+<path d="M380 231H394M387 224V238" stroke="#b3e898" stroke-width="2" stroke-opacity=".65"/>
+<rect x="1" y="1" width="862" height="484" rx="12" stroke="#40657e" stroke-width="2" fill="none"/>
+</svg>
