@@ -25,7 +25,7 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 ### VIBE CODER / AGENTE EN EVOLUCIÓN ∞
 
-**Nivel 2** · **65 XP** · **4 jugadas** · **1 setups creados**
+**Nivel 2** · **65 XP** · **4 jugadas** · **Setups: 1**
 
 ▰▰▰▱▱▱▱▱▱▱  → Siguiente nivel: 100 XP
 
