@@ -19,9 +19,9 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 ### VIBE CODER / AGENTE EN EVOLUCIÓN ∞
 
-**Nivel 1** · **12 XP** · **1 jugadas** · **0 setups creados**
+**Nivel 1** · **27 XP** · **2 jugadas** · **0 setups creados**
 
-▰▰▱▱▱▱▱▱▱▱  → Siguiente nivel: 50 XP
+▰▰▰▰▰▱▱▱▱▱  → Siguiente nivel: 50 XP
 
 </div>
 
@@ -29,7 +29,7 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 | 🧠 SKILLS ADQUIRIDAS | 🧩 COMPLEMENTOS | 🤖 IAs SUMADAS |
 | :-- | :-- | :-- |
-| Python ×1 | Sin adquirir | Sin adquirir |
+| Python ×1 | Sin adquirir | Qwen ×1 |
 
 #### 🎮 Elegí la próxima evolución
 
@@ -77,6 +77,7 @@ Cada enlace prepara la jugada. **Hay que pulsar Submit new issue** para que se p
 
 | Turno | Jugador | Acción |
 | --: | :-- | :-- |
+| 2 | @chrishotza | MODELO: Qwen |
 | 1 | @chrishotza | SKILL: Python |
 
 </details>
