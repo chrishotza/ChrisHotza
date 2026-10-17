@@ -1,23 +1,345 @@
-<!-- LABORATORIO DE VIBE CODING: estado dinámico del agente vía Issues + Actions. -->
 <div align="center">
 
-<img src="./assets/proceso-en-movimiento.gif" alt="Animación del ciclo de investigación: pregunta, construir, probar, aprender, con un gusanito luminoso." width="100%">
-
-**ARG / LABORATORIO DE VIBE CODING**
-
-### No es un CV. Es un agente que evoluciona.
-
-Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje crece con cada jugada de la comunidad. Sin nivel máximo.**
+**ARG / LABORATORIO INTERACTIVO** · Investigación · IA · Vibe coding
 
 </div>
 
+<!-- DOOM-LAB / INICIO DEL JUEGO DENTRO DEL README -->
+<a name="doom-lab"></a>
+
 <div align="center">
 
-<img src="./assets/agent-evolution.svg" alt="Agente pixelado comunitario. Muestra nivel, XP, skills, modelos y complementos; su aspecto se actualiza con las jugadas." width="100%">
+### 🎮 DOOM-LAB / PRIMER NIVEL
+
+**Jugás acá, sin salir de `github.com/chrishotza`.**
 
 </div>
+
+**Un mini-FPS retro por decisiones:** avanzá por un laboratorio en primera persona, enfrentate a bugs, levantá skills y complementos, integrá una IA y compilá un setup. Las pantallas son dibujos originales, no capturas del DOOM comercial.
+
+**Cómo jugar:** tocá las acciones debajo de cada pantalla. Te llevan a otra escena de *esta misma página*. No se abren repositorios, Issues ni sitios externos. Si usás un navegador que no abre una sección automáticamente, pulsá su título.
+
+<details open>
+<summary><b>00 / Sector 00 · Ingreso — COMENZAR ACÁ</b></summary>
+
+<a name="dl-00"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-00.svg" alt="Captura original pixel art retro del Sector 00 · Ingreso, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+No necesitás salir de esta página. Las acciones de abajo saltan entre escenas de este mismo README.
+
+[**↑ ENTRAR**](#dl01) &nbsp;·&nbsp; [**← REVISAR EL COSTADO**](#dl02)
+
+</details>
+
+<details>
+<summary><b>01 / Sector 01 · Primer bug — ABRIR ESCENA</b></summary>
+
+<a name="dl-01"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-01.svg" alt="Captura original pixel art retro del Sector 01 · Primer bug, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Enemigo:** un bug. Dispará o investigá cómo llegó al sistema.
+
+[**◎ DISPARAR**](#dl03) &nbsp;·&nbsp; [**→ LEER LA CONSOLA**](#dl04) &nbsp;·&nbsp; [**↓ RETROCEDER**](#dl00)
+
+</details>
+
+<details>
+<summary><b>02 / Sector 02 · Primera skill — ABRIR ESCENA</b></summary>
+
+<a name="dl-02"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-02.svg" alt="Captura original pixel art retro del Sector 02 · Primera skill, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Loot:** Python. Una skill para automatizar, construir y probar.
+
+[**+ RECOGER PYTHON**](#dl05) &nbsp;·&nbsp; [**→ VOLVER AL PASILLO**](#dl01)
+
+</details>
+
+<details>
+<summary><b>03 / Sector 03 · Error eliminado — ABRIR ESCENA</b></summary>
+
+<a name="dl-03"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-03.svg" alt="Captura original pixel art retro del Sector 03 · Error eliminado, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Enemigo eliminado.** Un test de regresión impide que reaparezca el mismo error.
+
+[**↑ ENTRAR AL NÚCLEO**](#dl06) &nbsp;·&nbsp; [**+ TOMAR EL BOTÍN**](#dl07) &nbsp;·&nbsp; [**→ ESCANEAR TERMINAL**](#dl04)
+
+</details>
+
+<details>
+<summary><b>04 / Sector 04 · Herramientas — ABRIR ESCENA</b></summary>
+
+<a name="dl-04"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-04.svg" alt="Captura original pixel art retro del Sector 04 · Herramientas, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Complemento:** GitHub Actions. Las pruebas repetibles importan más que la suerte.
+
+[**+ EQUIPAR GITHUB ACTIONS**](#dl08) &nbsp;·&nbsp; [**← VOLVER AL PASILLO**](#dl01)
+
+</details>
+
+<details>
+<summary><b>05 / Sector 05 · Python equipado — ABRIR ESCENA</b></summary>
+
+<a name="dl-05"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-05.svg" alt="Captura original pixel art retro del Sector 05 · Python equipado, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Skill desbloqueada:** Python.
+
+[**↑ IR A REVISAR CÓDIGO**](#dl09) &nbsp;·&nbsp; [**→ VOLVER AL COMBATE**](#dl01)
+
+</details>
+
+<details>
+<summary><b>06 / Sector 06 · Decisión — ABRIR ESCENA</b></summary>
+
+<a name="dl-06"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-06.svg" alt="Captura original pixel art retro del Sector 06 · Decisión, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Objetivo:** elegir una IA y preparar un experimento.
+
+[**↑ ABRIR LA PUERTA**](#dl10) &nbsp;·&nbsp; [**← VER SI HAY UN ENEMIGO**](#dl11)
+
+</details>
+
+<details>
+<summary><b>07 / Sector 07 · Botín de pruebas — ABRIR ESCENA</b></summary>
+
+<a name="dl-07"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-07.svg" alt="Captura original pixel art retro del Sector 07 · Botín de pruebas, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Item:** Testing. Las pruebas son parte del equipamiento.
+
+[**+ EQUIPAR PRUEBAS**](#dl03) &nbsp;·&nbsp; [**↑ SEGUIR AL NÚCLEO**](#dl06)
+
+</details>
+
+<details>
+<summary><b>08 / Sector 08 · CI lista — ABRIR ESCENA</b></summary>
+
+<a name="dl-08"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-08.svg" alt="Captura original pixel art retro del Sector 08 · CI lista, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Complemento desbloqueado:** GitHub Actions.
+
+[**↑ ENTRAR AL NÚCLEO**](#dl06) &nbsp;·&nbsp; [**← REVISAR ARCHIVOS**](#dl09)
+
+</details>
+
+<details>
+<summary><b>09 / Sector 09 · Un resultado negativo — ABRIR ESCENA</b></summary>
+
+<a name="dl-09"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-09.svg" alt="Captura original pixel art retro del Sector 09 · Un resultado negativo, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Hallazgo:** algunas hipótesis no se sostienen, y está bien dejarlo documentado.
+
+[**↑ AUDITAR EL NÚCLEO**](#dl06) &nbsp;·&nbsp; [**← BUSCAR MÁS HERRAMIENTAS**](#dl04)
+
+</details>
+
+<details>
+<summary><b>10 / Sector 10 · Elegir una IA — ABRIR ESCENA</b></summary>
+
+<a name="dl-10"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-10.svg" alt="Captura original pixel art retro del Sector 10 · Elegir una IA, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Modelo:** Qwen. Las capacidades requieren hipótesis y evaluación.
+
+[**+ INCORPORAR QWEN AL SETUP**](#dl12) &nbsp;·&nbsp; [**→ ESPERAR SIN TESTEAR**](#dl13) &nbsp;·&nbsp; [**← REVISAR EL CORREDOR**](#dl11)
+
+</details>
+
+<details>
+<summary><b>11 / Sector 11 · Otro bug — ABRIR ESCENA</b></summary>
+
+<a name="dl-11"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-11.svg" alt="Captura original pixel art retro del Sector 11 · Otro bug, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Enemigo:** dependencia rota. Elegí entre combatir o retroceder.
+
+[**◎ DISPARAR / MITIGAR**](#dl14) &nbsp;·&nbsp; [**↓ HUIR A REINICIAR**](#dl15) &nbsp;·&nbsp; [**← VOLVER AL MODELO**](#dl10)
+
+</details>
+
+<details>
+<summary><b>12 / Sector 12 · Python + Qwen + Actions — ABRIR ESCENA</b></summary>
+
+<a name="dl-12"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-12.svg" alt="Captura original pixel art retro del Sector 12 · Python + Qwen + Actions, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**SETUP:** Python + Qwen + GitHub Actions = Research Stack (virtual).
+
+[**↑ PROBAR ANTES DE LANZAR**](#dl16) &nbsp;·&nbsp; [**! LANZAR SIN PRUEBAS**](#dl17)
+
+</details>
+
+<details>
+<summary><b>13 / Sector 13 · Falta contexto — ABRIR ESCENA</b></summary>
+
+<a name="dl-13"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-13.svg" alt="Captura original pixel art retro del Sector 13 · Falta contexto, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Error:** el modelo no reemplaza la definición de un problema.
+
+[**↶ REVISAR CONFIGURACIÓN**](#dl10) &nbsp;·&nbsp; [**↑ BUSCAR EL PROBLEMA**](#dl11)
+
+</details>
+
+<details>
+<summary><b>14 / Sector 14 · Bug corregido — ABRIR ESCENA</b></summary>
+
+<a name="dl-14"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-14.svg" alt="Captura original pixel art retro del Sector 14 · Bug corregido, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Bug resuelto:** revisar causa y añadir pruebas.
+
+[**↑ RETOMAR LA INVESTIGACIÓN**](#dl10) &nbsp;·&nbsp; [**→ AUDITAR LOGS**](#dl09)
+
+</details>
+
+<details>
+<summary><b>15 / Sector 15 · Reiniciá con evidencia — ABRIR ESCENA</b></summary>
+
+<a name="dl-15"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-15.svg" alt="Captura original pixel art retro del Sector 15 · Reiniciá con evidencia, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Reinicio:** perder una partida no borra lo aprendido.
+
+[**↻ REINICIAR EN EL README**](#dl00) &nbsp;·&nbsp; [**→ VOLVER AL REGISTRO**](#dl09)
+
+</details>
+
+<details>
+<summary><b>16 / Sector 16 · Completaste el nivel — ABRIR ESCENA</b></summary>
+
+<a name="dl-16"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-16.svg" alt="Captura original pixel art retro del Sector 16 · Completaste el nivel, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Victoria:** experimento probado y documentado.
+
+[**▶ JUGAR OTRA VUELTA**](#dl00) &nbsp;·&nbsp; [**↗ VER AGENTE EN EVOLUCIÓN**](#vibe-lab) &nbsp;·&nbsp; [**→ VER OTRO MINI JUEGO**](#lab-snake)
+
+</details>
+
+<details>
+<summary><b>17 / Sector 17 · Producción falló — ABRIR ESCENA</b></summary>
+
+<a name="dl-17"></a>
+
+<div align="center">
+
+<img src="./assets/doom-lab/sector-17.svg" alt="Captura original pixel art retro del Sector 17 · Producción falló, con vista en primera persona y controles de videojuego." width="100%">
+
+</div>
+
+**Regresión:** saltarse los tests es una apuesta.
+
+[**← REVISAR LOS LOGS**](#dl09) &nbsp;·&nbsp; [**↻ VOLVER AL SETUP**](#dl12)
+
+</details>
+
+<sub>Motor Markdown de estados enlazados: 18 escenas y navegación interna. Es jugable por clics; **no ejecuta DOOM original, WebAssembly, audio ni controles WASD**. El modo Snake en tiempo real es otro proyecto separado, pero este juego corre íntegramente dentro del README.</sub>
+
+<!-- DOOM-LAB / FIN -->
+
 
 ---
+
+### 🧠 El agente comunitario también evoluciona
+
+<img src="./assets/agent-evolution.svg" alt="Agente de IA pixelado que muestra el nivel, skills, modelos y complementos acumulados por la comunidad." width="100%">
+
+<details>
+<summary><b>▸ Abrir el modo comunidad — XP, skills, IAs y setups persistentes</b></summary>
+
+<a name="vibe-lab"></a>
 
 <!-- VIBE-LAB:START -->
 
@@ -136,3 +458,5 @@ El Snake en tiempo real también está disponible y usa HTML, canvas y controles
 <sub>[Archivo de investigaciones](docs/README.md) · [README histórico](README.archive-2026-10-16.md)</sub>
 
 </div>
+
+</details>
