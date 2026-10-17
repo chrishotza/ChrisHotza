@@ -11,6 +11,12 @@ Juntá skills, sumá IAs, incorporá complementos y armá setups. **El personaje
 
 </div>
 
+<div align="center">
+
+<img src="./assets/agent-evolution.svg" alt="Agente pixelado comunitario. Muestra nivel, XP, skills, modelos y complementos; su aspecto se actualiza con las jugadas." width="100%">
+
+</div>
+
 ---
 
 <!-- VIBE-LAB:START -->
