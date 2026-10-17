@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Public projects, bilingual research and engineering index">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1425"/><stop offset="1" stop-color="#111e33"/></linearGradient><linearGradient id="line"><stop stop-color="#63d8ff"/><stop offset="1" stop-color="#bca0ff"/></linearGradient></defs>
+<rect width="1200" height="250" rx="20" fill="url(#bg)"/>
+<g opacity=".14" stroke="#8bb9e9" fill="none"><path d="M0 58H1200M0 125H1200M0 192H1200"/><path d="M110 0V250M230 0V250M350 0V250M470 0V250M590 0V250M710 0V250M830 0V250M950 0V250M1070 0V250"/></g>
+<rect x="43" y="42" width="4" height="165" rx="2" fill="url(#line)"/>
+<text x="74" y="74" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="5" fill="#79d9fb">OPEN RESEARCH / INVESTIGACION ABIERTA</text>
+<text x="72" y="137" font-family="Arial,sans-serif" font-size="55" font-weight="800" fill="#f4f7ff">PROJECT INDEX</text>
+<text x="74" y="177" font-family="Arial,sans-serif" font-size="19" fill="#9bb2ce">15 public repositories  /  15 proyectos públicos</text>
+<path d="M945 70L1010 108L1080 63L1141 116L1083 180L1007 164L945 70Z" fill="none" stroke="#78d5f7" stroke-width="2" opacity=".65"/><path d="M1010 108L1083 180M1080 63L1007 164M945 70L1141 116" stroke="#bd9eff" opacity=".35"/><g fill="#79d9fb"><circle cx="945" cy="70" r="6"/><circle cx="1010" cy="108" r="7"/><circle cx="1083" cy="180" r="6"/></g><g fill="#bc9dff"><circle cx="1080" cy="63" r="6"/><circle cx="1141" cy="116" r="7"/><circle cx="1007" cy="164" r="5"/></g>
+</svg>
