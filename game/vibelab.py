@@ -142,7 +142,7 @@ def render(state):
         "",
         "### VIBE CODER / AGENTE EN EVOLUCIÓN ∞",
         "",
-        "**Nivel %d** · **%d XP** · **%d jugadas** · **%d setups creados**" %
+        "**Nivel %d** · **%d XP** · **%d jugadas** · **Setups: %d**" %
         (lvl, xp, turns, state["inventory"]["build"] and sum(state["inventory"]["build"].values()) or 0),
         "",
         bar + "  → Siguiente nivel: %d XP" % ((lvl * 50)),
