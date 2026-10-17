@@ -330,6 +330,205 @@ No necesitás salir de esta página. Las acciones de abajo saltan entre escenas 
 <!-- DOOM-LAB / FIN -->
 
 
+<a name="lab-snake"></a>
+
+<details>
+<summary><b>🐍 OTRO JUEGO DENTRO DEL README — Skill Snake / elegir rutas, recolectar IA y compilar setup</b></summary>
+
+No tenés que abrir otra pestaña. Se juega **con clics en esta página**. Seguí al gusanito, evitá chocar y conseguí Python, Qwen y GitHub Actions. Es un puzzle de decisiones con tableros dibujados, no el Snake en tiempo real con teclas.
+
+<details open>
+<summary><b>00 / SKILL SNAKE — PASO 0</b></summary>
+
+<a name="sn00"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-00.svg" width="72%" alt="Tablero pixelado de Snake, paso 0. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+Comenzás con un agente diminuto. Su primera misión es encontrar una skill.
+
+[**→ MOVER**](#sn01) &nbsp; · &nbsp; [**↑ SUBIR (CHOQUE)**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>01 / SKILL SNAKE — PASO 1</b></summary>
+
+<a name="sn01"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-01.svg" width="72%" alt="Tablero pixelado de Snake, paso 1. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+Seguí la dirección de movimiento. Revertir de golpe tiene consecuencias.
+
+[**→ MOVER**](#sn02) &nbsp; · &nbsp; [**← INVERTIR (CHOQUE)**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>02 / SKILL SNAKE — PASO 2</b></summary>
+
+<a name="sn02"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-02.svg" width="72%" alt="Tablero pixelado de Snake, paso 2. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+Ya casi tenés Python. Elegí el movimiento correcto.
+
+[**→ COMER SKILL**](#sn03) &nbsp; · &nbsp; [**↑ SUBIR (CHOQUE)**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>03 / SKILL SNAKE — PASO 3</b></summary>
+
+<a name="sn03"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-03.svg" width="72%" alt="Tablero pixelado de Snake, paso 3. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+**+ Python**. Una skill útil para construir y probar. Ahora buscá una IA.
+
+[**↑ BUSCAR IA**](#sn04) &nbsp; · &nbsp; [**→ CHOCAR**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>04 / SKILL SNAKE — PASO 4</b></summary>
+
+<a name="sn04"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-04.svg" width="72%" alt="Tablero pixelado de Snake, paso 4. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+Qwen está a un paso. Seguí recto.
+
+[**↑ RECOGER QWEN**](#sn05) &nbsp; · &nbsp; [**← CHOCAR**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>05 / SKILL SNAKE — PASO 5</b></summary>
+
+<a name="sn05"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-05.svg" width="72%" alt="Tablero pixelado de Snake, paso 5. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+**+ Qwen**. El agente ahora tiene una skill y una IA; falta una herramienta.
+
+[**→ BUSCAR PLUGIN**](#sn06) &nbsp; · &nbsp; [**↓ INVERTIR (CHOQUE)**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>06 / SKILL SNAKE — PASO 6</b></summary>
+
+<a name="sn06"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-06.svg" width="72%" alt="Tablero pixelado de Snake, paso 6. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+El complemento se ve adelante. No tires el progreso.
+
+[**→ MOVER**](#sn07) &nbsp; · &nbsp; [**↑ PARED**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>07 / SKILL SNAKE — PASO 7</b></summary>
+
+<a name="sn07"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-07.svg" width="72%" alt="Tablero pixelado de Snake, paso 7. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+Una acción más para completar el equipo.
+
+[**→ RECOGER ACTIONS**](#sn08) &nbsp; · &nbsp; [**↓ INVERTIR (CHOQUE)**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>08 / SKILL SNAKE — PASO 8</b></summary>
+
+<a name="sn08"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-08.svg" width="72%" alt="Tablero pixelado de Snake, paso 8. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+**+ GitHub Actions**. Ya tenés skill + IA + complemento.
+
+[**✓ COMPILAR SETUP**](#sn09) &nbsp; · &nbsp; [**← CHOCAR**](#sn10)
+
+</details>
+
+<details open>
+<summary><b>09 / SETUP COMPLETO</b></summary>
+
+<a name="sn09"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-09.svg" width="72%" alt="Tablero pixelado de Snake, paso 9. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+**Setup virtual compilado:** Python + Qwen + GitHub Actions = Research Stack. El ciclo puede volver a empezar.
+
+[**↻ OTRA RONDA**](#sn00) &nbsp; · &nbsp; [**◈ VER MODO COMUNIDAD**](#vibe-lab)
+
+</details>
+
+<details open>
+<summary><b>☠ / CHOQUE / FIN DE PARTIDA</b></summary>
+
+<a name="sn10"></a>
+
+<div align="center">
+
+<img src="./assets/readme-snake/step-10.svg" width="72%" alt="Tablero pixelado de Snake, paso 10. Mostrando la posición del gusanito y el próximo objeto a recolectar.">
+
+</div>
+
+Choque. Este nivel es un rompecabezas por clics: aprendé la ruta y probá otra vez.
+
+[**↻ REINICIAR**](#sn00) &nbsp; · &nbsp; [**↓ VER DOOM-LAB**](#doom-lab)
+
+</details>
+
+</details>
+
+
+
+
 ---
 
 ### 🧠 El agente comunitario también evoluciona
