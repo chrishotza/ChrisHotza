@@ -66,7 +66,7 @@ def inspect_svg(path: Path) -> list[str]:
                 errors.append(f"CSS import or expression forbidden in {path.name}")
             # Preserve local paint server references such as url(#gradient),
             # but reject remote, data:, file:, javascript: and relative URLs.
-            for match in re.finditer(r"url\\(\\s*(['\\\"]?)(.*?)\\1\\s*\\)", value, re.IGNORECASE):
+            for match in re.finditer(r"""url\(\s*(['"]?)(.*?)\1\s*\)""", value, re.IGNORECASE):
                 reference = match.group(2).strip()
                 if not re.fullmatch(r"#[A-Za-z_][A-Za-z0-9_.:-]*", reference):
                     errors.append(f"External SVG URL forbidden in {path.name}")
