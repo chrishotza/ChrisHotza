@@ -37,11 +37,40 @@ PRIVATE = (
     "chrishotza/Escuela-de-Animaci-n",
 )
 SVG_NS = "{http://www.w3.org/2000/svg}"
-FORBIDDEN_SVG_TAGS = {"script", "foreignObject", "iframe", "image", "animateMotion"}
+FORBIDDEN_SVG_TAGS = {"script", "foreignObject", "iframe", "image", "animateMotion", "animate", "animateTransform", "set", "style", "a"}
 IMAGE_PATTERN = re.compile(
     r'<a href="https://github\.com/([^"]+)">'
     r'<img src="\./assets/([^"]+\.svg)" alt="([^"]+)" width="([^"]+)">'
 )
+
+
+def inspect_svg(path: Path) -> list[str]:
+    """Pure local-asset audit; keep references internal and forbid script hooks."""
+    errors: list[str] = []
+    try:
+        root = ET.parse(path).getroot()
+    except ET.ParseError as exc:
+        return [f"Invalid XML in {path.name}: {exc}"]
+    if root.tag != SVG_NS + "svg":
+        errors.append(f"Invalid SVG root: {path.name}")
+    for el in root.iter():
+        name = el.tag.split("}")[-1]
+        if name in FORBIDDEN_SVG_TAGS:
+            errors.append(f"Unsupported or unsafe SVG element in {path.name}: {name}")
+        for key, value in el.attrib.items():
+            attribute = key.split("}")[-1].casefold()
+            # SVG event handlers can execute even without a <script> element.
+            if attribute.startswith("on") or attribute.endswith("href"):
+                errors.append(f"Script/event or href attribute forbidden in {path.name}: {attribute}")
+            if "@import" in value.casefold() or "expression(" in value.casefold():
+                errors.append(f"CSS import or expression forbidden in {path.name}")
+            # Preserve local paint server references such as url(#gradient),
+            # but reject remote, data:, file:, javascript: and relative URLs.
+            for match in re.finditer(r"url\\(\\s*(['\\\"]?)(.*?)\\1\\s*\\)", value, re.IGNORECASE):
+                reference = match.group(2).strip()
+                if not re.fullmatch(r"#[A-Za-z_][A-Za-z0-9_.:-]*", reference):
+                    errors.append(f"External SVG URL forbidden in {path.name}")
+    return errors
 
 
 def main() -> int:
@@ -101,17 +130,7 @@ def main() -> int:
         if not img_path.is_file():
             errors.append(f"Missing SVG: {image}")
             continue
-        try:
-            root = ET.parse(img_path).getroot()
-            if root.tag != SVG_NS + "svg":
-                errors.append(f"Invalid SVG root: {image}")
-            for el in root.iter():
-                if el.tag.split("}")[-1] in FORBIDDEN_SVG_TAGS:
-                    errors.append(f"Unsupported or unsafe SVG element in {image}")
-                if any(key.lower().endswith("href") for key in el.attrib):
-                    errors.append(f"External href/reference is not allowed in {image}")
-        except ET.ParseError as exc:
-            errors.append(f"Invalid XML in {image}: {exc}")
+        errors.extend(inspect_svg(img_path))
 
     if errors:
         print("PROFILE CHECK FAILED")
